@@ -1413,7 +1413,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik Program Detil'.$this->pageTitle;
+		$this->pageTitle = 'Akademik Program Detil '.$this->pageTitle;
 		$this->render('akademik_program_detil', array(
 			'model'=>$model,
 		));
@@ -1423,7 +1423,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik Program Extention'.$this->pageTitle;
+		$this->pageTitle = 'Akademik Program Extention '.$this->pageTitle;
 		$this->render('akademik_program_extention', array(
 			'model'=>$model,
 		));
@@ -1433,7 +1433,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik Program Pasca Sarjana'.$this->pageTitle;
+		$this->pageTitle = 'Akademik Program Pasca Sarjana '.$this->pageTitle;
 		$this->render('akademik_program_pasca', array(
 			'model'=>$model,
 		));
@@ -1443,7 +1443,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik Program Sarjana'.$this->pageTitle;
+		$this->pageTitle = 'Akademik Program Sarjana '.$this->pageTitle;
 		$this->render('akademik_program_sarjana', array(
 			'model'=>$model,
 		));
@@ -1453,7 +1453,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik SIADRI'.$this->pageTitle;
+		$this->pageTitle = 'Akademik SIADRI '.$this->pageTitle;
 		$this->render('akademik_siadri', array(
 			'model'=>$model,
 		));
@@ -1463,7 +1463,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Komunitas Berita'.$this->pageTitle;
+		$this->pageTitle = 'Komunitas Berita '.$this->pageTitle;
 		$this->render('komunitas_berita', array(
 			'model'=>$model,
 		));
@@ -1473,7 +1473,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Komunitas Berita Detail'.$this->pageTitle;
+		$this->pageTitle = 'Komunitas Berita Detail '.$this->pageTitle;
 		$this->render('komunitas_berita_detail', array(
 			'model'=>$model,
 		));
@@ -1483,7 +1483,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Penerimaan Sarjana'.$this->pageTitle;
+		$this->pageTitle = 'Penerimaan Sarjana '.$this->pageTitle;
 		$this->render('penerimaan_sarjana', array(
 			'model'=>$model,
 		));
@@ -1502,7 +1502,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Tentang Kami'.$this->pageTitle;
+		$this->pageTitle = 'Tentang Kami '.$this->pageTitle;
 		$this->render('tentang_kami', array(
 			'model'=>$model,
 		));
@@ -1512,7 +1512,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Tentang Fakta'.$this->pageTitle;
+		$this->pageTitle = 'Tentang Fakta '.$this->pageTitle;
 		$this->render('tentang_fakta', array(
 			'model'=>$model,
 		));
@@ -1522,7 +1522,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Tentang Info'.$this->pageTitle;
+		$this->pageTitle = 'Tentang Info '.$this->pageTitle;
 		$this->render('tentang_info', array(
 			'model'=>$model,
 		));
@@ -1532,7 +1532,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Tentang Info Kampus Detail'.$this->pageTitle;
+		$this->pageTitle = 'Tentang Info Kampus Detail '.$this->pageTitle;
 		$this->render('tentang_info_kampus', array(
 			'model'=>$model,
 		));
@@ -1542,7 +1542,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Visi Misi'.$this->pageTitle;
+		$this->pageTitle = 'Visi Misi '.$this->pageTitle;
 		$this->render('visi_misi', array(
 			'model'=>$model,
 		));
@@ -1552,7 +1552,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Tentang Administrasi'.$this->pageTitle;
+		$this->pageTitle = 'Tentang Administrasi '.$this->pageTitle;
 		$this->render('tentang_administrasi', array(
 			'model'=>$model,
 		));
