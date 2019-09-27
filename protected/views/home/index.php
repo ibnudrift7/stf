@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <div class="desk">
                         <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <div class="desk">
                         <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <div class="desk">
                         <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-15 col-30">
                 <div class="box-content">
                     <div class="desk">
                         <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
@@ -165,12 +165,12 @@
                 <div class="box-content-right">
                     <h4>Kegiatan Sekolah</h4>
                     <div class="row no-gutters">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div class="images">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-54">
+                        <div class="col-md-54 col-54">
                             <div class="kalender">
                                 <h5>Pendaftaran Program Doktor</h5>
                                 <p>13.00 pm - selesai</p>
@@ -179,12 +179,12 @@
                     </div>
                     <div class="garis"></div>
                     <div class="row no-gutters">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div class="images">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-54">
+                        <div class="col-md-54 col-54">
                             <div class="kalender">
                                 <h5>PEKAN OLAH RAGA DRIYAKARA</h5>
                                 <p>13.00 pm - selesai</p>
@@ -193,12 +193,12 @@
                     </div>
                     <div class="garis"></div>
                     <div class="row no-gutters">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div class="images">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-54">
+                        <div class="col-md-54 col-54">
                             <div class="kalender">
                                 <h5>Pendaftaran MAHASISWA BARU</h5>
                                 <p>13.00 pm - selesai</p>
@@ -207,12 +207,12 @@
                     </div>
                     <div class="garis"></div>
                     <div class="row no-gutters">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div class="images">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-54">
+                        <div class="col-md-54 col-54">
                             <div class="kalender">
                                 <h5>RAPAT UMUM DOSEN SEMESTER GENAP</h5>
                                 <p>13.00 pm - selesai</p>
@@ -238,7 +238,7 @@
             <div class="col-md-37">
                 <form>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-20 col-60">
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
                                 <option selected>Pilih Kategori Studi</option>
@@ -250,7 +250,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-20 col-60">
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
                                 <option selected>Pilih Jenjang Studi</option>
@@ -262,7 +262,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-20 col-60">
                             <button type="submit" class="submit"><p>daftarkan diri anda</p></button>
                         </div>
                     </div>
