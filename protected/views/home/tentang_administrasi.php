@@ -1,3 +1,5 @@
+<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'administrasi')); ?>
+
 <section class="admin-sec-1">
     <div class="prelative container">
         <div class="row kecil">
