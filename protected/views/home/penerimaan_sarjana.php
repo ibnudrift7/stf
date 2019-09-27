@@ -1,9 +1,21 @@
+<?php 
+$type = 'program-sarjana';
+if ( isset($_GET['type']) ) {
+    $type = $_GET['type'];
+}
+?>
+<?php echo $this->renderPartial('//home/_top_penerimaan_mnu', array('actives' => $type)); ?>
+
 <section class="penerimaan-sec-1">
     <div class="prelative container">
         <div class="row kecil">
             <div class="col-md-60">
                 <div class="box-content">
+                    <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                    <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S2</h3>
+                    <?php else: ?>
                     <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S1</h3>
+                    <?php endif ?>
                     <h5>Persyaratan Masuk</h5>
                     <ul>
                         <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU 

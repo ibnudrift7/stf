@@ -1,16 +1,16 @@
 home
 
-home/akademikprogramdetil
-home/akademiksiadri
-home/akademikprogrampasca
-home/akademikprogramsarjana
-home/akademikprogramextension
+home/akademikprogramdetil > oke
+home/akademiksiadri > oke
+home/akademikprogrampasca > oke
+home/akademikprogramsarjana > oke
+home/akademikprogramextension > oke
 
 home/komunitasberita
 home/komunitasberitadetail
 
-home/penelitianperpustakaan
-home/penerimaansarjana
+home/penelitianperpustakaan > oke
+home/penerimaansarjana > oke
 
 home/tentangkami > oke
 home/tentanginfo > oke

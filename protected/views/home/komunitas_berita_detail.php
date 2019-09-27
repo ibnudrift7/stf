@@ -1,3 +1,11 @@
+<?php 
+$type = 'mahasiswa';
+if (isset($_GET['type'])) {
+    $type = htmlspecialchars($_GET['type']);
+}
+?>
+<?php echo $this->renderPartial('//home/_top_berita_mnu', array('actives' => $type)); ?>
+
 <section class="berita-detail-sec-1">
     <div class="prelative container">
         <div class="row kecil">
@@ -10,7 +18,7 @@
             </div>
             <div class="col-md-30">
                 <div class="box-content-topright">
-                    <p>KOMUNITAS: <b>MAHASISWA</b></p>
+                    <p>KOMUNITAS: <b><?php echo strtoupper($type) ?></b></p>
                 </div>
             </div>
         </div>
@@ -25,7 +33,7 @@
                     <p>
                     Donec pharetra, nibh at commodo bibendum, nunc lacus sagittis eros, sit amet vehicula tortor enim scelerisque erat. Sed erat ex, tristique vitae nisl id, auctor hendrerit dolor. Pellentesque vitae metus quis augue rhoncus tincidunt. Quisque faucibus erat a porta fringilla. Phasellus pretium lectus vel massa dictum, in eleifend ex sodales. Proin magna dui, feugiat non lacus non, feugiat maximus purus. Proin elementum eget sapien et facilisis. Quisque porta elit quis volutpat eleifend. Mauris et enim nec lectus efficitur faucibus vel sed ex. Phasellus nec porttitor eros. Donec quis justo at lorem lacinia egestas. Etiam diam ligula, vestibulum in justo sit amet, molestie vestibulum urna. Nulla ut rhoncus nunc. Mauris condimentum at dolor et pulvinar.</p>
                     <div class="kembali">
-                        <a href="#"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>chevron-thin-left-copy.png" alt=""><p>Kembali</p></a>
+                        <a href="#" onclick="window.history.back();"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>chevron-thin-left-copy.png" alt=""><p>Kembali</p></a>
                     </div>
                 </div>
             </div>
