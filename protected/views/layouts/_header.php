@@ -16,7 +16,7 @@
             <ul class="list-inline">
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Beranda</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/tentangkami')); ?>">Tentang Kami</a></li>
-              <li class="list-inline-item"><a href="#">Akademik</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil')); ?>">Akademik</a></li>
               <li class="list-inline-item"><a href="#">Penelitian</a></li>
               <li class="list-inline-item"><a href="#">Komunitas</a></li>
             </ul>

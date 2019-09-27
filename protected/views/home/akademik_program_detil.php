@@ -1,3 +1,5 @@
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'akademik_program_detil')); ?>
+
 <section class="program-detil-sec-1">
     <div class="prelative container">
         <div class="row kecil no-gutters">
