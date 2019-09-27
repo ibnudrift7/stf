@@ -1,3 +1,5 @@
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'program-pasca-sarjana')); ?>
+
 <section class="program-pasca-sec-1">
     <div class="prelative container">
         <div class="row kecil">
@@ -10,14 +12,14 @@
                     <div class="garis"></div>
                     <h5>Ilmu Teologi - Program Studi S2</h5>
                     <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <button class="baca"><a href="#">Baca Lebih Lanjut</a></button>
+                    <button class="baca"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Ilmu Teologi - Program Studi S2', 'type'=>'program-pasca-sarjana')); ?>">Baca Lebih Lanjut</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
                 </div>
                 <div class="box-content">
                     <div class="garis"></div>
                     <h5>Ilmu Filsafat - Program Studi S2</h5>
                     <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <button class="baca"><a href="#">Baca Lebih Lanjut</a></button>
+                    <button class="baca"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Ilmu Filsafat - Program Studi S2', 'type'=>'program-pasca-sarjana')); ?>">Baca Lebih Lanjut</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
                 </div>
             </div>

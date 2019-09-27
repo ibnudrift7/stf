@@ -1419,7 +1419,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		));
 	}
 
-	public function actionAkademikprogramextention()
+	public function actionAkademikprogramextension()
 	{
 		$this->layout='//layouts/column2';
 

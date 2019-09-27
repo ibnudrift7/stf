@@ -1,10 +1,10 @@
-<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'akademik_program_detil')); ?>
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'akademik_detail')); ?>
 
 <section class="program-detil-sec-1">
     <div class="prelative container">
         <div class="row kecil no-gutters">
             <div class="col-md-40">
-                <h3>ILMU TEOLOGIA - PROGRAM STUDI S1</h3>
+                <h3><?php echo strtoupper(strtolower( $_GET['name'] )) ?></h3>
             </div>
             <div class="col-md-20">
                 <div class="box-content-topleft">

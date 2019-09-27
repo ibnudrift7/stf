@@ -1,10 +1,12 @@
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'siadri')); ?>
+
 <section class="siadri-sec-1">
     <div class="prelative container">
         <div class="row kecil">
             <div class="col-md-60">
                 <div class="box-content">
                     <h4>SIADRI</h4>
-                    <p>Silahkan <a href="">klik di sini</a>  untuk masuk ke Sistem Informasi Akademik</p>
+                    <p>Silahkan <a href="#">klik di sini</a>  untuk masuk ke Sistem Informasi Akademik</p>
                 </div>
             </div>
         </div>

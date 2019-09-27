@@ -1,3 +1,5 @@
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'extension-course')); ?>
+
 <section class="program-extention-sec-1">
     <div class="prelative container">
         <div class="row kecil">
@@ -10,14 +12,14 @@
                     <div class="garis"></div>
                     <h5>EXTENSION COURSE 1</h5>
                     <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <button class="baca"><a href="#">Baca Lebih Lanjut</a></button>
+                    <button class="baca"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Extension Course 1', 'type'=>'extension-course')); ?>">Baca Lebih Lanjut</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
                 </div>
                 <div class="box-content">
                     <div class="garis"></div>
                     <h5>EXTENSION COURSE 2</h5>
                     <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <button class="baca"><a href="#">Baca Lebih Lanjut</a></button>
+                    <button class="baca"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Extension Course 2', 'type'=>'extension-course')); ?>">Baca Lebih Lanjut</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
                 </div>
             </div>

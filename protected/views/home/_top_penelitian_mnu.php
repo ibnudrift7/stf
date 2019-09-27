@@ -12,7 +12,7 @@
     </div>
     <div class="prelatife container py-5 my-5">
         <div class="inner-texts text-center d-block py-4">
-            <h1>Tentang Kami</h1>
+            <h1>Penelitian</h1>
             <h4><?php echo strtoupper(str_replace('-', ' ', $actives)) ?></h4>
             <div class="lines-middle d-block mx-auto"></div>
         </div>

@@ -1,10 +1,10 @@
 home
 
 home/akademikprogramdetil
-home/akademikprogramextension
+home/akademiksiadri
 home/akademikprogrampasca
 home/akademikprogramsarjana
-home/akademiksiadri
+home/akademikprogramextension
 
 home/komunitasberita
 home/komunitasberitadetail
