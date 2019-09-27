@@ -1,3 +1,5 @@
+<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'info-kampus')); ?>
+
 <section class="info-sec-1">
     <div class="prelative container">
         <div class="row">

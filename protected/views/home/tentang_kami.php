@@ -1,25 +1,4 @@
-<section class="top-covers py-5 back-abouts">
-    <div class="pos-tops_submenu">
-        <div class="prelatife container">
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Sejarah</a></li>
-                <li class="list-inline-item"><a href="#">Visi & Misi</a></li>
-                <li class="list-inline-item"><a href="#">Administrasi</a></li>
-                <li class="list-inline-item"><a href="#">Fakta & Angka</a></li>
-                <li class="list-inline-item"><a href="#">Info Kampus</a></li>
-            </ul>
-            <div class="clear clearfix"></div>
-        </div>
-    </div>
-    <div class="prelatife container py-5 my-5">
-        <div class="inner-texts text-center d-block py-4">
-            <h1>Tentang Kami</h1>
-            <h4>SEJARAH</h4>
-            <div class="lines-middle d-block mx-auto"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</section>
+<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'sejarah')); ?>
 
 <section class="tentang-sec-1">
     <div class="prelative container">

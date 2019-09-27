@@ -1,8 +1,10 @@
+<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'fakta-&-angka')); ?>
+
 <section class="tentang-fakta-sec-1">
     <div class="prelative container">
         <div class="row kecil">
             <div class="col-md-60">
-                <div class="box-content">
+                <div class="box-content content-text">
                     <h4>FAKTA STF DRIYARKARA</h4>
                     <p>Duis sed tortor magna. Curabitur eget sem vel mi porta consectetur ac eu velit. Aliquam est lectus, rutrum ut porta eget, fringilla a orci. Vestibulum vitae massa sit amet ipsum commodo mollis. Aenean euismod dui a fringilla efficitur. Pellentesque turpis mi, finibus at ipsum at, volutpat cursus ipsum. Maecenas quis lacus sapien.</p>
                     <p>

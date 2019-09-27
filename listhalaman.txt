@@ -8,9 +8,9 @@ home/komunitasberita
 home/komunitasberitadetail
 home/penelitianperpustakaan
 home/penerimaansarjana
-home/tentangkami
-home/tentanginfo
-home/tentanginfokampusdetail
-home/visimisi
-home/tentangadministrasi
-home/tentangfakta
+home/tentangkami > oke
+home/tentanginfo > oke
+home/tentanginfokampusdetail > oke
+home/visimisi > oke
+home/tentangadministrasi > oke
+home/tentangfakta > oke
