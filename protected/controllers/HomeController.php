@@ -1489,13 +1489,12 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		));
 	}
 
-	public function actionPenelitianperpustakaan()
+	public function actionPenelitian()
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Penerimaan Perpustakaan'.$this->pageTitle;
 		$this->render('penelitian_perpustakaan', array(
-			'model'=>$model,
+			// 'model'=>$model,
 		));
 	}
 
