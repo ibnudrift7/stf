@@ -1,3 +1,26 @@
+header.head.head_inisdes{
+	position: relative;
+	.bottoms_head{
+		background-color: #fff;
+		padding: 1rem 0;
+		.bck_lines{
+			background-color: #464dff;
+			height: 64px;
+			width: 2px;
+		}
+		.latsn{
+			i{
+				font-weight: 700;
+				font-style: italic;
+			}
+			font-size: 20px; 
+			font-weight: 500;
+			color: #4d4d4d;
+		}
+		clear: both;
+	}
+}
+
 header.head{
 	width: 100%;
 	
@@ -72,6 +95,7 @@ header.head{
 			font-size: 20px; 
 			font-weight: 500;
 			color: #fff;
+			line-height: 1.2;
 		}
 		clear: both;
 	}
@@ -154,4 +178,64 @@ header.head{
 			}
 		}
 	}
+}
+
+
+section.back-abouts{}
+section.top-covers{
+	width: 100%;
+	min-height: 120px;
+	height: auto;
+	background: url('../images/ill-abouts.jpg') center no-repeat;
+	.inner-texts{
+		h1, h4{
+			margin: 0; display: block;
+			padding: 0;
+		}
+		h1{
+			font-size: 18px; font-weight: 400; color: #fff;
+			margin-bottom: 0.3rem;
+		}
+		h4{
+			font-size: 38px;
+			font-weight: 600; color: #fff;
+		}
+
+		.lines-middle{
+			width: 65px;
+			height: 6px;
+			background-color: #464dff;
+			position: relative;
+			margin-top: 0.8rem;
+		}
+	}
+	position: relative;
+
+	.pos-tops_submenu{
+		position: absolute;
+		top: 0px; left: 0px;
+		width: 100%;
+		z-index: 78;
+		padding: 15px 0;
+		border-bottom: 1px solid #b9b9b9;
+		ul{
+			margin: 0;
+			li{
+				a{
+					font-size: 14px;
+					font-weight: 600;
+					color: #fff;
+				}
+				a:hover,
+				a:focus{
+					text-decoration: none;
+					color: #3e4095;
+				}
+			}
+			li.list-inline-item:not(:last-child){
+				margin-right: 1em;
+			}
+		}
+	}
+	clear: both;
 }
