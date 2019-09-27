@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <div class="col-md-43 p-4">
-                        <form action="#" method="post" class="form-inline justify-content-center">
+                        <form action="#" onsubmit="alert('underconstruction');" method="post" class="form-inline justify-content-center">
                             <div class="form-group mx-sm-2">
                             <label for="inputPassword1" class="sr-only">Option 1</label>
                             <select name="" id="inputPassword1" class="form-control">

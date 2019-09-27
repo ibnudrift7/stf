@@ -5,49 +5,48 @@
                 <h4>Berita Sekolah Tinggi Filsafat Driyarkara</h4>
             </div>
         </div>
+        <?php 
+        $data = array(
+                    array(
+                        'pict'=>'home1.jpg',
+                        'title'=>'The Heights Turns 100',
+                        'desc'=>'A century of breaking news for Boston College’s undergraduate paper.',
+                    ),
+                    array(
+                        'pict'=>'home2.jpg',
+                        'title'=>'Weeks of welcome',
+                        'desc'=>'New enhancements to BC`s annual rite of introduction for first-year students.',
+                    ),
+                    array(
+                        'pict'=>'home3.jpg',
+                        'title'=>'Learning from others: giving back',
+                        'desc'=>'BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.',
+                    ),
+                );
+        ?>
         <div class="row">
+
+            <?php foreach ($data as $key => $value): ?>
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home1.jpg" alt="" >
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberitadetail', 'type'=> 'berita')); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['pict'] ?>" alt="" ></a>
                     </div>
                     <div class="title">
-                        <p>The Heights Turns 100</p>
+                        <p>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberitadetail', 'type'=> 'berita')); ?>"><?php echo $value['title'] ?></a>
+                        </p>
                     </div>
                     <div class="subtitle">
-                        <p>A century of breaking news for Boston College’s undergraduate paper.</p>
+                        <p><?php echo $value['desc'] ?></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home2.jpg" alt="" alt="" >
-                    </div>
-                    <div class="title">
-                        <p>Weeks of welcome</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>New enhancements to BC's annual rite of introduction for first-year students.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image">
-                    <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>home3.jpg" alt="" alt="" >
-                    </div>
-                    <div class="title">
-                        <p>Learning from others: giving back</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.</p>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
+
             <div class="row">
                 <div class="col-md-60">
-                    <button class="lihatsemua"><a href="#"><p>Lihat Semua Berita</p></a></button>
+                    <button class="lihatsemua"><a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberita')); ?>"><p>Lihat Semua Berita</p></a></button>
                 </div>
             </div>
         </div>
@@ -157,7 +156,7 @@
                         <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
                     </div>
                     <button class="button-info">
-                        <a href="#"><p>Lihat Semua Info Kampus</p></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/tentanginfo')); ?>"><p>Lihat Semua Info Kampus</p></a>
                     </button>
                 </div>
             </div>
