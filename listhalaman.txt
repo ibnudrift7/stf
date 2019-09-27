@@ -1,0 +1,16 @@
+home
+home/akademikprogramdetil
+home/akademikprogramextension
+home/akademikprogrampasca
+home/akademikprogramsarjana
+home/akademiksiadri
+home/komunitasberita
+home/komunitasberitadetail
+home/penelitianperpustakaan
+home/penerimaansarjana
+home/tentangkami
+home/tentanginfo
+home/tentanginfokampusdetail
+home/visimisi
+home/tentangadministrasi
+home/tentangfakta
