@@ -1,11 +1,22 @@
+<?php 
+$type = 'perpustakaan';
+$names = 'perpustakaan';
+if (isset($_GET['type'])) {
+    $type = htmlspecialchars($_GET['type']);
+    $names = str_replace('-', ' ', $type);
+}
+$this->pageTitle = ucwords($names).' '.$this->pageTitle;
+?>
+<?php echo $this->renderPartial('//home/_top_penelitian_mnu', array('actives' => $type)); ?>
+
 <section class="penelitian-sec-1">
     <div class="prelative container">
         <div class="row kecil">
             <div class="col-md-60">
                 <div class="box-content">
-                    <h3>PERPUSTAKAAN</h3>
+                    <h3><?php echo strtoupper($names); ?></h3>
                     <p>Silahkan <a href="#">klik di sini</a>  untuk masuk ke Perpustakaan Sekolah Tinggi Filsafat Driyarkara</p>
-                    <a href="#">(semua link di penelitian menggunakan template ini dan link ke eksternal)</a>
+                    <!-- <a href="#">(semua link di penelitian menggunakan template ini dan link ke eksternal)</a> -->
                 </div>
             </div>
         </div>

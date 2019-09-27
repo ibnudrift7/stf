@@ -17,7 +17,7 @@
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Beranda</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/tentangkami')); ?>">Tentang Kami</a></li>
               <li class="list-inline-item"><a href="#">Akademik</a></li>
-              <li class="list-inline-item"><a href="#">Penelitian</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/penelitian')); ?>">Penelitian</a></li>
               <li class="list-inline-item"><a href="#">Komunitas</a></li>
             </ul>
           </div>
@@ -25,7 +25,7 @@
         <div class="col-md-35">
           <ul class="list-inline rhd_right">
               <li class="list-inline-item"><a href="#">HUBUNGI KAMI &nbsp;<i class="fa fa-paper-plane"></i></a></li>
-              <li class="list-inline-item"><a href="#">PENERIMAAN &nbsp;<i class="fa fa-user-o"></i></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/penerimaansarjana')); ?>">PENERIMAAN &nbsp;<i class="fa fa-user-o"></i></a></li>
               <li class="list-inline-item"><a href="#">WHATSAPP CHAT &nbsp;<i class="fa fa-whatsapp"></i></a></li>
               <li class="list-inline-item lasts_lang">
                 <a href="#">IN</a>&nbsp;&nbsp;|&nbsp;&nbsp;
