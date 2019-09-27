@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
 @fira : 'Fira Sans', sans-serif;
 
 html,body{
@@ -8,14 +7,18 @@ html,body{
     background: #ffffff;
 }
 
+div, li,
 h1,h2,h3,h4,h5,h6,p,a{
     font-family: @fira;
     margin-bottom: 0;
 }
 
+.container,
 .prelative.container{
-    max-width: 1260px;
+    max-width: 1236px;
 }
+
+@import 'subpage.less';
 
 section.home-sec-1{
     background: url('../images/homesec1.jpg') center center;
@@ -268,6 +271,7 @@ section.footer{
         padding-bottom: 30px;
         a{
             text-decoration: none;
+            color: #8d91ff;
             p{
                 color: #8d91ff;
                 font-size: 18px;
@@ -298,7 +302,7 @@ section.footer{
             a{
                 font-size: 13px;
                 color: #ffffff;
-                opacity: 0.4;
+                // opacity: 0.4;
                 text-decoration: none;
             }
         }
@@ -309,7 +313,7 @@ section.footer{
             li{
                 list-style: none;
                 display: inline;
-                padding: 0 15px;
+                // padding: 0 15px;
                 a{
                     text-decoration: none;
                     font-size: 18px;

@@ -56,6 +56,7 @@
 
 <section class="home-sec-2">
     <div class="prelative container">
+        <div class="py-3"></div>
         <div class="row">
             <div class="col-md-60">
                 <div class="box-content-atas">

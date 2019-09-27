@@ -7,5 +7,5 @@
 <div class="clear"></div>
 <?php echo $content ?>
 
-<?php echo $this->renderPartial('//layouts/_footer2', array()); ?>
+<?php echo $this->renderPartial('//layouts/_footer', array()); ?>
 <?php $this->endContent(); ?>

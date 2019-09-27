@@ -27,6 +27,14 @@
                         <li><a href="#">hubungi kami</a></li>
                     </ul>
                 </div>
+                <div class="py-4"></div>
+                <div class="socmed_scl text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -22,9 +22,18 @@
             </div>
             <div class="col-md-30">
                 <div class="box-content-top">
-                    <ul>
-                        <li><a href="#">penerimaan</a></li>
-                        <li><a href="#">hubungi kami</a></li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">penerimaan</a></li>
+                        <li class="list-inline-item"><a href="#">hubungi kami</a></li>
+                    </ul>
+                </div>
+                <div class="py-5"></div>
+                <div class="py-2"></div>
+                <div class="socmed_scl text-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;</li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;</li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
             </div>
