@@ -11048,3 +11048,1081 @@ in C:\xampp\htdocs\driyarkarya\protected\controllers\HomeController.php (1448)
 2019/09/26 10:50:11 [trace] [system.CModule] Loading "assetManager" application component
 in C:\xampp\htdocs\driyarkarya\protected\controllers\HomeController.php (1448)
 in C:\xampp\htdocs\driyarkarya\index.php (21)
+2019/09/27 10:45:13 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:14 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:14 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:15 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:15 [trace] [system.caching.CFileCache] Saving "Yii.CUrlManager.rules" to cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:17 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:17 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:18 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `setting`
+in C:\xampp\htdocs\stf\protected\models\Setting.php (20)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `setting`
+in C:\xampp\htdocs\stf\protected\models\Setting.php (20)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.ar.CActiveRecord] Setting.findAll()
+in C:\xampp\htdocs\stf\protected\models\Setting.php (93)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting` `t`
+in C:\xampp\htdocs\stf\protected\models\Setting.php (93)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:19 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `setting_description`
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (21)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `setting_description`
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (21)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Setting.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting` `t` WHERE name = :name LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] SettingDescription.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting_description` `t` WHERE setting_id = :setting_id AND language_id = :language_id LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Setting.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting` `t` WHERE name = :name LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] SettingDescription.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting_description` `t` WHERE setting_id = :setting_id AND language_id = :language_id LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Setting.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting` `t` WHERE name = :name LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (96)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (97)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.ar.CActiveRecord] SettingDescription.find()
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `setting_description` `t` WHERE setting_id = :setting_id AND language_id = :language_id LIMIT 1
+in C:\xampp\htdocs\stf\protected\models\SettingDescription.php (98)
+in C:\xampp\htdocs\stf\protected\models\Setting.php (97)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (48)
+2019/09/27 10:45:20 [trace] [system.caching.CFileCache] Saving "setting_en" to cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (49)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:20 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:20 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:23 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:45:23 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:27 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:45:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stf\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/stf/asset/images/favicon.png
+HTTP_REFERER=http://localhost/stf/home
+---
+2019/09/27 10:45:28 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/27 10:45:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:45:28 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:45:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:45:29 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:45:29 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:45:29 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:45:29 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stf\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/stf/asset/images/favicon.png
+HTTP_REFERER=http://localhost/stf/home
+---
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:29 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:29 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:48:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stf\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/stf/asset/images/favicon.png
+HTTP_REFERER=http://localhost/stf/home
+---
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:48:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:48:39 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:49:22 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:49:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stf\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/stf/asset/images/favicon.png
+HTTP_REFERER=http://localhost/stf/home
+---
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:49:23 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:49:23 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1468)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1468)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1468)
+2019/09/27 10:50:55 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1468)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:06 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:07 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:07 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:07 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:08 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:09 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:09 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1478)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:10 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1478)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:52:11 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1478)
+2019/09/27 10:52:11 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (1478)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:57:59 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:01 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:02 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:02 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:02 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:02 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:58:02 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:58:03 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:00 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:01 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:59:01 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column1.php (74)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+2019/09/27 10:59:06 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (154)
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:09 [trace] [system.CModule] Loading "log" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:09 [trace] [system.CModule] Loading "request" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:09 [trace] [system.CModule] Loading "urlManager" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:09 [trace] [system.CModule] Loading "cache" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:09 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:11 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\xampp\htdocs\stf\index.php (21)
+2019/09/27 10:59:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\stf\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/stf/asset/images/favicon.png
+HTTP_REFERER=http://localhost/stf/home/
+---
+2019/09/27 10:59:12 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/27 10:59:13 [trace] [system.CModule] Loading "db" application component
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.db.CDbConnection] Opening DB connection
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in C:\xampp\htdocs\stf\protected\models\Language.php (22)
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.db.ar.CActiveRecord] Language.find()
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in C:\xampp\htdocs\stf\protected\components\Controller.php (41)
+2019/09/27 10:59:13 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in C:\xampp\htdocs\stf\protected\components\Controller.php (43)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (493)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in C:\xampp\htdocs\stf\protected\models\PrdCategory.php (23)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:14 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:14 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (506)
+2019/09/27 10:59:15 [trace] [system.CModule] Loading "themeManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:59:15 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (2)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:59:15 [trace] [system.CModule] Loading "clientScript" application component
+in C:\xampp\htdocs\stf\protected\views\layouts\main.php (36)
+in C:\xampp\htdocs\stf\protected\views\layouts\column2.php (11)
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)
+2019/09/27 10:59:15 [trace] [system.CModule] Loading "assetManager" application component
+in C:\xampp\htdocs\stf\protected\controllers\HomeController.php (514)

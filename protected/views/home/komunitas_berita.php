@@ -14,7 +14,7 @@
                     <div class="title">
                         <p>The Heights Turns 100</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>A century of breaking news for Boston College’s undergraduate paper.</p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="title">
                         <p>Weeks of welcome</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>New enhancements to BC's annual rite of introduction for first-year students.</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     <div class="title">
                         <p>Learning from others: giving back</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class="title">
                         <p>The Heights Turns 100</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>A century of breaking news for Boston College’s undergraduate paper.</p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     <div class="title">
                         <p>Weeks of welcome</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>New enhancements to BC's annual rite of introduction for first-year students.</p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     <div class="title">
                         <p>Learning from others: giving back</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.</p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     <div class="title">
                         <p>The Heights Turns 100</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>A century of breaking news for Boston College’s undergraduate paper.</p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="title">
                         <p>Weeks of welcome</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>New enhancements to BC's annual rite of introduction for first-year students.</p>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                     <div class="title">
                         <p>Learning from others: giving back</p>
                     </div>
-                    <div class="subtittle">
+                    <div class="subtitle">
                         <p>BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.</p>
                     </div>
                 </div>
