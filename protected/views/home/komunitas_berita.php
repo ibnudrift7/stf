@@ -10,7 +10,7 @@ if (isset($_GET['type'])) {
     <div class="prelative container">
         <div class="row">
             <div class="col-md-60">
-                <h4>SEMUA BERITA</h4>
+                <h4>SEMUA <?php echo strtoupper($type); ?></h4>
             </div>
         </div>
         <?php 

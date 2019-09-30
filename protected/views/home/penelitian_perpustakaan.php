@@ -15,8 +15,19 @@ $this->pageTitle = ucwords($names).' '.$this->pageTitle;
             <div class="col-md-60">
                 <div class="box-content">
                     <h3><?php echo strtoupper($names); ?></h3>
-                    <p>Silahkan <a href="#">klik di sini</a>  untuk masuk ke Perpustakaan Sekolah Tinggi Filsafat Driyarkara</p>
-                    <!-- <a href="#">(semua link di penelitian menggunakan template ini dan link ke eksternal)</a> -->
+                    <?php 
+                    $link = '#';
+                    if ($type == 'perpustakaan') {
+                        $link = 'https://17813.rmwebopac.com';
+                    } else if($type == 'jurnal-diskursus') {
+                        $link = 'http://driyarkara.ac.id/jurnaldiskursus';
+                    } else if($type == 'publikasi') {
+                        $link = 'http://driyarkara.ac.id/publication';
+                    } else if($type == 'repositori') {
+                        $link = 'http://driyarkara.ac.id/repositori';
+                    }
+                    ?>
+                    <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke Perpustakaan Sekolah Tinggi Filsafat Driyarkara</p>
                 </div>
             </div>
         </div>

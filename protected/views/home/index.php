@@ -165,8 +165,9 @@
                     <h4>Kegiatan Sekolah</h4>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
-                            <div class="images">
+                            <div class="images prelatife">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
+                                <span>AUG<br><small>28</small></span>
                             </div>
                         </div>
                         <div class="col-md-54 col-54">
@@ -179,8 +180,9 @@
                     <div class="garis"></div>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
-                            <div class="images">
+                            <div class="images prelatife">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
+                                <span>AUG<br><small>28</small></span>
                             </div>
                         </div>
                         <div class="col-md-54 col-54">
@@ -193,8 +195,9 @@
                     <div class="garis"></div>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
-                            <div class="images">
+                            <div class="images prelatife">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
+                                <span>AUG<br><small>28</small></span>
                             </div>
                         </div>
                         <div class="col-md-54 col-54">
@@ -207,8 +210,9 @@
                     <div class="garis"></div>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
-                            <div class="images">
+                            <div class="images prelatife">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
+                                <span>AUG<br><small>28</small></span>
                             </div>
                         </div>
                         <div class="col-md-54 col-54">
@@ -217,8 +221,9 @@
                                 <p>13.00 pm - selesai</p>
                             </div>
                         </div>
-                    <div class="garis"></div>
                     </div>
+                    <div class="garis"></div>
+
                 </div>
             </div>
         </div>

@@ -6,6 +6,7 @@
             <div class="col-md-60">
                 <div class="box-content">
                     <h3>YAYASAN STF DRIYARKARA</h3>
+                    <div class="table-responsive">
                         <table>
                             <tr>
                                 <td class="caption">Pembina</td>
@@ -24,8 +25,10 @@
                                 <td class="caption">A.  Sunarko, OFM</td>
                             </tr>
                         </table>
+                    </div>
                 </div>
                 <div class="box-content">
+                    <div class="table-responsive">
                     <table>
                         <tr>
                             <td class="caption">Pengurus</td>
@@ -61,102 +64,109 @@
                         </tr>
                     </table>
                 </div>
+                </div>
                 <div class="box-content-bawah">
-                    <table>
-                        <tr>
-                            <td class="caption">Pengawas</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Ketua merangkap Anggota</td>
-                            <td class="caption">J. Heru Hendarto, SJ</td>
-                        </tr>
-                        <tr>
-                            <td>Anggota </td>
-                            <td class="caption">RD. Stef. Roy Djakarya</td>
-                        </tr>
-                        <tr>
-                            <td>Anggota</td>
-                            <td class="caption">Prof. Dr. FG Winarno</td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table>
+                            <tr>
+                                <td class="caption">Pengawas</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Ketua merangkap Anggota</td>
+                                <td class="caption">J. Heru Hendarto, SJ</td>
+                            </tr>
+                            <tr>
+                                <td>Anggota </td>
+                                <td class="caption">RD. Stef. Roy Djakarya</td>
+                            </tr>
+                            <tr>
+                                <td>Anggota</td>
+                                <td class="caption">Prof. Dr. FG Winarno</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="box-content">
                     <h3>PIMPINAN STF DRIYARKARA</h3>
-                    <table>
-                        <tr>
-                            <td>Ketua</td>
-                            <td class="caption">Dr. S. P. Lili Tjahjadi</td>
-                        </tr>
-                        <tr>
-                            <td>Wakil Ketua I</td>
-                            <td class="caption">Dr. Vitus Rubianto S.</td>
-                        </tr>
-                        <tr>
-                            <td>Wakil Ketua II</td>
-                            <td class="caption">A. Nugroho Widiyono, M.Hum</td>
-                        </tr>
-                        <tr>
-                            <td>Wakil Ketua III</td>
-                            <td class="caption">A. Widyarsono, M.Phil</td>
-                        </tr>
-                        <tr>
-                            <td>Sekretaris Senat</td>
-                            <td class="caption">Dr. Vitus Rubianto S.</td>
-                        </tr>
-                        <tr>
-                            <td>Direktur Program Pasca Sarjana</td>
-                            <td class="caption">Prof. Dr. J. Sudarminta</td>
-                        </tr>
-                        <tr>
-                            <td>Sekretaris Program Pasca Sarjana </td>
-                            <td class="caption">Dr. Karlina Supelli</td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Program Doktor Ilmu Filsafat</td>
-                            <td class="caption">Prof. Dr. J. Sudarminta</td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Program Magister Ilmu Filsafat					                                               </td>
-                            <td class="caption">Dr. B. Herry-Priyono</td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Program Studi Ilmu Filsafat</td>
-                            <td class="caption">Dr. A. Setyo Wibowo</td>
-                        </tr>
-                        <tr>
-                            <td>Sekretaris Program Studi Ilmu Filsafat</td>
-                            <td class="caption">Dr. F. Budi Hardiman</td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Program Studi Ilmu Teologi</td>
-                            <td class="caption">Dr. Vitus Rubianto S.</td>
-                        </tr>
-                        <tr>
-                            <td>Sekretaris Program Studi Ilmu Teologi</td>
-                            <td class="caption">F. Gions, Lic.Th.</td>
-                        </tr>
-                        <tr>
-                            <td>Kepala Lembaga Penelitian dan  </td>
-                            <td class="caption">Prof. Dr. J. Sudarminta</td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table2">
+                            <tr>
+                                <td>Ketua</td>
+                                <td class="caption">Dr. S. P. Lili Tjahjadi</td>
+                            </tr>
+                            <tr>
+                                <td>Wakil Ketua I</td>
+                                <td class="caption">Dr. Vitus Rubianto S.</td>
+                            </tr>
+                            <tr>
+                                <td>Wakil Ketua II</td>
+                                <td class="caption">A. Nugroho Widiyono, M.Hum</td>
+                            </tr>
+                            <tr>
+                                <td>Wakil Ketua III</td>
+                                <td class="caption">A. Widyarsono, M.Phil</td>
+                            </tr>
+                            <tr>
+                                <td>Sekretaris Senat</td>
+                                <td class="caption">Dr. Vitus Rubianto S.</td>
+                            </tr>
+                            <tr>
+                                <td>Direktur Program Pasca Sarjana</td>
+                                <td class="caption">Prof. Dr. J. Sudarminta</td>
+                            </tr>
+                            <tr>
+                                <td>Sekretaris Program Pasca Sarjana </td>
+                                <td class="caption">Dr. Karlina Supelli</td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Program Doktor Ilmu Filsafat</td>
+                                <td class="caption">Prof. Dr. J. Sudarminta</td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Program Magister Ilmu Filsafat					                                               </td>
+                                <td class="caption">Dr. B. Herry-Priyono</td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Program Studi Ilmu Filsafat</td>
+                                <td class="caption">Dr. A. Setyo Wibowo</td>
+                            </tr>
+                            <tr>
+                                <td>Sekretaris Program Studi Ilmu Filsafat</td>
+                                <td class="caption">Dr. F. Budi Hardiman</td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Program Studi Ilmu Teologi</td>
+                                <td class="caption">Dr. Vitus Rubianto S.</td>
+                            </tr>
+                            <tr>
+                                <td>Sekretaris Program Studi Ilmu Teologi</td>
+                                <td class="caption">F. Gions, Lic.Th.</td>
+                            </tr>
+                            <tr>
+                                <td>Kepala Lembaga Penelitian dan  </td>
+                                <td class="caption">Prof. Dr. J. Sudarminta</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="box-content-bawah">
-                    <table>
-                        <tr>
-                            <td class="caption">Pengabdian Kepada Masyarakat</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Penjaminan Mutu</td>
-                            <td class="caption">Dr. F. Budi Hardiman</td>
-                        </tr>
-                        <tr>
-                            <td>Ketua Panitia Penilai Angka Kredit</td>
-                            <td class="caption">Prof. Dr. A. Eddy Kristiyanto</td>
-                        </tr>
-                    </table>
+                    <div class="table-responsive">
+                        <table>
+                            <tr>
+                                <td class="caption">Pengabdian Kepada Masyarakat</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Penjaminan Mutu</td>
+                                <td class="caption">Dr. F. Budi Hardiman</td>
+                            </tr>
+                            <tr>
+                                <td>Ketua Panitia Penilai Angka Kredit</td>
+                                <td class="caption">Prof. Dr. A. Eddy Kristiyanto</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="box-content">
                     <h3>STRUKTUR ORGANISASI</h3>

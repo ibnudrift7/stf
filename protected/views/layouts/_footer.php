@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-30">
                 <div class="whattaps">
-                    <a href="#"><p><b>Whatsapp Hotline. +62 81 650 47575</b> (click to chat)</a></p>
+                    <a href="https://wa.me/628165047575"><p><b>Whatsapp Hotline. +62 81 650 47575</b> (click to chat)</a></p>
                 </div>
                 <div class="box-contact">
                     <div class="telmi">
