@@ -1429,6 +1429,18 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		));
 	}
 
+	public function actionAkademikcalendar()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Akademik Kalendar '.$this->pageTitle;
+		$this->render('akademik_kalendar', array(
+			// 'model'=>$model,
+		));
+	}
+
+	
+
 	public function actionAkademikprogrampasca()
 	{
 		$this->layout='//layouts/column2';

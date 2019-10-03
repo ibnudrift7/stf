@@ -1,28 +1,18 @@
-<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'extension-course')); ?>
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'kalendar-akademik')); ?>
 
 <section class="program-extention-sec-1">
     <div class="prelative container">
         <div class="row kecil">
             <div class="col-md-60">
                 <div class="box-judul">
-                    <h4>EXTENSION COURSE</h4>
-                    <p>Silahkan melihat program studi akademik Program Pasca Sarjana di Sekolah Tinggi Filsafat Driyarkara:</p>
+                    <h4>KALENDAR AKADEMIK</h4>
+                    <!-- <p>Silahkan melihat program studi akademik Program Pasca Sarjana di Sekolah Tinggi Filsafat Driyarkara:</p> -->
                 </div>
                 <div class="box-content">
-                    <div class="garis"></div>
-                    <h5>EXTENSION COURSE FILSAFAT</h5>
-                    <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <?php // echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Extension Course 1', 'type'=>'extension-course')); ?>
-                    <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/document/'.'ecfilsafat.pdf' ?>">Lihat Pdf</a></button>
-                    <button class="daftar"><a href="#">Mendaftar</a></button>
+
+                    <div class="clearfix"></div>
                 </div>
-                <div class="box-content">
-                    <div class="garis"></div>
-                    <h5>EXTENSION COURSE TEOLOGI</h5>
-                    <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/document/'.'ecteologi.pdf' ?>">Lihat Pdf</a></button>
-                    <button class="daftar"><a href="#">Mendaftar</a></button>
-                </div>
+
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Sep 2019 pada 12.23
+-- Waktu pembuatan: 03 Okt 2019 pada 06.02
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -1283,7 +1283,8 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (325, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-29 07:10:16'),
 (326, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-08-29 09:44:53'),
 (327, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-09-27 03:51:15'),
-(328, 'info@markdesign.net', 'Slide Controller Create 1', '2019-09-27 03:53:54');
+(328, 'info@markdesign.net', 'Slide Controller Create 1', '2019-09-27 03:53:54'),
+(329, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-02 06:43:47');
 
 -- --------------------------------------------------------
 
@@ -9624,7 +9625,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=329;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=330;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
