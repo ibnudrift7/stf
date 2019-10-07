@@ -11,7 +11,7 @@
                 <div class="box-content">
                     <div class="garis"></div>
                     <h5>EXTENSION COURSE FILSAFAT</h5>
-                    <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
+                    <p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>
                     <?php // echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 'name'=> 'Extension Course 1', 'type'=>'extension-course')); ?>
                     <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/document/'.'ecfilsafat.pdf' ?>">Lihat Pdf</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
@@ -19,7 +19,7 @@
                 <div class="box-content">
                     <div class="garis"></div>
                     <h5>EXTENSION COURSE TEOLOGI</h5>
-                    <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
+                    <p>Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.</p>
                     <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/document/'.'ecteologi.pdf' ?>">Lihat Pdf</a></button>
                     <button class="daftar"><a href="#">Mendaftar</a></button>
                 </div>

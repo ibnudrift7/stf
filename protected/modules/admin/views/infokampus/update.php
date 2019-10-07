@@ -1,20 +1,20 @@
 <?php
 $this->breadcrumbs=array(
-	'Testimonial'=>array('index'),
+	'Info Kampus'=>array('index'),
 	// $model->name=>array('view','id'=>$model->id),
 	'Edit',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-send-o',
-	'title'=>'Testimonial',
-	'subtitle'=>'Edit Testimonial',
+	'title'=>'Info Kampus',
+	'subtitle'=>'Edit Info Kampus',
 );
 
 $this->menu=array(
-	array('label'=>'List Testimonial', 'icon'=>'th-list','url'=>array('index')),
-	array('label'=>'Add Testimonial', 'icon'=>'plus-sign','url'=>array('create')),
-	// array('label'=>'View Testimonial', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
+	array('label'=>'List Info Kampus', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'Add Info Kampus', 'icon'=>'plus-sign','url'=>array('create')),
+	// array('label'=>'View Info Kampus', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
 );
 ?>
 

@@ -13,7 +13,7 @@
 		<?php echo $form->errorSummary($model); ?>
 
 		<div class="widget">
-		<h4 class="widgettitle">Data Testimonial</h4>
+		<h4 class="widgettitle">Data Form</h4>
 		<div class="widgetcontent">
 			<div class="multilang pj-form-langbar">
 				<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
@@ -25,7 +25,7 @@
 
 			<?php echo $form->textFieldRow($model,'name',array('class'=>'span5','maxlength'=>225)); ?>
 
-			<?php echo $form->textFieldRow($model,'email',array('class'=>'span5','maxlength'=>225)); ?>
+			<?php // echo $form->textFieldRow($model,'email',array('class'=>'span5','maxlength'=>225)); ?>
 
 			<?php // echo $form->textAreaRow($model,'testimonial',array('rows'=>6, 'cols'=>50, 'class'=>'span8')); ?>
 			<?php // echo $form->textFieldRow($model,'status',array('class'=>'span5')); ?>

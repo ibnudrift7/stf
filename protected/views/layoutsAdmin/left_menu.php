@@ -32,6 +32,13 @@
             </ul>
         </li>
 
+        <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Info Kampus') ?></a>
+            <ul>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>">List Info Kampus</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/create')); ?>">Create Info Kampus</a></li>
+            </ul>
+        </li>
+
         <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/testimonial/index')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Testimoni') ?></a>
             <ul>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/testimonial/index')); ?>">List Testimoni</a></li>

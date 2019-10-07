@@ -20,19 +20,19 @@ if (isset($_GET['type'])) {
                         'title'=>'The Heights Turns 100',
                         'desc'=>'A century of breaking news for Boston College’s undergraduate paper.',
                     ),
-                    array(
-                        'pict'=>'home2.jpg',
-                        'title'=>'Weeks of welcome',
-                        'desc'=>'New enhancements to BC`s annual rite of introduction for first-year students.',
-                    ),
-                    array(
-                        'pict'=>'home3.jpg',
-                        'title'=>'Learning from others: giving back',
-                        'desc'=>'BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.',
-                    ),
+                    // array(
+                    //     'pict'=>'home2.jpg',
+                    //     'title'=>'Weeks of welcome',
+                    //     'desc'=>'New enhancements to BC`s annual rite of introduction for first-year students.',
+                    // ),
+                    // array(
+                    //     'pict'=>'home3.jpg',
+                    //     'title'=>'Learning from others: giving back',
+                    //     'desc'=>'BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.',
+                    // ),
                 );
         ?>
-        <?php for ($i=1; $i < 4; $i++) { ?>
+        <?php if (isset($_GET['type']) && $_GET['type'] == 'berita'): ?>
         <div class="row">
             <?php foreach ($data as $key => $value): ?>
             <div class="col-md-20">
@@ -51,9 +51,14 @@ if (isset($_GET['type'])) {
                 </div>
             </div>
             <?php endforeach ?>
-
         </div>
-        <?php } ?>
+        <?php else: ?>
+        <div class="py-5"></div>
+        <div class="text-center">
+        <h5>Sory, Data is empty</h5>
+        </div>
+        <?php endif ?>
+
     </div>
 </section>
 
