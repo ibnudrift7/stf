@@ -68,7 +68,7 @@ class Infokampus extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'email' => 'Jabatan',
+			'email' => 'email',
 			// 'testimonial' => 'Testimonial',
 			'status' => 'Status',
 			'date' => 'Date',
