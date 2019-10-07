@@ -30,9 +30,21 @@ class BlogController extends Controller
 		$criteria->params[':language_id'] = $this->languageID;
 		$criteria->order = 'date_input DESC';
 		
-		if ( isset($_GET['topik']) AND $_GET['topik'] != '' ) {
+		if ( isset($_GET['type']) AND $_GET['type'] != '' ) {
+			switch ($_GET['type']) {
+				case 'alumni':
+					$numbers = 3;
+					break;
+				case 'berita':
+					$numbers = 1;
+					break;
+				
+				default:
+					$numbers = 2;
+					break;
+			}
 			$criteria->addCondition('t.topik_id = :sn_topikid');
-			$criteria->params[':sn_topikid'] = intval($_GET['topik']);
+			$criteria->params[':sn_topikid'] = intval($numbers);
 		}
 
 		// $dataFeatured = new CActiveDataProvider('Blog', array(
@@ -55,10 +67,10 @@ class BlogController extends Controller
 		));
 
 		$this->layout='//layouts/column2';
-		$this->pageTitle = 'News & Articles - '.$this->pageTitle;
+		$this->pageTitle = 'Komunitas Berita - '.$this->pageTitle;
 
 		$this->render('index', array(
-			'dataBlog'=>$dataBlog,
+			'data'=>$dataBlog,
 		));
 	}
 
@@ -91,7 +103,7 @@ class BlogController extends Controller
 
 		$this->layout='//layouts/column2';
 		$this->render('detail', array(
-			'dataBlog' => $dataBlog,
+			'data' => $dataBlog,
 			'dataBlogs' => $dataBlogs,
 			// 'menu'=>$menu,
 			// 'data'=> $konten,

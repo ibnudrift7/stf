@@ -1,3 +1,92 @@
+<?php 
+$type = 'mahasiswa';
+if (isset($_GET['type'])) {
+    $type = htmlspecialchars($_GET['type']);
+}
+
+$res_product = array(
+              1=>'berita',
+              2=>'mahasiswa',
+              3=>'alumni',
+              );
+?>
+<?php echo $this->renderPartial('//home/_top_berita_mnu', array('actives' => $type)); ?>
+
+<section class="berita-detail-sec-1">
+    <div class="prelative container">
+        <div class="row kecil">
+            <div class="col-md-30">
+                <h3><?php echo $data->description->title ?></h3>
+                <h5>TERAKHIR DITULIS</h5>
+                <div class="tanggal">
+                    <p><?php echo date("d F Y", strtotime($data->date_input)) ?></p>
+                </div>
+            </div>
+            <div class="col-md-30">
+                <div class="box-content-topright">
+                    <p>KOMUNITAS: <b><?php echo strtoupper($res_product[$data->topik_id]) ?></b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row kecil blogs_detail_contents">
+            <div class="col-md-60">
+                <div class="box-content">
+                    <div class="garis"></div>
+                    <div class="image">
+                        <img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $data->image ?>" alt="">
+                    </div>
+                    
+                    <?php echo $data->description->content; ?>
+
+                    <div class="kembali">
+                        <a href="#" onclick="window.history.back();"><img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>chevron-thin-left-copy.png" alt=""><p>Kembali</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-sec-1">
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-60">
+                <h4>BERITA LAINNYA</h4>
+            </div>
+
+        </div>
+        <div class="row">
+            <?php foreach ($dataBlogs->getData() as $key => $value): ?>
+            <div class="col-md-20">
+                <div class="box-content">
+                    <div class="image">
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $data->image ?>" alt="" ></a>
+                    </div>
+                    <div class="title">
+                        <p>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><?php echo $value->description->title ?></a>
+                        </p>
+                    </div>
+                    <div class="subtitle">
+                        <p><?php echo substr(strip_tags($value->description->content), 0, 60); ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach ?>
+        </div>
+        <div class="row">
+            <div class="col-md-60">
+                <button class="lihatsemua"><a href="#"><p>Lihat Semua Berita</p></a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>
+
+
+<?php
+/*
 <section class="cover-blog">
   <div class="prelative container py-5">
     <div class="container2 mx-auto py-5">
@@ -93,76 +182,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
-<?php
-/*
-<section class="outers_page_static back_cream mh500 back_grey_pattern">
-  <div class="insides sub_page_static about_us">
-    <div class="prelatife container">
-      <div class="clear height-50"></div><div class="height-10"></div>
-
-      <div class="content-text insides_static">
-        <h1 class="title_page">BLOGS</h1>
-        <div class="clear"></div>
-        <h3 class="tagline"><?php echo $dataBlog->description->title ?></h3>
-        <div class="clear"></div>
-        <div class="row details_cont_articles">
-          <div class="col-md-9 text-left">
-            <div class="left_cont">
-              <div class="mw906">
-
-                <img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(980,1000, '/images/blog/'.$dataBlog->image , array('method' => 'resize', 'quality' => '90')) ?>" alt="">
-
-                <?php echo $dataBlog->description->content ?>
-
-                <div class="clear height-10"></div>
-                <div class="shares-text text-left p_shares_article">
-                    <span class="inline-t">SHARE</span>&nbsp; / &nbsp;<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=#">FACEBOOK</a>&nbsp; /
-                    &nbsp;<a target="_blank" href="https://plus.google.com/share?url=#">GOOGLE PLUS</a>&nbsp; /
-                    &nbsp;<a target="_blank" href="https://twitter.com/home?status=#">TWITTER</a>
-                </div>
-
-                <div class="clear"></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-3 text-left">
-            <div class="right_cont">
-              <div class="padding-left-25">
-                  <span class="sub_page_title">Other Blogs</span>
-              </div>
-              <div class="clear"></div>
-              <div class="right_sub_menu">
-                <ul class="list-unstyled">
-                    <?php foreach ($dataBlogs->getData() as $key => $value): ?>
-                        
-                  <li><a href="<?php echo CHtml::normalizeUrl(array('detail', 'id'=>$value->id)); ?>"><?php echo $value->description->title ?></a></li>
-                    <?php endforeach ?>
-                </ul>
-                <div class="clear"></div>
-              </div>
-
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        
-
-        <div class="clear"></div>
-      </div>
-      
-      <div class="clear height-20"></div>
-      <div class="clear height-50"></div>
-    </div>
-    <div class="clear"></div>
   </div>
 </section>
 */ ?>

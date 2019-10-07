@@ -2,9 +2,9 @@
     <div class="pos-tops_submenu">
         <div class="prelatife container">
             <ul class="list-inline">
-                <li class="list-inline-item <?php if ($actives == 'mahasiswa'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberita', 'type'=>'mahasiswa')); ?>">Mahasiswa</a></li>
-                <li class="list-inline-item <?php if ($actives == 'alumni'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberita', 'type'=>'alumni')); ?>">alumni</a></li>
-                <li class="list-inline-item <?php if ($actives == 'berita'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberita', 'type'=>'berita')); ?>">berita</a></li>
+                <li class="list-inline-item <?php if ($actives == 'mahasiswa'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'mahasiswa')); ?>">Mahasiswa</a></li>
+                <li class="list-inline-item <?php if ($actives == 'alumni'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'alumni')); ?>">alumni</a></li>
+                <li class="list-inline-item <?php if ($actives == 'berita'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'berita')); ?>">berita</a></li>
             </ul>
             <div class="clear clearfix"></div>
         </div>

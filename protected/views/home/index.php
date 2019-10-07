@@ -12,17 +12,31 @@
                         'title'=>'The Heights Turns 100',
                         'desc'=>'A century of breaking news for Boston College’s undergraduate paper.',
                     ),
-                    array(
-                        'pict'=>'home2.jpg',
-                        'title'=>'Weeks of welcome',
-                        'desc'=>'New enhancements to BC`s annual rite of introduction for first-year students.',
-                    ),
-                    array(
-                        'pict'=>'home3.jpg',
-                        'title'=>'Learning from others: giving back',
-                        'desc'=>'BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.',
-                    ),
+                    // array(
+                    //     'pict'=>'home2.jpg',
+                    //     'title'=>'Weeks of welcome',
+                    //     'desc'=>'New enhancements to BC`s annual rite of introduction for first-year students.',
+                    // ),
+                    // array(
+                    //     'pict'=>'home3.jpg',
+                    //     'title'=>'Learning from others: giving back',
+                    //     'desc'=>'BC graduate Joseph Rizzuto ’15, now in medical school, is creating his own service-learning tradition in Nepal.',
+                    // ),
                 );
+
+        $criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('active = "1"');
+        $criteria->addCondition('description.language_id = :language_id');
+        $criteria->params[':language_id'] = $this->languageID;
+        $criteria->order = 'date_input DESC';
+        
+        // if ( isset($_GET['topik']) AND $_GET['topik'] != '' ) {
+        $criteria->addCondition('t.topik_id = :sn_topikid');
+        $criteria->params[':sn_topikid'] = intval(1);
+        // }
+
+        $data = Blog::model()->findAll($criteria);
         ?>
         <div class="row">
 
@@ -30,26 +44,28 @@
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberitadetail', 'type'=> 'berita')); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['pict'] ?>" alt="" ></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita')); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $value->image ?>" alt="" ></a>
                     </div>
                     <div class="title">
                         <p>
-                            <a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberitadetail', 'type'=> 'berita')); ?>"><?php echo $value['title'] ?></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita')); ?>"><?php echo $value->description->title ?></a>
                         </p>
                     </div>
                     <div class="subtitle">
-                        <p><?php echo $value['desc'] ?></p>
+                        <p><?php echo substr(strip_tags($value->description->content), 0, 60); ?></p>
                     </div>
                 </div>
             </div>
             <?php endforeach ?>
 
-            <div class="row">
-                <div class="col-md-60">
-                    <button class="lihatsemua"><a href="<?php echo CHtml::normalizeUrl(array('/home/komunitasberita')); ?>"><p>Lihat Semua Berita</p></a></button>
-                </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-60">
+                <button class="lihatsemua"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>"><p>Lihat Semua Berita</p></a></button>
             </div>
         </div>
+        <div class="py-5"></div>
     </div>
 </section>
 
