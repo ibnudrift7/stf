@@ -1,0 +1,66 @@
+modul stf.
+
+homepage.
+
+slide.
+
+blog.
+(berita, mahasiswa, alumni) > DONE
+
+testimoni.
+(id, title, jabatan, image, content_en, content_id)
+
+kegiatan_univ.
+(id, date_input, date_event, title_en, title_id, time_start, time_end)
+
+info_kampus.
+(id, date_input, title_en, title_id, content_en, content_id)
+
+master_kategoristudi.
+(id, nama)
+
+master_jenjangstudi.
+(id, nama)
+
+master_sarjana_page.
+(id, page_id, kategoristudi_id, jenjangstudi_id)
+
+----------------
+
+page_hero_images
+page_title
+page_title_code
+page_subtitle
+page_content
+
+--------------
+program_sarjana
+id
+type (sarjana, pasca sarjana)
+title_id
+title_en
+content_id
+content_en
+register_link
+
+--------------
+
+program_extensioncourse
+id
+type (sarjana, pasca sarjana)
+title_id
+title_en
+content_id
+content_en
+register_link
+
+--------------
+
+about_hero
+about_title
+about_subtitle
+about_content
+about_bannerpict1
+about_bannerleftpic_2
+about_bio_title
+about_bio_content

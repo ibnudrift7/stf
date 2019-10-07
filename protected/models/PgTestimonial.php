@@ -42,7 +42,7 @@ class PgTestimonial extends CActiveRecord
 			array('name, email', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('name, email', 'length', 'max'=>225),
-			array('status, date','safe'),
+			array('status, date, image','safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, email, status, date', 'safe', 'on'=>'search'),
@@ -68,7 +68,7 @@ class PgTestimonial extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'email' => 'Email',
+			'email' => 'Jabatan',
 			// 'testimonial' => 'Testimonial',
 			'status' => 'Status',
 			'date' => 'Date',

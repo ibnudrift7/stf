@@ -74,10 +74,20 @@ class TestimonialController extends ControllerAdmin
 	            }
 	        }
 
+	        $image = CUploadedFile::getInstance($model,'image');
+			if ($image->name != '') {
+				$model->image = substr(md5(time()),0,5).'-'.$image->name;
+			}
+
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
+
+					if ($image->name != '') {
+						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/testimoni/'.$model->image);
+					}
+
 					$model->date = date("Y-m-d H:i:s");
 					$model->status = '0';
 
@@ -125,7 +135,9 @@ class TestimonialController extends ControllerAdmin
 
 		if(isset($_POST['PgTestimonial']))
 		{
+			$image = $model->image; //mengamankan nama file
 			$model->attributes=$_POST['PgTestimonial'];
+			$model->image = $image; //mengembalikan nama file
 
 			unset($modelDesc);
 			$valid=true;
@@ -139,12 +151,20 @@ class TestimonialController extends ControllerAdmin
 	            }
 	        }
 
-
+	        $image = CUploadedFile::getInstance($model,'image');
+			if ($image->name != '') {
+				$model->image = substr(md5(time()),0,5).'-'.$image->name;
+			}
 
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
+
+					if ($image->name != '') {
+						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/testimoni/'.$model->image);
+					}
+
 					$model->save();
 
 					TestimonialDescription::model()->deleteAll('testimonial_id = :id', array(':id'=>$model->id));

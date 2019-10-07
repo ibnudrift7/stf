@@ -7,7 +7,6 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>">View Products</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/product/create')); ?>">Add Products</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/category/index')); ?>">Category</a></li>
-                
                 <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/filtercat/index')); ?>">Filter</a></li> -->
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/brand/index')); ?>">Brand</a></li>
             </ul>
@@ -17,9 +16,9 @@
 
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/order/index')); ?>"><span class="fa fa-fax"></span> <?php echo Tt::t('admin', 'Orders') ?> (<?php echo OrOrder::model()->count('is_read = 0') ?>)</a></li>
 
+        <?php /*
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/customer/index')); ?>"><span class="fa fa-fax"></span> <?php echo Tt::t('admin', 'Customer') ?></a></li>
         
-        <?php /*
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/slide/index')); ?>"><span class="fa fa-image"></span> <?php echo Tt::t('admin', 'Slides/Promotion') ?></a></li>
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/about/index')); ?>"><span class="fa fa-info"></span> <?php echo Tt::t('admin', 'About Us') ?></a></li>
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/about/howto')); ?>"><span class="fa fa-info"></span> <?php echo Tt::t('admin', 'How To Order') ?></a></li>
@@ -30,6 +29,20 @@
             <ul>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/slide/index')); ?>">View Slide</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/slide/create')); ?>">Create Slide</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/testimonial/index')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Testimoni') ?></a>
+            <ul>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/testimonial/index')); ?>">List Testimoni</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/testimonial/create')); ?>">Create Testimoni</a></li>
+            </ul>
+        </li>
+        
+        <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>"><span class="fa fa-flag"></span> <?php echo Tt::t('admin', 'Blog') ?></a>
+            <ul>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>">List Blog</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/create')); ?>">Create Blog</a></li>
             </ul>
         </li>
         
@@ -46,12 +59,6 @@
 
         <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/address/index')); ?>"><span class="fa fa-building"></span> <?php echo Tt::t('admin', 'Store Locator') ?></a></li> -->
 
-        <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>"><span class="fa fa-flag"></span> <?php echo Tt::t('admin', 'Blog') ?></a>
-            <ul>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>">List Blog</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/create')); ?>">Create Blog</a></li>
-            </ul>
-        </li>
 
         <!-- <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/promotion/index')); ?>"><span class="fa fa-heart"></span> <?php echo Tt::t('admin', 'Lokasi Toko') ?></a>
             <ul>

@@ -8,8 +8,9 @@
                     <h4>KALENDAR AKADEMIK</h4>
                     <!-- <p>Silahkan melihat program studi akademik Program Pasca Sarjana di Sekolah Tinggi Filsafat Driyarkara:</p> -->
                 </div>
-                <div class="box-content">
-
+                <div class="box-content n_back_banner">
+                    <p><img src="<?php echo $this->assetBaseurl; ?>AKADEMIK-GANJIL.jpg" alt="" class="img-fluid"></p>
+                    <p><img src="<?php echo $this->assetBaseurl; ?>AKADEMIK-GENAP.jpg" alt="" class="img-fluid"></p>
                     <div class="clearfix"></div>
                 </div>
 

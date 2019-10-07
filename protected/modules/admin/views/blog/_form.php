@@ -92,10 +92,11 @@
 			// foreach ($listProduct as $key => $value) {
 			// 	$res_product[$value->id] = $value->description->name;
 			// }
+
 			$res_product = array(
-							1=>'Tips & Trik',
-							2=>'Artikel',
-							3=>'Berita',
+							1=>'berita',
+							2=>'mahasiswa',
+							3=>'alumni',
 							);
 			?>
 			<?php echo $form->textFieldRow($model, 'link', array('class'=>'form-control span6',)); ?>
@@ -104,13 +105,13 @@
 
 
 			<?php echo $form->fileFieldRow($model,'image',array(
-			'hint'=>'<b>Note:</b> Ukuran gambar adalah 1080 x 725px. Gambar yang lebih besar akan ter-crop otomatis, tolong upload foto ukuran horizontal')); ?>
+			'hint'=>'<b>Note:</b> Ukuran gambar adalah 1080 x 710px. Gambar yang lebih besar akan ter-crop otomatis, tolong upload foto ukuran horizontal')); ?>
 			<?php if ($model->scenario == 'update'): ?>
 			<div class="control-group">
 				<label class="control-label">&nbsp;</label>
 				<div class="controls">
 				<div style="max-width: 25%;">
-				<img class="img-polaroid" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1080,730, '/images/blog/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+				<img class="img-polaroid" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1080,710, '/images/blog/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 				</div>
 				</div>
 			</div>

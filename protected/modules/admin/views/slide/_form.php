@@ -160,14 +160,13 @@
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image',array(
-				'hint'=>'<b>Note:</b> Image size is 1160 x 645px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
+				'hint'=>'<b>Note:</b> Image size is 1920 x 860px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
 				<?php if ($model->scenario == 'update'): ?>
-				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1160,645, '/images/slide/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1920,860, '/images/slide/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 				<?php endif; ?>
 		    </div>
 		</div>
-		
-		<?php /*
+		`
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
@@ -175,13 +174,12 @@
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image2',array(
-				'hint'=>'<b>Note:</b> Image size is 800 x 900px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
+				'hint'=>'<b>Note:</b> Image size is 600 x 900px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
 				<?php if ($model->scenario == 'update'): ?>
-				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(800,900, '/images/slide/'.$model->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/slide/'.$model->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 				<?php endif; ?>
 		    </div>
 		</div>
-		*/ ?>
 
 	</div>
 </div>

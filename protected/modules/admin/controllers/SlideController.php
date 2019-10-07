@@ -94,11 +94,22 @@ class SlideController extends ControllerAdmin
 			$image = CUploadedFile::getInstance($model,'image');
 			$model->image = substr(md5(time()),0,5).'-'.$image->name;
 
+			$image2 = CUploadedFile::getInstance($model,'image2');
+			if ($image2->name != '') {
+				$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
+			}
+
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
 					$image->saveAs(Yii::getPathOfAlias('webroot').'/images/slide/'.$model->image);
+
+					$image2 = CUploadedFile::getInstance($model,'image2');
+					if ($image2->name != '') {
+						$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
+					}
+					
 					// $model->date_input = date("Y-m-d H:i:s");
 					$model->date_update = date("Y-m-d H:i:s");
 					$model->insert_by = Yii::app()->user->name;
@@ -184,10 +195,10 @@ class SlideController extends ControllerAdmin
 				$model->image = substr(md5(time()),0,5).'-'.$image->name;
 			}
 
-			// $image2 = CUploadedFile::getInstance($model,'image2');
-			// if ($image2->name != '') {
-			// 	$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
-			// }
+			$image2 = CUploadedFile::getInstance($model,'image2');
+			if ($image2->name != '') {
+				$model->image2 = substr(md5(time()),0,5).'-'.$image2->name;
+			}
 
 			// $model->image = $session['upload_foto_edit'][1];
 
@@ -200,9 +211,9 @@ class SlideController extends ControllerAdmin
 					if ($image->name != '') {
 						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/slide/'.$model->image);
 					}
-					// if ($image2->name != '') {
-					// 	$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/slide/'.$model->image2);
-					// }
+					if ($image2->name != '') {
+						$image2->saveAs(Yii::getPathOfAlias('webroot').'/images/slide/'.$model->image2);
+					}
 
 					$model->date_update = date("Y-m-d H:i:s");
 					$model->last_update_by = Yii::app()->user->name;

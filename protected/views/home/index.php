@@ -246,11 +246,8 @@
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
                                 <option selected>Pilih Kategori Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <option>S1</option>
+                                <option>S2</option>
                                 </select>
                             </div>
                         </div>
@@ -258,11 +255,8 @@
                             <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
                                 <option selected>Pilih Jenjang Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <option>Filsafat</option>
+                                <option>Teologi</option>
                                 </select>
                             </div>
                         </div>
