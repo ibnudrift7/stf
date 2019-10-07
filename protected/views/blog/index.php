@@ -1,3 +1,54 @@
+<?php 
+$type = 'mahasiswa';
+if (isset($_GET['type'])) {
+    $type = htmlspecialchars($_GET['type']);
+}
+?>
+<?php echo $this->renderPartial('//home/_top_berita_mnu', array('actives' => $type, 'type_no'=> $type_no)); ?>
+
+<section class="komunitas-sec-1">
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-60">
+                <h4>SEMUA <?php echo strtoupper($type); ?></h4>
+            </div>
+        </div>
+       
+        <?php if (count($data) > 0): ?>
+        <div class="row">
+            <?php foreach ($data->getData() as $key => $value): ?>
+            <div class="col-md-20">
+                <div class="box-content">
+                    <div class="image">
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $value->image ?>" alt="" ></a>
+                    </div>
+                    <div class="title">
+                        <p>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><?php echo $value->description->title ?></a>
+                        </p>
+                    </div>
+                    <div class="subtitle">
+                        <p><?php echo substr(strip_tags($value->description->content), 0, 60); ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach ?>
+        </div>
+        <?php else: ?>
+        <div class="py-5"></div>
+        <div class="text-center">
+        <h5>Sory, Data is empty</h5>
+        </div>
+        <?php endif ?>
+
+    </div>
+</section>
+
+<?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>
+
+
+<?php 
+/*
 <section class="cover-blog">
   <div class="prelative container py-5">
     <div class="container2 mx-auto py-5">
@@ -82,3 +133,4 @@
     </div>
   </div>
 </section>
+*/ ?>
