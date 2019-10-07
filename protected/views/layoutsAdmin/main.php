@@ -137,7 +137,7 @@
         }    
         
         //datepicker
-        jQuery('#datepicker').datepicker();
+        jQuery('#datepicker, .datepicker').datepicker();
         
         // tabbed widget
         jQuery('.tabbedwidget').tabs();

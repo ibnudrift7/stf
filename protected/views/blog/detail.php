@@ -47,6 +47,7 @@ $res_product = array(
     </div>
 </section>
 
+<?php if ( count($dataBlogs->getData()) > 0 ): ?>
 <section class="home-sec-1">
     <div class="prelative container">
         <div class="row">
@@ -81,6 +82,7 @@ $res_product = array(
         </div>
     </div>
 </section>
+<?php endif ?>
 
 <?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>
 

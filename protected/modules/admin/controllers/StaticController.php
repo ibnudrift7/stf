@@ -164,28 +164,16 @@ class StaticController extends ControllerAdmin
 		));
 	}
 
-	public function actionMerek()
+	public function actionPerpustakaan()
 	{
 		$model = Setting::model()->getModelSetting('data');
 
 		$model = $this->loadData($model);
 
-		$this->render('merek',array(
+		$this->render('perpustakaan',array(
 			'model'=>$model,
 		));
 	}
-
-	public function actionAgen()
-	{
-		$model = Setting::model()->getModelSetting('data');
-
-		$model = $this->loadData($model);
-
-		$this->render('agen',array(
-			'model'=>$model,
-		));
-	}
-	
 
 	public function actionContact()
 	{

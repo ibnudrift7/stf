@@ -35,10 +35,11 @@ $this->menu=array(
 			'columns'=>array(
 				// 'id',
 				'name',
-				'email',
+				// 'email',
 				// array(
-				// 	'name'=>'testimonial',
-				// 	'value'=>'substr($data->testimonial, 0, 130)."..."',
+				// 	'name'=>'title',
+				// 	'type'=>'raw',
+				// 	'value'=>'substr($data->description->title, 0, 50)',
 				// 	),
 				array(
 					'name'=>'status',

@@ -16,7 +16,7 @@ class InfokampusDescription extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'pg_testimonial_description';
+		return 'pg_infokampus_description';
 	}
 
 	/**
@@ -30,7 +30,7 @@ class InfokampusDescription extends CActiveRecord
 			array('content', 'required'),
 			array('parents_id, language_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
-			array('parents_id, language_id','safe'),
+			array('title, parents_id, language_id','safe'),
 			// @todo Please remove those attributes that should not be searched.
 			array('id, parents_id, language_id, content', 'safe', 'on'=>'search'),
 		);
@@ -56,7 +56,8 @@ class InfokampusDescription extends CActiveRecord
 			'id' => 'ID',
 			'parents_id' => 'Testimonial',
 			'language_id' => 'Language',
-			'content' => 'Testimonial',
+			'title' => 'Title',
+			'content' => 'Content',
 		);
 	}
 
@@ -80,7 +81,9 @@ class InfokampusDescription extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('parents_id',$this->parents_id);
+		$criteria->compare('title',$this->title);
 		$criteria->compare('language_id',$this->language_id);
+		$criteria->compare('title',$this->title);
 		$criteria->compare('content',$this->content,true);
 
 		return new CActiveDataProvider($this, array(

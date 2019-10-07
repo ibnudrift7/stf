@@ -39,10 +39,10 @@ class Infokampus extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email', 'required'),
+			array('name', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('name, email', 'length', 'max'=>225),
-			array('status, date, image','safe'),
+			array('status, email, date, image','safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, email, status, date', 'safe', 'on'=>'search'),
@@ -86,7 +86,7 @@ class Infokampus extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->select = "t.*, pg_infokampus_description.content";
+		$criteria->select = "t.*, pg_infokampus_description.title, pg_infokampus_description.content";
 		$criteria->join = "
 		LEFT JOIN pg_infokampus_description ON pg_infokampus_description.parents_id=t.id
 		";
@@ -110,7 +110,7 @@ class Infokampus extends CActiveRecord
 	{
 		$criteria=new CDbCriteria;
 
-		$criteria->select = "t.*, pg_infokampus_description.content";
+		$criteria->select = "t.*, pg_infokampus_description.title, pg_infokampus_description.content";
 		$criteria->join = "
 		LEFT JOIN pg_infokampus_description ON pg_infokampus_description.parents_id=t.id
 		";
@@ -149,7 +149,7 @@ class Infokampus extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->select = "t.*, pg_infokampus_description.content";
+		$criteria->select = "t.*, pg_infokampus_description.title, pg_infokampus_description.content";
 
 		$criteria->join = "
 		LEFT JOIN pg_infokampus_description ON pg_infokampus_description.parents_id=t.id
