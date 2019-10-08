@@ -24,7 +24,7 @@
 
 	<div class="row-fluid">
 		<div class="span5">
-			<?php echo $form->textFieldRow($model,'time_start',array('class'=>'span12')); ?>
+			<?php echo $form->textFieldRow($model,'time_start',array('class'=>'span12 timepicker')); ?>
 		</div>
 		<div class="span5">
 			<?php echo $form->textFieldRow($model,'time_end',array('class'=>'span12','maxlength'=>225)); ?>

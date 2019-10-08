@@ -32,7 +32,8 @@
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/asset/backend/js/custom.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/asset/backend/js/my.js"></script>
     <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php // echo Yii::app()->baseUrl; ?>/asset/backend/js/excanvas.min.js"></script><![endif]-->
-
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
 </head>
 <body>
@@ -119,6 +120,9 @@
     </div><!--rightpanel-->
     
 </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
 <script type="text/javascript">
     jQuery(document).ready(function() {
         
@@ -137,14 +141,32 @@
         }    
         
         //datepicker
-        jQuery('#datepicker, .datepicker').datepicker();
+        jQuery('#datepicker').datepicker();
+        jQuery('.datepicker').datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
         
         // tabbed widget
         jQuery('.tabbedwidget').tabs();
         
         
+
+        jQuery('.timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 60,
+            minTime: '8',
+            maxTime: '7:00pm',
+            startTime: '8:00',
+            defaultTime: '11',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true
+        });
+
+
     
     });
 </script>
+
 </body>
 </html>
