@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Okt 2019 pada 11.48
+-- Waktu pembuatan: 08 Okt 2019 pada 12.36
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -876,7 +876,20 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (36, 'info@markdesign.net', 'Setting Update', '2019-10-08 09:45:55'),
 (37, 'info@markdesign.net', 'Setting Update', '2019-10-08 09:46:09'),
 (38, 'info@markdesign.net', 'ExtensioncourseController Create 1', '2019-10-08 09:46:34'),
-(39, 'info@markdesign.net', 'Setting Update', '2019-10-08 09:47:12');
+(39, 'info@markdesign.net', 'Setting Update', '2019-10-08 09:47:12'),
+(40, 'info@markdesign.net', 'ExtensioncourseController Create 2', '2019-10-08 09:56:58'),
+(41, 'info@markdesign.net', 'MasterKategoristudiController Update 1', '2019-10-08 09:57:29'),
+(42, 'info@markdesign.net', 'KegiatanUnivController Create 1', '2019-10-08 10:18:02'),
+(43, 'info@markdesign.net', 'KegiatanUnivController Create 2', '2019-10-08 10:18:31'),
+(44, 'info@markdesign.net', 'KegiatanUnivController Create 3', '2019-10-08 10:18:45'),
+(45, 'info@markdesign.net', 'KegiatanUnivController Create 4', '2019-10-08 10:18:57'),
+(46, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-08 10:19:37'),
+(47, 'info@markdesign.net', 'ExtensioncourseController Update 2', '2019-10-08 10:19:49'),
+(48, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:20:09'),
+(49, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:20:23'),
+(50, 'info@markdesign.net', 'KegiatanUnivController Update 3', '2019-10-08 10:20:55'),
+(51, 'info@markdesign.net', 'KegiatanUnivController Update 4', '2019-10-08 10:21:08'),
+(52, 'info@markdesign.net', 'KegiatanUnivController Update 2', '2019-10-08 10:21:20');
 
 -- --------------------------------------------------------
 
@@ -2702,7 +2715,8 @@ CREATE TABLE `tb_extensioncourse` (
 --
 
 INSERT INTO `tb_extensioncourse` (`id`, `title_id`, `title_en`, `content_id`, `content_en`, `register_link`, `image`, `sorts`, `active`) VALUES
-(1, 'EXTENSION COURSE FILSAFAT', 'EXTENSION COURSE FILSAFAT', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', 'http://192.168.1.2/stf/home/akademikprogramextension#', '', NULL, 1);
+(1, 'EXTENSION COURSE FILSAFAT', 'PERPANJANGAN KURSUS FILSAFAT', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', 'http://192.168.1.2/stf/home/akademikprogramextension#', '', NULL, 1),
+(2, 'EXTENSION COURSE TEOLOGI', 'PERPANJANGAN KURSUS TEOLOGI', '<p>Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.</p>', '<p>Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.</p>', 'http://192.168.1.2/stf/home/akademikprogramextension#', '', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -2739,6 +2753,16 @@ CREATE TABLE `tb_kegiatan_univ` (
   `date_input` datetime NOT NULL,
   `date_event` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_kegiatan_univ`
+--
+
+INSERT INTO `tb_kegiatan_univ` (`id`, `title_en`, `title_id`, `time_start`, `time_end`, `date_input`, `date_event`) VALUES
+(1, 'REGISTRATION PROGRAM DOCTORS', 'PENDAFTARAN PROGRAM DOKTOR', '00:00:13', 'selesai', '2019-10-08 17:18:02', '0000-00-00'),
+(2, 'DRIYARKARA SPORT WEEK', 'PEKAN OLAH RAGA DRIYAKARA', '00:00:13', 'selesai', '2019-10-08 17:18:31', '0000-00-00'),
+(3, 'REGISTRATION NEW STUDENT COLLAGE', 'PENDAFTARAN MAHASISWA BARU', '00:00:13', 'selesai', '2019-10-08 17:18:45', '0000-00-00'),
+(4, 'GENERAL MEETING OF EVEN SEMESTER', 'RAPAT UMUM DOSEN SEMESTER GENAP', '00:00:13', 'selesai', '2019-10-08 17:18:57', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -3501,7 +3525,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
@@ -3723,7 +3747,7 @@ ALTER TABLE `sl_slide_description`
 -- AUTO_INCREMENT untuk tabel `tb_extensioncourse`
 --
 ALTER TABLE `tb_extensioncourse`
-  MODIFY `id` bigint(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_group`
@@ -3735,7 +3759,7 @@ ALTER TABLE `tb_group`
 -- AUTO_INCREMENT untuk tabel `tb_kegiatan_univ`
 --
 ALTER TABLE `tb_kegiatan_univ`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_master_jenjangstudi`

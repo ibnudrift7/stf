@@ -40,8 +40,8 @@ class KegiatanUniv extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, title_en, title_id, date_event', 'required'),
-			array('id', 'length', 'max'=>20),
+			array('title_en, title_id, date_event', 'required'),
+			// array('id', 'length', 'max'=>20),
 			array('title_en, title_id, time_end', 'length', 'max'=>225),
 			// The following rule is used by search().
 			array('time_start, time_end, date_input','safe'),
