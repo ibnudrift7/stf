@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Okt 2019 pada 12.36
+-- Waktu pembuatan: 08 Okt 2019 pada 12.59
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -889,7 +889,19 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (49, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:20:23'),
 (50, 'info@markdesign.net', 'KegiatanUnivController Update 3', '2019-10-08 10:20:55'),
 (51, 'info@markdesign.net', 'KegiatanUnivController Update 4', '2019-10-08 10:21:08'),
-(52, 'info@markdesign.net', 'KegiatanUnivController Update 2', '2019-10-08 10:21:20');
+(52, 'info@markdesign.net', 'KegiatanUnivController Update 2', '2019-10-08 10:21:20'),
+(53, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-08 10:45:01'),
+(54, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:45:14'),
+(55, 'info@markdesign.net', 'KegiatanUnivController Update 2', '2019-10-08 10:45:19'),
+(56, 'info@markdesign.net', 'KegiatanUnivController Update 3', '2019-10-08 10:45:23'),
+(57, 'info@markdesign.net', 'KegiatanUnivController Update 4', '2019-10-08 10:45:27'),
+(58, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:45:40'),
+(59, 'info@markdesign.net', 'KegiatanUnivController Update 1', '2019-10-08 10:45:43'),
+(60, 'info@markdesign.net', 'KegiatanUnivController Update 2', '2019-10-08 10:45:47'),
+(61, 'info@markdesign.net', 'KegiatanUnivController Update 3', '2019-10-08 10:45:52'),
+(62, 'info@markdesign.net', 'KegiatanUnivController Update 4', '2019-10-08 10:45:55'),
+(63, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-08 10:46:18'),
+(64, 'info@markdesign.net', 'Setting Update', '2019-10-08 10:46:22');
 
 -- --------------------------------------------------------
 
@@ -2759,10 +2771,10 @@ CREATE TABLE `tb_kegiatan_univ` (
 --
 
 INSERT INTO `tb_kegiatan_univ` (`id`, `title_en`, `title_id`, `time_start`, `time_end`, `date_input`, `date_event`) VALUES
-(1, 'REGISTRATION PROGRAM DOCTORS', 'PENDAFTARAN PROGRAM DOKTOR', '00:00:13', 'selesai', '2019-10-08 17:18:02', '0000-00-00'),
-(2, 'DRIYARKARA SPORT WEEK', 'PEKAN OLAH RAGA DRIYAKARA', '00:00:13', 'selesai', '2019-10-08 17:18:31', '0000-00-00'),
-(3, 'REGISTRATION NEW STUDENT COLLAGE', 'PENDAFTARAN MAHASISWA BARU', '00:00:13', 'selesai', '2019-10-08 17:18:45', '0000-00-00'),
-(4, 'GENERAL MEETING OF EVEN SEMESTER', 'RAPAT UMUM DOSEN SEMESTER GENAP', '00:00:13', 'selesai', '2019-10-08 17:18:57', '0000-00-00');
+(1, 'REGISTRATION PROGRAM DOCTORS', 'PENDAFTARAN PROGRAM DOKTOR', '11:00:00', 'SELESAI', '2019-10-08 17:18:02', '2019-10-08'),
+(2, 'DRIYARKARA SPORT WEEK', 'PEKAN OLAH RAGA DRIYAKARA', '11:00:00', 'SELESAI', '2019-10-08 17:18:31', '2019-10-08'),
+(3, 'REGISTRATION NEW STUDENT COLLAGE', 'PENDAFTARAN MAHASISWA BARU', '11:00:00', 'SELESAI', '2019-10-08 17:18:45', '2019-10-08'),
+(4, 'GENERAL MEETING OF EVEN SEMESTER', 'RAPAT UMUM DOSEN SEMESTER GENAP', '11:00:00', 'SELESAI', '2019-10-08 17:18:57', '2019-10-08');
 
 -- --------------------------------------------------------
 
@@ -3525,7 +3537,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
