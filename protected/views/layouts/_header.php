@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-35">
           <ul class="list-inline rhd_right">
-              <li class="list-inline-item"><a href="#">HUBUNGI KAMI &nbsp;<i class="fa fa-paper-plane"></i></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">HUBUNGI KAMI &nbsp;<i class="fa fa-paper-plane"></i></a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/penerimaansarjana')); ?>">PENERIMAAN &nbsp;<i class="fa fa-user-o"></i></a></li>
               <li class="list-inline-item"><a href="https://wa.me/628165047575">WHATSAPP CHAT &nbsp;<i class="fa fa-whatsapp"></i></a></li>
               <li class="list-inline-item lasts_lang">

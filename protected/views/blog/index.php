@@ -20,7 +20,7 @@ if (isset($_GET['type'])) {
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $value->image ?>" alt="" ></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(382,255, '/images/blog/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="" ></a>
                     </div>
                     <div class="title">
                         <p>
@@ -28,7 +28,7 @@ if (isset($_GET['type'])) {
                         </p>
                     </div>
                     <div class="subtitle">
-                        <p><?php echo substr(strip_tags($value->description->content), 0, 60); ?></p>
+                        <p><?php echo substr(strip_tags($value->description->content), 0, 100); ?>...</p>
                     </div>
                 </div>
             </div>

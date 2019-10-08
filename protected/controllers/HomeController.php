@@ -1192,7 +1192,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Contact Us - '.$this->pageTitle;
+		$this->pageTitle = 'Hubungi Kami - '.$this->pageTitle;
 
 		$model = new ContactForm;
 		$model->scenario = 'insert';

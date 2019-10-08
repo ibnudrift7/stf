@@ -59,6 +59,6 @@ $this->menu=array(
 		)); ?>
 	</div>
 	<div class="span4">
-		<?php $this->renderPartial('/pages/page_menu') ?>
+		<?php // $this->renderPartial('/pages/page_menu') ?>
 	</div>
 </div>

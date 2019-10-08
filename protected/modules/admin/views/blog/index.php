@@ -1,23 +1,23 @@
 <?php
 $this->breadcrumbs=array(
-	'News & Article',
+	'Komunitas',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-book',
-	'title'=>'News & Article',
-	'subtitle'=>'Data News & Article',
+	'title'=>'Komunitas',
+	'subtitle'=>'Data Komunitas',
 );
 
 $this->menu=array(
-	array('label'=>'Add News & Article', 'icon'=>'plus-sign','url'=>array('create')),
+	array('label'=>'Add Komunitas', 'icon'=>'plus-sign','url'=>array('create')),
 );
 ?>
 
 <?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?>
 <div class="row-fluid">
 	<div class="span8">
-<h1>News & Article</h1>
+<h1>Komunitas</h1>
 		<?php $this->widget('bootstrap.widgets.TbGridView',array(
 			'id'=>'promotion-grid',
 			'dataProvider'=>$model->search($this->languageID),

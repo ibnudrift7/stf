@@ -21,13 +21,13 @@
     <?php endif; ?>
 
     <div class="row default">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
             <label for="exampleInputName">Name</label>
             <?php echo $form->textField($model, 'name', array('class'=>'form-control')); ?>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         
         <div class="form-group">
             <label for="exampleInputEmail">Email</label>
@@ -37,13 +37,13 @@
     </div>
 
     <div class="row default">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
             <label for="exampleInputPhone">Phone</label>
             <?php echo $form->textField($model, 'phone', array('class'=>'form-control')); ?>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
             <label for="exampleInputCompany">Company</label>
             <?php echo $form->textField($model, 'company', array('class'=>'form-control')); ?>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="row default">
-      <div class="col-md-12 col-sm-12 col-lg-12">
+      <div class="col-md-60 col-sm-60 col-lg-60">
         <div class="form-group">
             <label for="exampleInputMessage">Message</label> 
             <div class="clear"></div>
@@ -61,9 +61,9 @@
       </div>
       <div class="clear"></div>
 
-      <div class="col-md-12 col-sm-12 col-lg-12">
+      <div class="col-md-60 col-sm-60 col-lg-60">
         <div class="row default">
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-30 col-sm-30">
             <div class="fright-inpd">
               <div class="form-group mb-0">
                 <div class="fleft">
@@ -73,9 +73,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-30 col-sm-30">
             <div class="fright">
-              <button type="submit" class="btn btn-default btns-submit-bt"></button>
+              <button type="submit" class="btn btn-dark btns-submit-bt">SUBMIT</button>
             </div>
           </div>
         </div>

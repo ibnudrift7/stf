@@ -137,7 +137,7 @@ class Infokampus extends CActiveRecord
 			':id'=>$id,
 		);
 
-		$model = TestimonialDescription::model()->find($criteria);
+		$model = InfokampusDescription::model()->find($criteria);
 
 		return $model;
 	}

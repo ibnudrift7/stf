@@ -33,10 +33,13 @@
             </ul>
         </li>
 
-        <li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Info Kampus') ?></a>
+        <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Tentang Kami') ?></a>
             <ul>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>">List Info Kampus</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/create')); ?>">Create Info Kampus</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/sejarah')); ?>">Sejarah</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/visimisi')); ?>">Visi & Misi</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/administrasi')); ?>">Administrasi</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/fakta')); ?>">Fakta & Angka</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>">Info Kampus</a></li>
             </ul>
         </li>
 
@@ -54,6 +57,7 @@
             </ul>
         </li>
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/kegiatanuniv')); ?>"><span class="fa fa-building"></span> <?php echo Tt::t('admin', 'Kegiatan Univ') ?></a></li>
+        <li>&nbsp;</li>
 
         <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Data Sarjana') ?></a>
             <ul>
@@ -62,6 +66,9 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/programSarjana')); ?>">Program Sarjana</a></li>
             </ul>
         </li>
+        <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/extensioncourse')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Extension Course') ?></a></li>
+        <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/kalendarakademik')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Kalendar Akademik') ?></a></li>
+        <li>&nbsp;</li>
 
         <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Penelitian') ?></a>
             <ul>

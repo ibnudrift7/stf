@@ -1,24 +1,24 @@
 <?php
 $this->breadcrumbs=array(
-	'News & Article'=>array('index'),
+	'Komunitas'=>array('index'),
 	'Add',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-book',
-	'title'=>'News & Article',
-	'subtitle'=>'Data News & Article',
+	'title'=>'Komunitas',
+	'subtitle'=>'Data Komunitas',
 );
 
 $this->menu=array(
-	array('label'=>'List News & Article', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'List Komunitas', 'icon'=>'th-list','url'=>array('index')),
 );
 ?>
 
 <?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?>
 <div class="row-fluid">
 	<div class="span8">
-		<h1>Add News & Article</h1>
+		<h1>Add Komunitas</h1>
 		<?php echo $this->renderPartial('_form', array('model'=>$model, 'modelDesc'=>$modelDesc)); ?>
 	</div>
 	<div class="span4">
