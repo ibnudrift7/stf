@@ -10,7 +10,15 @@ if (isset($_GET['type'])) {
     <div class="prelative container">
         <div class="row">
             <div class="col-md-60">
-                <h4>SEMUA <?php echo strtoupper($type); ?></h4>
+              <?php 
+              $namas = strtolower(str_replace('-', ' ', $type));
+              $locah = Tt::t('front', $namas);
+              ?>
+              <?php if (Yii::app()->language == 'en'): ?>
+                <h4>ALL <?php echo strtoupper($locah); ?></h4>
+              <?php else: ?>
+                <h4>SEMUA <?php echo strtoupper($locah); ?></h4>
+              <?php endif ?>
             </div>
         </div>
        
