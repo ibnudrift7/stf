@@ -89,7 +89,6 @@ class InfoKampusController extends ControllerAdmin
 					// }
 
 					$model->date = date("Y-m-d H:i:s");
-					$model->status = '0';
 
 					$model->save();
 

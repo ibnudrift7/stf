@@ -14,68 +14,28 @@ $this->pageTitle = ucwords($names).' '.$this->pageTitle;
         <div class="row kecil">
             <div class="col-md-60">
                 <div class="box-content">
-                    <h3><?php echo strtoupper($names); ?></h3>
+                    <h3><?php echo strtoupper( Tt::t('front', $names) ); ?></h3>
                     <?php 
                     $link = '#';
                     if ($type == 'perpustakaan') {
-                        $link = 'https://17813.rmwebopac.com';
+                        $link = $this->setting['link_eks_perpustakaan'];
                     } else if($type == 'jurnal-diskursus') {
-                        $link = 'http://driyarkara.ac.id/jurnaldiskursus';
+                        $link = $this->setting['link_eks_jurnaldis'];
                     } else if($type == 'publikasi') {
-                        $link = 'http://driyarkara.ac.id/publication';
+                        $link = $this->setting['link_eks_publikasi'];
                     } else if($type == 'repositori') {
-                        $link = 'http://driyarkara.ac.id/repositori';
+                        $link = $this->setting['link_eks_repositori'];
                     }
                     ?>
+                    <?php if (Yii::app()->language == 'en'): ?>
+                    <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School Library</p>    
+                    <?php else: ?>
                     <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke Perpustakaan Sekolah Tinggi Filsafat Driyarkara</p>
+                    <?php endif ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="home-sec-4">
-    <div class="prelative container">
-        <div class="row">
-            <div class="col-md-23">
-                <div class="box-content-left">
-                    <h3>PENDAFTARAN JURUSAN</h3>
-                    <p>Hampir 95% Mahasiswa Internasional Sekolah Tinggi Filsafat Driyarkara merekomendasikan kepada siswa lain untuk belajar Filsafat di tempat kami.</p>
-                </div>
-            </div>
-            <div class="col-md-37">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Kategori Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Jenjang Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="submit"><p>daftarkan diri anda</p></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+<?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>

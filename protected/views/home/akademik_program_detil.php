@@ -1,14 +1,32 @@
 <?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'akademik_detail')); ?>
 
+<?php 
+$ids = (int) $_GET['id'];
+$data = TbProgramSarjana::model()->findByPk($ids);
+
+$titles = '';
+$subtitle = '';
+$content = '';
+if (Yii::app()->language == 'en') {
+    $titles = $data->title_en;
+    $subtitle = $data->subtitle_en;
+    $content = $data->content_en;    
+}else{
+    $titles = $data->title;
+    $subtitle = $data->subtitle_id;
+    $content = $data->content_id;
+}
+?>
+
 <section class="program-detil-sec-1">
     <div class="prelative container">
         <div class="row kecil no-gutters">
             <div class="col-md-40">
-                <h3><?php echo strtoupper(strtolower( $_GET['name'] )) ?></h3>
+                <h3><?php echo strtoupper(strtolower( $titles )) ?></h3>
             </div>
             <div class="col-md-20">
                 <div class="box-content-topleft">
-                    <a href="#">
+                    <a href="#" onclick="window.history.back();">
                         <div class="image">
                             <img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>chevron-thin-left-copy.png" alt="">
                         </div>
@@ -20,12 +38,9 @@
         <div class="row kecil no-gutters">
             <div class="col-md-60">
                 <div class="box-content">
-                    <h5>Ikhtisar</h5>
-                    <p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.
-                    </p><p>
-                    A Master's degree is only offered through a 5-year BS/MS program for current undergraduate students.</p>
+                    <?php echo $content ?>
                 </div>
-                <div class="box-content">
+                <!-- <div class="box-content">
                     <h5>Hasil Belajar</h5>
                     <ul>
                         <li> Conduct original, publishable research in a field of Biology.</li>
@@ -38,10 +53,11 @@
                 <div class="box-content">
                     <h5>Dosen / Pengajar Fakultas</h5>
                     <p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>
-                </div>
+                </div> -->
+
                 <div class="button">
                     <button class="pendaftaran">
-                        <p>Pendaftaraan S1</p>
+                        <p><?php echo Tt::t('front', 'Pendaftaraan') ?> <?php echo MasterJenjangstudi::model()->findByPk($data->jenjang_id)->nama ?></p>
                     </button>
                 </div>
             </div>

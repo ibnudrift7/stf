@@ -13,10 +13,12 @@ if ( isset($_GET['type']) ) {
                 <div class="box-content">
                     <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
                     <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S2</h3>
+                    <?php echo $this->setting['sarjana_content'] ?>
                     <?php else: ?>
                     <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S1</h3>
+                    <?php echo $this->setting['pascasarjana_content'] ?>
                     <?php endif ?>
-                    <h5>Persyaratan Masuk</h5>
+                    <!-- <h5>Persyaratan Masuk</h5>
                     <ul>
                         <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU 
                             PENGETAHUAN SOSIAL; WAWANCARA</li>
@@ -35,7 +37,8 @@ if ( isset($_GET['type']) ) {
                         <p>Whatsapp Hotline. +62 81 650 47575 <a href="#">(click to chat)</a></p>
                         <p>Tel. +62 21 5047575</p>
                         <p>Email. admin@driyarkara.ac.id</p>
-                    </div>
+                    </div> -->
+
                 </div>
             </div>
         </div>

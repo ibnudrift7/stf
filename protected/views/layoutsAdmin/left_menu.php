@@ -79,6 +79,13 @@
             </ul>
         </li>
 
+        <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Penerimaan') ?></a>
+            <ul>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/terimasarjana')); ?>">Statis Program Sarjana</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/terimapascasarjana')); ?>">Statis Program Pasca Sarjana</a></li>
+            </ul>
+        </li>
+
         <li>&nbsp;</li>
        <!--  <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Static Page') ?></a>
             <ul>

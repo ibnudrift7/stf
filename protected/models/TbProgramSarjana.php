@@ -45,7 +45,7 @@ class TbProgramSarjana extends CActiveRecord
 			array('jenjang_id, studi_id, sorts', 'numerical', 'integerOnly'=>true),
 			array('title_id, title_en', 'length', 'max'=>225),
 			// The following rule is used by search().
-			array('title_en, content_id, content_en, sorts', 'safe'),
+			array('title_en, content_id, content_en, sorts, type, subtitle_id, subtitle_en', 'safe'),
 			// Please remove those attributes that should not be searched.
 			array('id, jenjang_id, studi_id, title_id, title_en, content_id, content_en, sorts', 'safe', 'on'=>'search'),
 		);
@@ -75,6 +75,12 @@ class TbProgramSarjana extends CActiveRecord
 			'title_en' => 'Title English',
 			'content_id' => 'Content Indonesia',
 			'content_en' => 'Content English',
+			
+			'subtitle_id' => 'Subtitle Indonesia',
+			'subtitle_en' => 'Subtitle English',
+
+			'link'=>'link',
+			'type'=>'type',
 			'sorts' => 'Sorts',
 		);
 	}
@@ -98,6 +104,7 @@ class TbProgramSarjana extends CActiveRecord
 		$criteria->compare('content_id',$this->content_id,true);
 		$criteria->compare('content_en',$this->content_en,true);
 		$criteria->compare('sorts',$this->sorts);
+		$criteria->compare('type',$this->type);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -26,7 +26,11 @@
 <div class="widget">
 <h4 class="widgettitle">Data Program Sarjana</h4>
 <div class="widgetcontent">
-
+	<div class="row-fluid">
+		<div class="span6">
+			<?php echo $form->dropDownListRow($model,'type', array('sarjana'=>'sarjana', 'pasca_sarjana'=>'pasca sarjana'), array('class'=>'span10', 'empty'=> '-- Choose --')); ?>
+		</div>
+	</div>
 	<div class="row-fluid">
 		<div class="span6">
 			<?php 
@@ -57,16 +61,29 @@
 
 	<div class="row-fluid">
 		<div class="span6">
+			<?php echo $form->textAreaRow($model,'subtitle_id',array('rows'=>3, 'class'=>'span11')); ?>
+		</div>
+		<div class="span6">
+			<?php echo $form->textAreaRow($model,'subtitle_en',array('rows'=>3, 'class'=>'span11')); ?>
+		</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="span6">
 			<?php echo $form->textAreaRow($model,'content_id',array('rows'=>3, 'class'=>'span11 redactor')); ?>
 		</div>
 		<div class="span6">
 			<?php echo $form->textAreaRow($model,'content_en',array('rows'=>3, 'class'=>'span11 redactor')); ?>
 		</div>
 	</div>
-
-
-
-	<?php echo $form->textFieldRow($model,'sorts',array('class'=>'span5')); ?>
+	<div class="row-fluid">
+		<div class="span6">
+			<?php echo $form->textFieldRow($model,'link',array('class'=>'span5')); ?>
+		</div>
+		<div class="span6">
+			<?php echo $form->textFieldRow($model,'sorts',array('class'=>'span5')); ?>
+		</div>
+	</div>
 
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',

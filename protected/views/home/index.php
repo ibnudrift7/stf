@@ -52,7 +52,7 @@
                         </p>
                     </div>
                     <div class="subtitle">
-                        <p><?php echo substr(strip_tags($value->description->content), 0, 100); ?>...</p>
+                        <p><?php echo $value->description->quote ?></p>
                     </div>
                 </div>
             </div>
@@ -83,162 +83,97 @@
                 </div>
             </div>
         </div>
+        <?php 
+        $criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('status = "1"');
+        $criteria->addCondition('description.language_id = :language_id');
+        $criteria->params[':language_id'] = $this->languageID;
+        $criteria->order = 't.id DESC';
+        $criteria->limit = 4;
+        $data = PgTestimonial::model()->findAll($criteria);
+        ?>
         <div class="row">
+            <?php foreach ($data as $key => $value): ?>
             <div class="col-md-15 col-30">
                 <div class="box-content">
                     <div class="desk">
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
+                        <p><?php echo $value->description->content ?></p>
                     </div>
                     <div class="gambar">
-                        <img  class="img img-fluid " src="<?php echo $this->assetBaseurl; ?>homsec21.jpg" alt="">
+                        <img  class="img img-fluid" src="<?php echo Yii::app()->baseUrl.'/images/testimoni/'. $value->image ?>" alt="">
                     </div>
                     <div class="nama">
-                        <p>Rita Marsusiana</p>
+                        <p><?php echo $value->name ?></p>
                     </div>
                     <div class="jabatan">
-                        <p>Direktur PT. Agengrandhu Jolotundo</p>
+                        <p><?php echo $value->email ?></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-15 col-30">
-                <div class="box-content">
-                    <div class="desk">
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    </div>
-                    <div class="gambar">
-                        <img  class="img img-fluid " src="<?php echo $this->assetBaseurl; ?>homesec22.jpg" >
-                    </div>
-                    <div class="nama">
-                        <p>Rita Marsusiana</p>
-                    </div>
-                    <div class="jabatan">
-                        <p>politikus</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-15 col-30">
-                <div class="box-content">
-                    <div class="desk">
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    </div>
-                    <div class="gambar">
-                        <img  class="img img-fluid " src="<?php echo $this->assetBaseurl; ?>homesec23.jpg" >
-                    </div>
-                    <div class="nama">
-                        <p>Andreana Sutarja</p>
-                    </div>
-                    <div class="jabatan">
-                        <p>Direktur PT. Makmur sentosa</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-15 col-30">
-                <div class="box-content">
-                    <div class="desk">
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    </div>
-                    <div class="gambar">
-                        <img  class="img img-fluid " src="<?php echo $this->assetBaseurl; ?>homsec21.jpg" >
-                    </div>
-                    <div class="nama">
-                        <p>Rita Marsusiana</p>
-                    </div>
-                    <div class="jabatan">
-                        <p>politikus</p>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
+
         </div>
     </div>
 </section>
 
 <section class="home-sec-3">
     <div class="prelative container">
+        <?php 
+        $criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('status = "1"');
+        $criteria->addCondition('description.language_id = :language_id');
+        $criteria->params[':language_id'] = $this->languageID;
+        $criteria->order = 't.id DESC';
+        $criteria->limit = 3;
+        $data_info = Infokampus::model()->findAll($criteria);
+        ?>
         <div class="row">
             <div class="col-md-30">
                 <div class="box-content-left">
                     <h3>Aktifitas di STF Driyarkara</h3>
                     <h5>Info Kampus</h5>
+                    <?php foreach ($data_info as $key => $value): ?>
                     <div class="box-caption">
-                        <h6>Pendaftaran Program Doktor</h6>
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
+                        <h6><?php echo $value->name ?></h6>
+                        <p><?php echo $value->description->content; ?></p>
                     </div>
-                    <div class="box-caption">
-                        <h6>Pendaftaran Program Pascasarjana</h6>
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    </div>
-                    <div class="box-caption">
-                        <h6>Pendaftaran MAHASISWA BARU</h6>
-                        <p>Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.</p>
-                    </div>
+                    <?php endforeach ?>
+
                     <button class="button-info">
                         <a href="<?php echo CHtml::normalizeUrl(array('/home/tentanginfo')); ?>"><p>Lihat Semua Info Kampus</p></a>
                     </button>
                 </div>
             </div>
+
             <div class="col-md-30">
                 <div class="box-content-right">
                     <h4>Kegiatan Sekolah</h4>
+                    <?php 
+                    $alls_data = KegiatanUniv::model()->findAll();
+                    ?>
+                    <?php foreach ($alls_data as $key => $value): ?>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
                             <div class="images prelatife">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
-                                <span>AUG<br><small>28</small></span>
+                                <span><?php echo date('M', strtotime($value->date_event)); ?><br><small><?php echo date('d', strtotime($value->date_event)); ?></small></span>
                             </div>
                         </div>
                         <div class="col-md-54 col-54">
                             <div class="kalender">
-                                <h5>Pendaftaran Program Doktor</h5>
-                                <p>13.00 pm - selesai</p>
+                                <?php if (Yii::app()->language == 'en'): ?>
+                                <h5><?php echo $value->title_en ?></h5>    
+                                <?php else: ?>
+                                <h5><?php echo $value->title_id ?></h5>
+                                <?php endif ?>
+                                <p><?php echo date('g:i a', strtotime($value->time_start)); ?> - <?php echo strtolower($value->time_end); ?></p>
                             </div>
                         </div>
                     </div>
                     <div class="garis"></div>
-                    <div class="row no-gutters">
-                        <div class="col-md-6 col-6">
-                            <div class="images prelatife">
-                                <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
-                                <span>AUG<br><small>28</small></span>
-                            </div>
-                        </div>
-                        <div class="col-md-54 col-54">
-                            <div class="kalender">
-                                <h5>PEKAN OLAH RAGA DRIYAKARA</h5>
-                                <p>13.00 pm - selesai</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="garis"></div>
-                    <div class="row no-gutters">
-                        <div class="col-md-6 col-6">
-                            <div class="images prelatife">
-                                <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
-                                <span>AUG<br><small>28</small></span>
-                            </div>
-                        </div>
-                        <div class="col-md-54 col-54">
-                            <div class="kalender">
-                                <h5>Pendaftaran MAHASISWA BARU</h5>
-                                <p>13.00 pm - selesai</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="garis"></div>
-                    <div class="row no-gutters">
-                        <div class="col-md-6 col-6">
-                            <div class="images prelatife">
-                                <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
-                                <span>AUG<br><small>28</small></span>
-                            </div>
-                        </div>
-                        <div class="col-md-54 col-54">
-                            <div class="kalender">
-                                <h5>RAPAT UMUM DOSEN SEMESTER GENAP</h5>
-                                <p>13.00 pm - selesai</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="garis"></div>
+                    <?php endforeach ?>
 
                 </div>
             </div>
@@ -246,42 +181,4 @@
     </div>
 </section>
 
-<section class="home-sec-4">
-    <div class="prelative container">
-        <div class="row">
-            <div class="col-md-23">
-                <div class="box-content-left">
-                    <h3>PENDAFTARAN JURUSAN</h3>
-                    <p>Hampir 95% Mahasiswa Internasional Sekolah Tinggi Filsafat Driyarkara merekomendasikan kepada siswa lain untuk belajar Filsafat di tempat kami.</p>
-                </div>
-            </div>
-            <div class="col-md-37">
-                <form>
-                    <div class="row">
-                        <div class="col-md-20 col-60">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Kategori Studi</option>
-                                <option>S1</option>
-                                <option>S2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-20 col-60">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Jenjang Studi</option>
-                                <option>Filsafat</option>
-                                <option>Teologi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-20 col-60">
-                            <button type="submit" class="submit"><p>daftarkan diri anda</p></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+<?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>

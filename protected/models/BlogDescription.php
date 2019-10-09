@@ -68,6 +68,7 @@ class BlogDescription extends CActiveRecord
 			'language_id' => 'Language',
 			'title' => 'Title',
 			'content' => 'Content',
+			'quote' => 'Subtitle',
 		);
 	}
 

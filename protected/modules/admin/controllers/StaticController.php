@@ -230,6 +230,28 @@ class StaticController extends ControllerAdmin
 		));
 	}
 
+	public function actionTerimasarjana()
+	{
+		$model = Setting::model()->getModelSetting('data');
+
+		$model = $this->loadData($model);
+
+		$this->render('terimasarjana',array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionTerimapascasarjana()
+	{
+		$model = Setting::model()->getModelSetting('data');
+
+		$model = $this->loadData($model);
+
+		$this->render('terimapascasarjana',array(
+			'model'=>$model,
+		));
+	}
+
 	public function actionContact()
 	{
 		$model = Setting::model()->getModelSetting('data');

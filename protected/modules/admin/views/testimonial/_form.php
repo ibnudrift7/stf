@@ -49,8 +49,8 @@
 			?>
 
         	<?php echo $form->dropDownListRow($model, 'status', array(
-        		'1'=>'Di Tampilkan',
-        		'0'=>'Di Sembunyikan',
+        		1=>'Di Tampilkan',
+        		0=>'Di Sembunyikan',
         	)); ?>
 
         	<?php echo $form->fileFieldRow($model,'image',array(

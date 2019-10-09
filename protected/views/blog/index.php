@@ -28,7 +28,7 @@ if (isset($_GET['type'])) {
                         </p>
                     </div>
                     <div class="subtitle">
-                        <p><?php echo substr(strip_tags($value->description->content), 0, 100); ?>...</p>
+                        <p><?php echo $value->description->quote ?></p>
                     </div>
                 </div>
             </div>

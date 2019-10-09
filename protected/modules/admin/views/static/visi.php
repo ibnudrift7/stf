@@ -19,7 +19,18 @@ $this->pageHeader=array(
 	),
 	'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
-
+<?php Yii::import('ext.imperavi-redactor-widget.ImperaviRedactorWidget'); ?>
+<?php $this->widget('ImperaviRedactorWidget', array(
+    'selector' => '.redactor',
+    'options' => array(
+        'imageUpload'=> $this->createUrl('/admin/setting/uploadimage', array('type'=>'image')),
+        'clipboardUploadUrl'=> $this->createUrl('/admin/setting/uploadimage', array('type'=>'clip')),
+    ),
+    'plugins' => array(
+        'clips' => array(
+        ),
+    ),
+)); ?>
 <div class="row-fluid">
 	<div class="span12">
 		<div class="widget">
@@ -38,20 +49,7 @@ $this->pageHeader=array(
 				    )); ?>
 				<?php endif; ?>
 
-				<?php Yii::import('ext.imperavi-redactor-widget.ImperaviRedactorWidget'); ?>
-				<?php $this->widget('ImperaviRedactorWidget', array(
-				    'selector' => '.redactor',
-				    'options' => array(
-				        'imageUpload'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'image')),
-				        'clipboardUploadUrl'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'clip')),
-				    ),
-				    'plugins' => array(
-				        'clips' => array(
-				        ),
-				    ),
-				)); ?>
-
-				<?php $type = 'visi_hero_image' ?>
+				<?php /*$type = 'visi_hero_image' ?>
 				<?php Common::createSetting($type, 'Image', 'image', 'n') ?>
 				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
 				<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
@@ -86,23 +84,7 @@ $this->pageHeader=array(
 					    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
 					    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
-				<?php endforeach ?>
-				
-				
-				<div class="divider10"></div>
-				<?php $this->widget('bootstrap.widgets.TbButton', array(
-					'buttonType'=>'submit',
-					'type'=>'primary',
-					'label'=>'Save',
-				)); ?>
-
-			
-		</div>
-		</div>
-		
-		<div class="widget">
-			<h4 class="widgettitle">Section Content</h4>
-			<div class="widgetcontent">
+				<?php endforeach */ ?>
 				<div class="row-fluid">
 					<div class="span6">
 						<?php $type = 'visi_content' ?>
@@ -133,7 +115,7 @@ $this->pageHeader=array(
 
 					</div>
 				</div>
-
+				
 				<div class="divider10"></div>
 				<?php $this->widget('bootstrap.widgets.TbButton', array(
 					'buttonType'=>'submit',
@@ -141,7 +123,8 @@ $this->pageHeader=array(
 					'label'=>'Save',
 				)); ?>
 
-			</div>
+			
+		</div>
 		</div>
 
 		<div class="alert">

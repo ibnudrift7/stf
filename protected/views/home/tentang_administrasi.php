@@ -1,9 +1,13 @@
-<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'administrasi')); ?>
+<?php echo $this->renderPartial('//home/_top_about_mnu', array('actives' => 'Administrasi')); ?>
 
 <section class="admin-sec-1">
     <div class="prelative container">
         <div class="row kecil">
-            <div class="col-md-60">
+            <div class="col-md-60 inners_content_tabl">
+                
+                <?php echo $this->setting['administrasi_content'] ?>
+
+                <!-- 
                 <div class="box-content">
                     <h3>YAYASAN STF DRIYARKARA</h3>
                     <div class="table-responsive">
@@ -172,54 +176,12 @@
                     <h3>STRUKTUR ORGANISASI</h3>
                     <p>Struktur organisasi per September 2019 STF Driyarkara</p>
                     <img src="<?php echo $this->assetBaseurl; ?>susunan.jpg" alt="">
-                </div>
+                </div> -->
+
+                <div class="clear clearfix"></div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="home-sec-4">
-    <div class="prelative container">
-        <div class="row">
-            <div class="col-md-23">
-                <div class="box-content-left">
-                    <h3>PENDAFTARAN JURUSAN</h3>
-                    <p>Hampir 95% Mahasiswa Internasional Sekolah Tinggi Filsafat Driyarkara merekomendasikan kepada siswa lain untuk belajar Filsafat di tempat kami.</p>
-                </div>
-            </div>
-            <div class="col-md-37">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Kategori Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Pilih Jenjang Studi</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="submit"><p>daftarkan diri anda</p></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+<?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>

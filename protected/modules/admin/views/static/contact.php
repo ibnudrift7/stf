@@ -90,10 +90,10 @@ $this->pageHeader=array(
 				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
 				<?php echo CHtml::textArea('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
 
-				<?php /*$type = 'contact_wa' ?>
+				<?php $type = 'contact_wa' ?>
 				<?php Common::createSetting($type, 'Whatsapp', 'text', 'n') ?>
 				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
-				<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12'));*/ ?>
+				<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')); ?>
 
 				<?php $type = 'email' ?>
 				<?php Common::createSetting($type, 'Form Email', 'text', 'n') ?>

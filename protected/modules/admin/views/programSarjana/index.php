@@ -32,7 +32,13 @@ $this->menu=array(
 	'type'=>'bordered',
 	'columns'=>array(
 		// 'id',
-		'jenjang_id',
+		'type',
+		// 'jenjang_id',
+		array(
+			'header'=>'Jenjang',
+			'type'=>'raw',
+			'value'=>'MasterJenjangstudi::model()->findByPk($data->jenjang_id)->nama',
+		),
 		// 'studi_id',
 		'title_id',
 		// 'title_en',

@@ -23,8 +23,8 @@
             <div class="col-md-30">
                 <div class="box-content-top">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">penerimaan</a></li>
-                        <li class="list-inline-item"><a href="#">hubungi kami</a></li>
+                        <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/penerimaansarjana', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'PENERIMAAN') ?></a></li>
+                        <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'HUBUNGI KAMI') ?></a></li>
                     </ul>
                 </div>
                 <div class="py-5"></div>

@@ -42,8 +42,8 @@ $this->pageHeader=array(
 				<?php $this->widget('ImperaviRedactorWidget', array(
 				    'selector' => '.redactor',
 				    'options' => array(
-				        'imageUpload'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'image')),
-				        'clipboardUploadUrl'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'clip')),
+				        'imageUpload'=> $this->createUrl('/admin/setting/uploadimage', array('type'=>'image')),
+				        'clipboardUploadUrl'=> $this->createUrl('/admin/setting/uploadimage', array('type'=>'clip')),
 				    ),
 				    'plugins' => array(
 				        'clips' => array(
@@ -51,7 +51,7 @@ $this->pageHeader=array(
 				    ),
 				)); ?>
 
-				<?php $type = 'administrasi_hero_image' ?>
+				<?php /*$type = 'administrasi_hero_image' ?>
 				<?php Common::createSetting($type, 'Image', 'image', 'n') ?>
 				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
 				<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
@@ -86,23 +86,8 @@ $this->pageHeader=array(
 					    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
 					    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
-				<?php endforeach ?>
-				
-				
-				<div class="divider10"></div>
-				<?php $this->widget('bootstrap.widgets.TbButton', array(
-					'buttonType'=>'submit',
-					'type'=>'primary',
-					'label'=>'Save',
-				)); ?>
+				<?php endforeach*/ ?>
 
-			
-		</div>
-		</div>
-		
-		<div class="widget">
-			<h4 class="widgettitle">Section Content</h4>
-			<div class="widgetcontent">
 				<div class="row-fluid">
 					<div class="span12">
 						<?php $type = 'administrasi_content' ?>
@@ -119,7 +104,8 @@ $this->pageHeader=array(
 						
 					</div>
 				</div>
-
+				
+				
 				<div class="divider10"></div>
 				<?php $this->widget('bootstrap.widgets.TbButton', array(
 					'buttonType'=>'submit',
@@ -127,7 +113,8 @@ $this->pageHeader=array(
 					'label'=>'Save',
 				)); ?>
 
-			</div>
+			
+		</div>
 		</div>
 
 		<div class="alert">
