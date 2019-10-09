@@ -15,8 +15,12 @@ $res_product = array(
 <section class="berita-detail-sec-1">
     <div class="prelative container">
         <div class="row kecil">
+        	<div class="col-md-60">
+        		<h3><?php echo $data->description->title ?></h3>
+        	</div>
+        </div>
+        <div class="row kecil">
             <div class="col-md-30">
-                <h3><?php echo $data->description->title ?></h3>
                 <h5>TERAKHIR DITULIS</h5>
                 <div class="tanggal">
                     <p><?php echo date("d F Y", strtotime($data->date_input)) ?></p>
@@ -86,7 +90,11 @@ $res_product = array(
 
 <?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>
 
-
+<style type="text/css">
+	section.berita-detail-sec-1 .box-content-topright{
+		padding-top: 20px;
+	}
+</style>
 <?php
 /*
 <section class="cover-blog">
