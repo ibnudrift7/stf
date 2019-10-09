@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Okt 2019 pada 12.59
+-- Waktu pembuatan: 09 Okt 2019 pada 13.18
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -790,7 +790,8 @@ CREATE TABLE `language` (
 --
 
 INSERT INTO `language` (`id`, `name`, `code`, `sort`, `status`) VALUES
-(2, 'English', 'en', 1, '1');
+(2, 'English', 'en', 1, '1'),
+(3, 'Indonesia', 'id', 2, '1');
 
 -- --------------------------------------------------------
 
@@ -901,7 +902,61 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (61, 'info@markdesign.net', 'KegiatanUnivController Update 3', '2019-10-08 10:45:52'),
 (62, 'info@markdesign.net', 'KegiatanUnivController Update 4', '2019-10-08 10:45:55'),
 (63, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-08 10:46:18'),
-(64, 'info@markdesign.net', 'Setting Update', '2019-10-08 10:46:22');
+(64, 'info@markdesign.net', 'Setting Update', '2019-10-08 10:46:22'),
+(65, 'info@markdesign.net', 'SetController Update 4', '2019-10-09 06:12:59'),
+(66, 'info@markdesign.net', 'SetController Update 3', '2019-10-09 06:13:06'),
+(67, 'info@markdesign.net', 'SetController Update 2', '2019-10-09 06:13:11'),
+(68, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-09 07:43:54'),
+(69, 'info@markdesign.net', 'Setting Update', '2019-10-09 08:07:44'),
+(70, 'info@markdesign.net', 'Setting Update', '2019-10-09 08:10:21'),
+(71, 'info@markdesign.net', 'Setting Update', '2019-10-09 08:20:49'),
+(72, 'info@markdesign.net', 'Setting Update', '2019-10-09 08:29:50'),
+(73, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-09 09:28:02'),
+(74, 'info@markdesign.net', 'ProgramSarjanaController Create 1', '2019-10-09 09:29:12'),
+(75, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-09 09:39:34'),
+(76, 'info@markdesign.net', 'ProgramSarjanaController Create 2', '2019-10-09 09:42:44'),
+(77, 'info@markdesign.net', 'ProgramSarjanaController Create 3', '2019-10-09 09:43:33'),
+(78, 'info@markdesign.net', 'ProgramSarjanaController Update 3', '2019-10-09 09:49:43'),
+(79, 'info@markdesign.net', 'ProgramSarjanaController Update 1', '2019-10-09 09:49:52'),
+(80, 'info@markdesign.net', 'ProgramSarjanaController Update 2', '2019-10-09 09:49:58'),
+(81, 'info@markdesign.net', 'ProgramSarjanaController Update 2', '2019-10-09 09:55:26'),
+(82, 'info@markdesign.net', 'ProgramSarjanaController Update 3', '2019-10-09 09:55:58'),
+(83, 'info@markdesign.net', 'ProgramSarjanaController Update 1', '2019-10-09 09:56:07'),
+(84, 'info@markdesign.net', 'ProgramSarjanaController Update 3', '2019-10-09 09:57:00'),
+(85, 'info@markdesign.net', 'ProgramSarjanaController Create 4', '2019-10-09 09:57:08'),
+(86, 'info@markdesign.net', 'MasterKategoristudiController Create 3', '2019-10-09 10:08:57'),
+(87, 'info@markdesign.net', 'MasterKategoristudiController Create 4', '2019-10-09 10:09:02'),
+(88, 'info@markdesign.net', 'MasterJenjangstudiController Create 3', '2019-10-09 10:09:08'),
+(89, 'info@markdesign.net', 'MasterJenjangstudiController Create 4', '2019-10-09 10:09:11'),
+(90, 'info@markdesign.net', 'ProgramSarjanaController Update 1', '2019-10-09 10:09:30'),
+(91, 'info@markdesign.net', 'ProgramSarjanaController Update 4', '2019-10-09 10:09:41'),
+(92, 'info@markdesign.net', 'ProgramSarjanaController Update 2', '2019-10-09 10:09:58'),
+(93, 'info@markdesign.net', 'ProgramSarjanaController Update 3', '2019-10-09 10:10:06'),
+(94, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:11:56'),
+(95, 'info@markdesign.net', 'ExtensioncourseController Update 2', '2019-10-09 10:12:09'),
+(96, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:14:17'),
+(97, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:14:39'),
+(98, 'info@markdesign.net', 'ExtensioncourseController Update 2', '2019-10-09 10:14:45'),
+(99, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:15:11'),
+(100, 'info@markdesign.net', 'ExtensioncourseController Update 2', '2019-10-09 10:15:22'),
+(101, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:18:21'),
+(102, 'info@markdesign.net', 'ExtensioncourseController Update 2', '2019-10-09 10:18:33'),
+(103, 'info@markdesign.net', 'Login: info@markdesign.net', '2019-10-09 10:22:47'),
+(104, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:23:58'),
+(105, 'info@markdesign.net', 'ExtensioncourseController Update 1', '2019-10-09 10:24:16'),
+(106, 'info@markdesign.net', 'Setting Update', '2019-10-09 10:30:08'),
+(107, 'info@markdesign.net', 'Setting Update', '2019-10-09 10:31:07'),
+(108, 'info@markdesign.net', 'BlogController Update 2', '2019-10-09 10:43:23'),
+(109, 'info@markdesign.net', 'BlogController Update 1', '2019-10-09 10:43:48'),
+(110, 'info@markdesign.net', 'BlogController Update 1', '2019-10-09 10:46:44'),
+(111, 'info@markdesign.net', 'BlogController Update 2', '2019-10-09 10:47:16'),
+(112, 'info@markdesign.net', 'Blog Controller Create 3', '2019-10-09 10:51:34'),
+(113, 'info@markdesign.net', 'BlogController Update 3', '2019-10-09 10:51:48'),
+(114, 'info@markdesign.net', 'BlogController Update 3', '2019-10-09 10:51:55'),
+(115, 'info@markdesign.net', 'Setting Update', '2019-10-09 11:01:13'),
+(116, 'info@markdesign.net', 'Setting Update', '2019-10-09 11:01:28'),
+(117, 'info@markdesign.net', 'Setting Update', '2019-10-09 11:03:39'),
+(118, 'info@markdesign.net', 'BlogController Update 3', '2019-10-09 11:16:54');
 
 -- --------------------------------------------------------
 
@@ -1135,8 +1190,9 @@ CREATE TABLE `pg_blog` (
 --
 
 INSERT INTO `pg_blog` (`id`, `topik_id`, `image`, `link`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`, `writer`) VALUES
-(1, 1, '53f97-Peserta-mengajukan-pertanyaan.jpg', NULL, 1, '2019-10-07 13:47:27', '2019-10-07 13:54:11', 'info@markdesign.net', 'info@markdesign.net', 0),
-(2, 1, 'fc97e-Foto Bersama.jpg', NULL, 1, '2019-10-08 11:56:39', '2019-10-08 13:26:05', 'info@markdesign.net', 'info@markdesign.net', 0);
+(1, 1, '53f97-Peserta-mengajukan-pertanyaan.jpg', NULL, 1, '2019-10-07 13:47:27', '2019-10-09 17:46:44', 'info@markdesign.net', 'info@markdesign.net', 0),
+(2, 1, 'fc97e-Foto Bersama.jpg', NULL, 1, '2019-10-08 11:56:39', '2019-10-09 17:47:16', 'info@markdesign.net', 'info@markdesign.net', 0),
+(3, 1, '7409b-pictur-1.jpg', NULL, 1, '2019-10-09 17:47:59', '2019-10-09 18:16:54', 'info@markdesign.net', 'info@markdesign.net', 0);
 
 -- --------------------------------------------------------
 
@@ -1158,8 +1214,12 @@ CREATE TABLE `pg_blog_description` (
 --
 
 INSERT INTO `pg_blog_description` (`id`, `blog_id`, `language_id`, `title`, `content`, `quote`) VALUES
-(2, 1, 2, 'Kunjungan Parlemen Eropa', '<h4>Belajar mengenai hubungan antaragama di Indonesia.</h4><p>Dua belas anggota Parlemen Eropa berkunjung ke STF Driyarkara pada tanggal 12 Agustus 2019 untuk berbincang-bincang dengan Romo Franz Magnis-Suseno dan mendapatkan masukan mengenai hubungan antaragama di Indonesia. Rombongan diantar oleh staf Kementerian Agama yang diketuai oleh Bapak Paulus Tasik Galle.</p><p><img src=\"/stf/images/static/27/Foto-Bersama.jpg\"></p><p><img src=\"/stf/images/static/35/Suasana-Diskusi.jpg\"></p><p><img src=\"/stf/images/static/46/Romo-Magnis-memberikan-penjelasan.jpg\"></p>', ''),
-(9, 2, 2, 'Sosialisasi dan Pelatihan Sistem Informasi Akademik', '<h4>Data lengkap dan akurat membantu memperlancar proses pembelajaran.</h4><p>Tanggal 2 hingga 5 September 2019 STF Driyarkara bekerja sama dengan PT Sentra Vidya Utama (Sevima) mengadakan sosialisasi dan pelatihan sistem informasi akademik untuk para administrator dan dosen. Pengunaan aplikasi Siakad Cloud (atau ‘SIADRI’ -- Sistem Informasi Akademik Driyarkara) yang dikembangkan oleh PT Sevima ini diharapkan dapat membantu para mahasiswa dalam merencanakan dan mengatur kegiatan akademik mereka dan juga membantu para dosen dalam merencanakan dan mengimplementasikan rencana pembelajaran melalui kuliah-kuliah yang diberikan.</p><p><img src=\"/stf/images/static/81/Tim PT Sevima.jpg\"></p><p><img src=\"/stf/images/static/02/Suasana Pelatihan 2.jpg\"></p><p><img src=\"/stf/images/static/12/Suasana Pelatihan 1.jpg\"></p><p><br></p>', '');
+(15, 1, 3, 'Kunjungan Parlemen Eropa', '<h4>Belajar mengenai hubungan antaragama di Indonesia.</h4><p>Dua belas anggota Parlemen Eropa berkunjung ke STF Driyarkara pada tanggal 12 Agustus 2019 untuk berbincang-bincang dengan Romo Franz Magnis-Suseno dan mendapatkan masukan mengenai hubungan antaragama di Indonesia. Rombongan diantar oleh staf Kementerian Agama yang diketuai oleh Bapak Paulus Tasik Galle.\r\n</p><p><img src=\"/stf/images/static/27/Foto-Bersama.jpg\">\r\n</p><p><img src=\"/stf/images/static/35/Suasana-Diskusi.jpg\">\r\n</p><p><img src=\"/stf/images/static/46/Romo-Magnis-memberikan-penjelasan.jpg\">\r\n</p>', 'Dua belas anggota Parlemen Eropa berkunjung ke STF Driyarkara pada tanggal 12 Agustus 2019 untuk berbincang-bincang dengan Romo Franz Magnis-Suseno'),
+(17, 2, 3, 'Sosialisasi dan Pelatihan Sistem Informasi Akademik', '<h4>Data lengkap dan akurat membantu memperlancar proses pembelajaran.</h4><p>Tanggal 2 hingga 5 September 2019 STF Driyarkara bekerja sama dengan PT Sentra Vidya Utama (Sevima) mengadakan sosialisasi dan pelatihan sistem informasi akademik untuk para administrator dan dosen. Pengunaan aplikasi Siakad Cloud (atau ‘SIADRI’ -- Sistem Informasi Akademik Driyarkara) yang dikembangkan oleh PT Sevima ini diharapkan dapat membantu para mahasiswa dalam merencanakan dan mengatur kegiatan akademik mereka dan juga membantu para dosen dalam merencanakan dan mengimplementasikan rencana pembelajaran melalui kuliah-kuliah yang diberikan.\r\n</p><p><img src=\"/stf/images/static/81/Tim PT Sevima.jpg\">\r\n</p><p><img src=\"/stf/images/static/02/Suasana Pelatihan 2.jpg\">\r\n</p><p><img src=\"/stf/images/static/12/Suasana Pelatihan 1.jpg\">\r\n</p><p><br>\r\n</p>', 'STF Driyarkara bekerja sama dengan PT Sentra Vidya Utama (Sevima) mengadakan sosialisasi dan pelatihan sistem informasi akademik untuk para administrator dan dosen.'),
+(16, 2, 2, 'Academic Information System Training and Socialization', '<h4>Data lengkap dan akurat membantu memperlancar proses pembelajaran.</h4><p>Tanggal 2 hingga 5 September 2019 STF Driyarkara bekerja sama dengan PT Sentra Vidya Utama (Sevima) mengadakan sosialisasi dan pelatihan sistem informasi akademik untuk para administrator dan dosen. Pengunaan aplikasi Siakad Cloud (atau ‘SIADRI’ -- Sistem Informasi Akademik Driyarkara) yang dikembangkan oleh PT Sevima ini diharapkan dapat membantu para mahasiswa dalam merencanakan dan mengatur kegiatan akademik mereka dan juga membantu para dosen dalam merencanakan dan mengimplementasikan rencana pembelajaran melalui kuliah-kuliah yang diberikan.\r\n</p><p><img src=\"/stf/images/static/81/Tim PT Sevima.jpg\">\r\n</p><p><img src=\"/stf/images/static/02/Suasana Pelatihan 2.jpg\">\r\n</p><p><img src=\"/stf/images/static/12/Suasana Pelatihan 1.jpg\">\r\n</p><p><br>\r\n</p>', 'STF Driyarkara in collaboration with PT Sentra Vidya Utama (Sevima) held an academic information system and training for administrators and lecturers.'),
+(14, 1, 2, 'European Parliament Visit', '<h4>Belajar mengenai hubungan antaragama di Indonesia.</h4><p>Dua belas anggota Parlemen Eropa berkunjung ke STF Driyarkara pada tanggal 12 Agustus 2019 untuk berbincang-bincang dengan Romo Franz Magnis-Suseno dan mendapatkan masukan mengenai hubungan antaragama di Indonesia. Rombongan diantar oleh staf Kementerian Agama yang diketuai oleh Bapak Paulus Tasik Galle.\r\n</p><p><img src=\"/stf/images/static/27/Foto-Bersama.jpg\">\r\n</p><p><img src=\"/stf/images/static/35/Suasana-Diskusi.jpg\">\r\n</p><p><img src=\"/stf/images/static/46/Romo-Magnis-memberikan-penjelasan.jpg\">\r\n</p>', 'Twelve members of the European Parliament visited the Driyarkara STF on 12 August 2019 to chat with Father Franz Magnis-Suseno'),
+(24, 3, 2, 'Electronic Waste Collection from STF Campus', '<p>On September 9, 2019 staff and officers from PT Teknotama Lingkungan Internusa (TLI) collected electronic waste (ewaste) from the Driyarkara STF campus while handing over a dropbox to collect used electronic goods. The collaboration between STF Driyarkara and PT TLI is an effort to prevent environmental pollution from electronic waste as well as to build a more environmentally friendly campus.\r\n</p>\r\n<p><img src=\"/stf/images/static/06/pictur-2.jpg\">\r\n</p>\r\n<div class=\"embed-container\">\r\n	<iframe src=\"https://www.youtube.com/embed/1u3FAUpVHx0\" frameborder=\"0\" allowfullscreen=\"\">\r\n	</iframe>\r\n</div><br>', 'Building a campus that is more environmentally friendly.'),
+(25, 3, 3, 'Pengambilan Sampah Elektronik dari Kampus STF', '<p>Pada tanggal 9 September 2019 staf dan petugas dari PT Teknotama Lingkungan Internusa (TLI) melakukan pengambilan sampah elektronik (<i>ewaste</i>) dari kampus STF Driyarkara sekaligus menyerahkan dropbox untuk pengumpulan barang-barang elektronik bekas. Kerjasama STF Driyarkara dengan PT TLI ini merupakan upaya untuk mencegah terjadinya pencemaran lingkungan akibat sampah elektronik sekaligus untuk membangun kampus yang lebih ramah lingkungan.\r\n</p>\r\n<p><strong></strong>\r\n</p>\r\n<div class=\"embed-container\">\r\n	<iframe src=\"https://www.youtube.com/embed/1u3FAUpVHx0\" frameborder=\"0\" allowfullscreen=\"\">\r\n	</iframe>\r\n</div><br>', 'Membangun kampus yang lebih ramah lingkungan.');
 
 -- --------------------------------------------------------
 
@@ -1183,9 +1243,9 @@ CREATE TABLE `pg_infokampus` (
 
 INSERT INTO `pg_infokampus` (`id`, `name`, `email`, `testimonial`, `image`, `status`, `date`) VALUES
 (1, 'lorem ipsum', '', '', NULL, 1, '2019-10-07 15:45:19'),
-(2, 'lorem ipsum', '', '', NULL, 0, '2019-10-07 15:46:47'),
-(3, 'lorem ipsum', '', '', NULL, 0, '2019-10-07 15:47:28'),
-(4, 'lorem ipsum', '', '', NULL, 0, '2019-10-07 16:01:51');
+(2, 'lorem ipsum', '', '', NULL, 1, '2019-10-07 15:46:47'),
+(3, 'lorem ipsum', '', '', NULL, 1, '2019-10-07 15:47:28'),
+(4, 'lorem ipsum', '', '', NULL, 1, '2019-10-07 16:01:51');
 
 -- --------------------------------------------------------
 
@@ -1207,9 +1267,9 @@ CREATE TABLE `pg_infokampus_description` (
 
 INSERT INTO `pg_infokampus_description` (`id`, `parents_id`, `language_id`, `title`, `content`) VALUES
 (5, 1, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib'),
-(2, 2, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib'),
-(3, 3, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib'),
-(4, 4, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib');
+(8, 2, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib'),
+(7, 3, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib'),
+(6, 4, 2, ' PENDAFTARAN PROGRAM DOKTOR', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bib');
 
 -- --------------------------------------------------------
 
@@ -1328,10 +1388,10 @@ CREATE TABLE `pg_testimonial` (
 --
 
 INSERT INTO `pg_testimonial` (`id`, `name`, `email`, `testimonial`, `image`, `status`, `date`) VALUES
-(1, 'Rita Marsusiana', 'DIREKTUR PT. AGENGRANDHU JOLOTUNDO', '', '4c55d-homsec21.jpg', 0, '2019-10-07 15:50:07'),
-(2, 'Rita Marsusiana', 'POLITIKUS', '', '4b74b-homsec21.jpg', 0, '2019-10-07 15:50:32'),
-(3, 'Andreana Sutarja', 'DIREKTUR PT. MAKMUR SENTOSA', '', 'e6269-homsec21.jpg', 0, '2019-10-07 15:50:56'),
-(4, 'Rita Marsusiana', 'POLITIKUS', '', '388ca-homsec21.jpg', 0, '2019-10-07 15:51:15');
+(1, 'Rita Marsusiana', 'DIREKTUR PT. AGENGRANDHU JOLOTUNDO', '', '4c55d-homsec21.jpg', 1, '2019-10-07 15:50:07'),
+(2, 'Rita Marsusiana', 'POLITIKUS', '', '4b74b-homsec21.jpg', 1, '2019-10-07 15:50:32'),
+(3, 'Andreana Sutarja', 'DIREKTUR PT. MAKMUR SENTOSA', '', 'e6269-homsec21.jpg', 1, '2019-10-07 15:50:56'),
+(4, 'Rita Marsusiana', 'POLITIKUS', '', '388ca-homsec21.jpg', 1, '2019-10-07 15:51:15');
 
 -- --------------------------------------------------------
 
@@ -1888,11 +1948,13 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (57, 'contact_content2', 'Content', '', 'text', 0, 'data', 'y', 0),
 (58, 'contact1_links_map', 'Googles Map', '', 'text', 0, 'data', 'n', 0),
 (59, 'contact_phone', 'Phone', '+62 21 5047575', 'text', 0, 'data', 'n', 0),
-(60, 'contact_wa', 'Whatsapp', '', 'text', 0, 'data', 'n', 0),
+(60, 'contact_wa', 'Whatsapp', '628165047575', 'text', 0, 'data', 'n', 0),
 (61, 'url_facebook', 'URL Facebook', '', 'text', 0, 'data', 'n', 0),
 (62, 'url_instagram', 'URL Instagram', '', 'text', 0, 'data', 'n', 0),
 (63, 'contact_adress', 'Address Contact', 'Cempaka Putih Indah 100A\r\nJembatan Serong, Rawasari - Jakarta 10520, Indonesia', 'text', 0, 'data', 'n', 0),
-(64, 'url_youtube', 'URL Youtube', '', 'text', 0, 'data', 'n', 0);
+(64, 'url_youtube', 'URL Youtube', '', 'text', 0, 'data', 'n', 0),
+(65, 'sarjana_content', 'Content', '', 'text', 0, 'data', 'y', 0),
+(66, 'pascasarjana_content', 'Content', '', 'text', 0, 'data', 'y', 0);
 
 -- --------------------------------------------------------
 
@@ -1915,22 +1977,27 @@ INSERT INTO `setting_description` (`id`, `setting_id`, `language_id`, `value`) V
 (1, 33, 2, 'Tentang Kami'),
 (2, 34, 2, 'SEJARAH'),
 (3, 35, 2, '<h4>AWAL MULA DIDIRIKANNYA SEKOLAH TINGGI FILSAFAT DRIYARKARA</h4><p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor dapibus nulla eu rhoncus. In vel eleifend dolor, sed blandit velit. Curabitur orci purus, bibendum sit amet iaculis quis, aliquam in metus. Donec quis euismod urna, sit amet luctus leo. Aenean leo mi, volutpat eu pulvinar vel, pellentesque eget massa.</p><p>Aliquam bibendum, tellus sed scelerisque ultrices, metus velit tempor odio, sed tempor purus dui a metus. Pellentesque nec felis eu ipsum dignissim fringilla at imperdiet massa. Nulla malesuada lacinia pharetra. Etiam ultrices nisl vel pharetra vehicula. Morbi orci sapien, tincidunt in maximus a, commodo eget leo. Suspendisse ante lectus, scelerisque id risus sed, luctus hendrerit urna. Integer nec congue metus. Maecenas eget ipsum finibus, venenatis dui sed, tincidunt eros. Quisque varius elit sed dui blandit vulputate. Ut a eleifend metus. Nam in blandit sem. Aenean risus enim, iaculis quis diam nec, faucibus aliquet nulla.</p>'),
-(4, 42, 2, 'BIOGRAFI Prof. Dr. N. Driyarkara, SJ.'),
+(4, 42, 2, 'Prof. Dr. N. Driyarkara, SJ.'),
 (5, 43, 2, 'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor dapibus nulla eu rhoncus. In vel eleifend dolor, sed blandit velit. Curabitur orci purus, bibendum sit amet iaculis quis, aliquam in metus. Donec quis euismod urna, sit amet luctus leo. Aenean leo mi, volutpat eu pulvinar vel, pellentesque eget massa.'),
 (6, 28, 2, 'Tentang Kami'),
 (7, 29, 2, 'VISI & MISI'),
-(8, 30, 2, '<h4>VISI</h4><p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor dapibus nulla eu rhoncus. In vel eleifend dolor, sed blandit velit. Curabitur orci purus, bibendum sit amet iaculis quis, aliquam in metus. Donec quis euismod urna, sit amet luctus leo. Aenean leo mi, volutpat eu pulvinar vel, pellentesque eget massa.</p>'),
-(9, 31, 2, '<h4>MISI</h4><p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>'),
+(8, 30, 2, '<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor dapibus nulla eu rhoncus. In vel eleifend dolor, sed blandit velit. Curabitur orci purus, bibendum sit amet iaculis quis, aliquam in metus. Donec quis euismod urna, sit amet luctus leo. Aenean leo mi, volutpat eu pulvinar vel, pellentesque eget massa.\r\n</p>'),
+(9, 31, 2, '<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam et congue orci, et pellentesque ligula. Aenean condimentum tincidunt purus vitae malesuada. Nunc tortor quam, rutrum ut vehicula in, vehicula a tellus. Integer quis purus iaculis metus facilisis interdum. Quisque laoreet nec ligula pulvinar condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\r\n</p>'),
 (10, 45, 2, 'Tentang Kami'),
 (11, 46, 2, 'ADMINISTRASI'),
-(12, 47, 2, '<h3>YAYASAN STF DRIYARKARA</h3><table><tbody><tr><td>Pembina</td><td></td></tr><tr><td>Ketua merangkap Anggota</td><td>Mgr. Ignatius Suharyo</td></tr><tr><td>Sekretaris merangkap Anggota</td><td>P. Sunu Hardiyanta, SJ</td></tr><tr><td>Bendahara merangkap Anggota</td><td>A. Sunarko, OFM</td></tr></tbody></table><table><tbody><tr><td>Pengurus</td><td></td></tr><tr><td>Ketua merangkap Anggota</td><td>Franz Magnis-Suseno, SJ</td></tr><tr><td>Sekretaris merangkap Anggota</td><td>A. Bimo Prakoso, OFM</td></tr><tr><td>Bendahara merangkap Anggota</td><td>RD. Suhardi Antara</td></tr><tr><td>Anggota</td><td>F. Saveria Sika Seda, Ph.D</td></tr><tr><td>Anggota</td><td>Prof. Dr. Bernadette N. Setiadi</td></tr><tr><td>Anggota</td><td>Prof. Dr. Paulus Wirutomo</td></tr><tr><td>Anggota</td><td>St. Sularto</td></tr></tbody></table><table><tbody><tr><td>Pengawas</td><td></td></tr><tr><td>Ketua merangkap Anggota</td><td>J. Heru Hendarto, SJ</td></tr><tr><td>Anggota</td><td>RD. Stef. Roy Djakarya</td></tr><tr><td>Anggota</td><td>Prof. Dr. FG Winarno</td></tr></tbody></table><h3>PIMPINAN STF DRIYARKARA</h3><table class=\"table2\"><tbody><tr><td>Ketua</td><td>Dr. S. P. Lili Tjahjadi</td></tr><tr><td>Wakil Ketua I</td><td>Dr. Vitus Rubianto S.</td></tr><tr><td>Wakil Ketua II</td><td>A. Nugroho Widiyono, M.Hum</td></tr><tr><td>Wakil Ketua III</td><td>A. Widyarsono, M.Phil</td></tr><tr><td>Sekretaris Senat</td><td>Dr. Vitus Rubianto S.</td></tr><tr><td>Direktur Program Pasca Sarjana</td><td>Prof. Dr. J. Sudarminta</td></tr><tr><td>Sekretaris Program Pasca Sarjana</td><td>Dr. Karlina Supelli</td></tr><tr><td>Ketua Program Doktor Ilmu Filsafat</td><td>Prof. Dr. J. Sudarminta</td></tr><tr><td>Ketua Program Magister Ilmu Filsafat</td><td>Dr. B. Herry-Priyono</td></tr><tr><td>Ketua Program Studi Ilmu Filsafat</td><td>Dr. A. Setyo Wibowo</td></tr><tr><td>Sekretaris Program Studi Ilmu Filsafat</td><td>Dr. F. Budi Hardiman</td></tr><tr><td>Ketua Program Studi Ilmu Teologi</td><td>Dr. Vitus Rubianto S.</td></tr><tr><td>Sekretaris Program Studi Ilmu Teologi</td><td>F. Gions, Lic.Th.</td></tr><tr><td>Kepala Lembaga Penelitian dan</td><td>Prof. Dr. J. Sudarminta</td></tr></tbody></table><table><tbody><tr><td>Pengabdian Kepada Masyarakat</td><td></td></tr><tr><td>Ketua Penjaminan Mutu</td><td>Dr. F. Budi Hardiman</td></tr><tr><td>Ketua Panitia Penilai Angka Kredit</td><td>Prof. Dr. A. Eddy Kristiyanto</td></tr></tbody></table><h3>STRUKTUR ORGANISASI</h3><p>Struktur organisasi per September 2019 STF Driyarkara</p>'),
+(12, 47, 2, '<h3>YAYASAN STF DRIYARKARA</h3><table>\r\n                            <tbody><tr>\r\n                                <td class=\"caption\">Pembina</td>\r\n                                <td></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua merangkap Anggota</td>\r\n                                <td class=\"caption\">Mgr. Ignatius Suharyo</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Sekretaris merangkap Anggota</td>\r\n                                <td class=\"caption\">P. Sunu Hardiyanta, SJ</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Bendahara merangkap Anggota</td>\r\n                                <td class=\"caption\">A.  Sunarko, OFM</td>\r\n                            </tr>\r\n                        </tbody></table><table>\r\n                        <tbody><tr>\r\n                            <td class=\"caption\">Pengurus</td>\r\n                            <td></td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Ketua merangkap Anggota</td>\r\n                            <td class=\"caption\">Franz Magnis-Suseno, SJ</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Sekretaris merangkap Anggota</td>\r\n                            <td class=\"caption\">A. Bimo Prakoso, OFM</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Bendahara merangkap Anggota</td>\r\n                            <td class=\"caption\">RD. Suhardi Antara</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Anggota</td>\r\n                            <td class=\"caption\">F. Saveria Sika Seda, Ph.D</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Anggota</td>\r\n                            <td class=\"caption\">Prof. Dr. Bernadette N. Setiadi</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Anggota</td>\r\n                            <td class=\"caption\">Prof. Dr. Paulus Wirutomo</td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>Anggota</td>\r\n                            <td class=\"caption\">St. Sularto</td>\r\n                        </tr>\r\n                    </tbody></table><table>\r\n                            <tbody><tr>\r\n                                <td class=\"caption\">Pengawas</td>\r\n                                <td></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua merangkap Anggota</td>\r\n                                <td class=\"caption\">J. Heru Hendarto, SJ</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Anggota </td>\r\n                                <td class=\"caption\">RD. Stef. Roy Djakarya</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Anggota</td>\r\n                                <td class=\"caption\">Prof. Dr. FG Winarno</td>\r\n                            </tr>\r\n                        </tbody></table><h3>PIMPINAN STF DRIYARKARA</h3><table class=\"table2\">\r\n                            <tbody><tr>\r\n                                <td>Ketua</td>\r\n                                <td class=\"caption\">Dr. S. P. Lili Tjahjadi</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Wakil Ketua I</td>\r\n                                <td class=\"caption\">Dr. Vitus Rubianto S.</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Wakil Ketua II</td>\r\n                                <td class=\"caption\">A. Nugroho Widiyono, M.Hum</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Wakil Ketua III</td>\r\n                                <td class=\"caption\">A. Widyarsono, M.Phil</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Sekretaris Senat</td>\r\n                                <td class=\"caption\">Dr. Vitus Rubianto S.</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Direktur Program Pasca Sarjana</td>\r\n                                <td class=\"caption\">Prof. Dr. J. Sudarminta</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Sekretaris Program Pasca Sarjana </td>\r\n                                <td class=\"caption\">Dr. Karlina Supelli</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Program Doktor Ilmu Filsafat</td>\r\n                                <td class=\"caption\">Prof. Dr. J. Sudarminta</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Program Magister Ilmu Filsafat					                                               </td>\r\n                                <td class=\"caption\">Dr. B. Herry-Priyono</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Program Studi Ilmu Filsafat</td>\r\n                                <td class=\"caption\">Dr. A. Setyo Wibowo</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Sekretaris Program Studi Ilmu Filsafat</td>\r\n                                <td class=\"caption\">Dr. F. Budi Hardiman</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Program Studi Ilmu Teologi</td>\r\n                                <td class=\"caption\">Dr. Vitus Rubianto S.</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Sekretaris Program Studi Ilmu Teologi</td>\r\n                                <td class=\"caption\">F. Gions, Lic.Th.</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Kepala Lembaga Penelitian dan  </td>\r\n                                <td class=\"caption\">Prof. Dr. J. Sudarminta</td>\r\n                            </tr>\r\n                        </tbody></table><table>\r\n                            <tbody><tr>\r\n                                <td class=\"caption\">Pengabdian Kepada Masyarakat</td>\r\n                                <td></td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Penjaminan Mutu</td>\r\n                                <td class=\"caption\">Dr. F. Budi Hardiman</td>\r\n                            </tr>\r\n                            <tr>\r\n                                <td>Ketua Panitia Penilai Angka Kredit</td>\r\n                                <td class=\"caption\">Prof. Dr. A. Eddy Kristiyanto</td>\r\n                            </tr>\r\n                        </tbody></table><h3>STRUKTUR ORGANISASI</h3><p>Struktur organisasi per September 2019 STF Driyarkara</p><p><img src=\"/stf/images/static/87/susunan.jpg\"></p>'),
 (13, 49, 2, 'Tentang Kami'),
 (14, 50, 2, 'FAKTA & ANGKA'),
 (15, 51, 2, '<h4>FAKTA STF DRIYARKARA</h4><p>Duis sed tortor magna. Curabitur eget sem vel mi porta consectetur ac eu velit. Aliquam est lectus, rutrum ut porta eget, fringilla a orci. Vestibulum vitae massa sit amet ipsum commodo mollis. Aenean euismod dui a fringilla efficitur. Pellentesque turpis mi, finibus at ipsum at, volutpat cursus ipsum. Maecenas quis lacus sapien.</p><p>Donec vulputate sapien accumsan, ultrices justo et, convallis felis. Duis luctus consectetur scelerisque. Phasellus malesuada purus eu augue sollicitudin faucibus. Sed in mattis nisl, quis vestibulum mauris. In leo tortor, viverra vitae fringilla ac, facilisis nec metus. Donec ut porta diam. Morbi sed neque non augue tempus ultricies eget at urna.</p><p>Sed tempor dolor id ex vestibulum laoreet. Nulla vitae leo auctor, efficitur orci at, venenatis sem. Suspendisse ut accumsan nunc. Fusce iaculis nisi a lectus luctus, nec dignissim nisi lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquet bibendum tempor. Cras in metus et ipsum posuere eleifend. Suspendisse vulputate consequat felis non rutrum. Praesent tempor vel est a tempus. Suspendisse at facilisis orci. Quisque a mattis diam. Proin vitae magna ultrices, lacinia est sit amet, accumsan mi.</p>'),
 (16, 20, 2, 'Akademik'),
 (17, 21, 2, 'KALENDAR AKADEMIK'),
-(18, 22, 2, '<h4>KALENDAR AKADEMIK</h4><p><img src=\"http://192.168.1.2/stf/asset/images/AKADEMIK-GANJIL.jpg\" alt=\"\"></p><p><img src=\"http://192.168.1.2/stf/asset/images/AKADEMIK-GENAP.jpg\" alt=\"\"></p>'),
-(19, 55, 2, 'ou can contact us anytime with our online form,\r\nwe will get back tou you as soon as possible.');
+(18, 22, 2, '<p><img src=\"/stf/images/static/54/AKADEMIK-GANJIL.jpg\"></p><p><img src=\"/stf/images/static/63/AKADEMIK-GENAP.jpg\"></p><p><br></p>'),
+(19, 55, 2, 'ou can contact us anytime with our online form,\r\nwe will get back tou you as soon as possible.'),
+(20, 65, 2, '<h5>Persyaratan Masuk</h5>\r\n                    <ul>\r\n                        <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU \r\n                            PENGETAHUAN SOSIAL; WAWANCARA</li>\r\n                        <li>Memenuhi persyaratan administrasi yang ditentukan oleh Sekretariat Sekolah Tinggi Filsafar Driyarkara</li>\r\n                    </ul>\r\n                    <h5>Persyaratan Daftar</h5>\r\n                    <ul>\r\n                        <li>Mengisi formulir pendaftaran (Rp. 500.000,-)</li>\r\n                        <li>Fotocopy ijasah terakhir yang dilegalisasi</li>\r\n                        <li>Pasfoto hitam-putih 4x6 dan 2x3 (masing-masing 3 lbr)</li>\r\n                        <li>Fotocopy KTP dan atau Surat Tanda Lapor Diri</li>\r\n                        <li>Kartu Keluarga (KK)</li>\r\n                    </ul>\r\n                    <h5>Informasi Lebih Lanjut</h5>\r\n                    <div class=\"kontak\">\r\n                        <p>Whatsapp Hotline. +62 81 650 47575 <a href=\"#\">(click to chat)</a></p>\r\n                        <p>Tel. +62 21 5047575</p>\r\n                        <p>Email. admin@driyarkara.ac.id</p>\r\n                    </div>'),
+(21, 65, 3, '<h5>Persyaratan Masuk</h5>\r\n                    <ul>\r\n                        <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU \r\n                            PENGETAHUAN SOSIAL; WAWANCARA</li>\r\n                        <li>Memenuhi persyaratan administrasi yang ditentukan oleh Sekretariat Sekolah Tinggi Filsafar Driyarkara</li>\r\n                    </ul>\r\n                    <h5>Persyaratan Daftar</h5>\r\n                    <ul>\r\n                        <li>Mengisi formulir pendaftaran (Rp. 500.000,-)</li>\r\n                        <li>Fotocopy ijasah terakhir yang dilegalisasi</li>\r\n                        <li>Pasfoto hitam-putih 4x6 dan 2x3 (masing-masing 3 lbr)</li>\r\n                        <li>Fotocopy KTP dan atau Surat Tanda Lapor Diri</li>\r\n                        <li>Kartu Keluarga (KK)</li>\r\n                    </ul>\r\n                    <h5>Informasi Lebih Lanjut</h5>\r\n                    <div class=\"kontak\">\r\n                        <p>Whatsapp Hotline. +62 81 650 47575 <a href=\"#\">(click to chat)</a></p>\r\n                        <p>Tel. +62 21 5047575</p>\r\n                        <p>Email. admin@driyarkara.ac.id</p>\r\n                    </div>'),
+(22, 66, 2, '<h5>Persyaratan Masuk</h5>\r\n                    <ul>\r\n                        <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU \r\n                            PENGETAHUAN SOSIAL; WAWANCARA</li>\r\n                        <li>Memenuhi persyaratan administrasi yang ditentukan oleh Sekretariat Sekolah Tinggi Filsafar Driyarkara</li>\r\n                    </ul>\r\n                    <h5>Persyaratan Daftar</h5>\r\n                    <ul>\r\n                        <li>Mengisi formulir pendaftaran (Rp. 500.000,-)</li>\r\n                        <li>Fotocopy ijasah terakhir yang dilegalisasi</li>\r\n                        <li>Pasfoto hitam-putih 4x6 dan 2x3 (masing-masing 3 lbr)</li>\r\n                        <li>Fotocopy KTP dan atau Surat Tanda Lapor Diri</li>\r\n                        <li>Kartu Keluarga (KK)</li>\r\n                    </ul>\r\n                    <h5>Informasi Lebih Lanjut</h5>\r\n                    <div class=\"kontak\">\r\n                        <p>Whatsapp Hotline. +62 81 650 47575 <a href=\"#\">(click to chat)</a></p>\r\n                        <p>Tel. +62 21 5047575</p>\r\n                        <p>Email. admin@driyarkara.ac.id</p>\r\n                    </div>'),
+(23, 66, 3, '<h5>Persyaratan Masuk</h5>\r\n                    <ul>\r\n                        <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU \r\n                            PENGETAHUAN SOSIAL; WAWANCARA</li>\r\n                        <li>Memenuhi persyaratan administrasi yang ditentukan oleh Sekretariat Sekolah Tinggi Filsafar Driyarkara</li>\r\n                    </ul>\r\n                    <h5>Persyaratan Daftar</h5>\r\n                    <ul>\r\n                        <li>Mengisi formulir pendaftaran (Rp. 500.000,-)</li>\r\n                        <li>Fotocopy ijasah terakhir yang dilegalisasi</li>\r\n                        <li>Pasfoto hitam-putih 4x6 dan 2x3 (masing-masing 3 lbr)</li>\r\n                        <li>Fotocopy KTP dan atau Surat Tanda Lapor Diri</li>\r\n                        <li>Kartu Keluarga (KK)</li>\r\n                    </ul>\r\n                    <h5>Informasi Lebih Lanjut</h5>\r\n                    <div class=\"kontak\">\r\n                        <p>Whatsapp Hotline. +62 81 650 47575 <a href=\"#\">(click to chat)</a></p>\r\n                        <p>Tel. +62 21 5047575</p>\r\n                        <p>Email. admin@driyarkara.ac.id</p>\r\n                    </div>'),
+(24, 55, 3, '');
 
 -- --------------------------------------------------------
 
@@ -2727,8 +2794,8 @@ CREATE TABLE `tb_extensioncourse` (
 --
 
 INSERT INTO `tb_extensioncourse` (`id`, `title_id`, `title_en`, `content_id`, `content_en`, `register_link`, `image`, `sorts`, `active`) VALUES
-(1, 'EXTENSION COURSE FILSAFAT', 'PERPANJANGAN KURSUS FILSAFAT', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', '<p>Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.</p>', 'http://192.168.1.2/stf/home/akademikprogramextension#', '', NULL, 1),
-(2, 'EXTENSION COURSE TEOLOGI', 'PERPANJANGAN KURSUS TEOLOGI', '<p>Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.</p>', '<p>Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.</p>', 'http://192.168.1.2/stf/home/akademikprogramextension#', '', NULL, 1);
+(1, 'EXTENSION COURSE FILSAFAT', 'PERPANJANGAN KURSUS FILSAFAT ', 'Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.', 'Epistemologi, sebagai cabang ilmu filsafat yang secara kritis mengkaji hakikat, ruang lingkup, dan sumber serta dasar pertanggungjawaban atau justifikasi klaim kebenaran pengetahuan, dipahami secara berbeda dari masa ke masa.', '#', '7b90f-ecfilsafat.pdf', NULL, 1),
+(2, 'EXTENSION COURSE TEOLOGI', 'PERPANJANGAN KURSUS TEOLOGI', 'Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.', 'Presiden terpilih akan dilantik. Ia mengajak semua unsur bangsa untuk bersama membangun secara lahir-batin. Umat Katolik adalah unsur bangsa di tengah rakyat tersebut. Hikmat yang menjadi modal pembangunan bersama, perlu diolah bersama, dengan cukup dipahami.', '#', '04de3-ecteologi.pdf', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -2792,8 +2859,8 @@ CREATE TABLE `tb_master_jenjangstudi` (
 --
 
 INSERT INTO `tb_master_jenjangstudi` (`id`, `nama`) VALUES
-(1, 'Filsafat'),
-(2, 'Teologi');
+(3, 'S1'),
+(4, 'S2');
 
 -- --------------------------------------------------------
 
@@ -2811,8 +2878,8 @@ CREATE TABLE `tb_master_kategoristudi` (
 --
 
 INSERT INTO `tb_master_kategoristudi` (`id`, `nama`) VALUES
-(1, 'S1'),
-(2, 'S2');
+(3, 'Teologi'),
+(4, 'Filsafat');
 
 -- --------------------------------------------------------
 
@@ -2859,10 +2926,24 @@ CREATE TABLE `tb_program_sarjana` (
   `studi_id` int(3) DEFAULT NULL,
   `title_id` varchar(225) NOT NULL,
   `title_en` varchar(225) NOT NULL,
+  `subtitle_id` text,
+  `subtitle_en` text,
   `content_id` text NOT NULL,
   `content_en` text NOT NULL,
-  `sorts` int(10) NOT NULL
+  `type` varchar(225) DEFAULT NULL,
+  `sorts` int(10) NOT NULL,
+  `link` varchar(225) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_program_sarjana`
+--
+
+INSERT INTO `tb_program_sarjana` (`id`, `jenjang_id`, `studi_id`, `title_id`, `title_en`, `subtitle_id`, `subtitle_en`, `content_id`, `content_en`, `type`, `sorts`, `link`) VALUES
+(1, 3, 3, 'Ilmu Teologi', 'Theological Sciences', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.\r\n</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.\r\n</p><h5>Hasil Belajar</h5><ul>\r\n	<li>Conduct original, publishable research in a field of Biology.</li>\r\n	<li>Formulate a novel research question and design the experiments required to make advances in the field.</li>\r\n	<li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li>\r\n	<li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li>\r\n	<li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li>\r\n</ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs\r\n</p>', '<p>Ikhtisar</p><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><p>Hasil Belajar</p><p>Conduct original, publishable research in a field of Biology.</p><p>Formulate a novel research question and design the experiments required to make advances in the field.</p><p>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</p><p>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</p><p>Communicate the findings of their research both orally and in writing to professional and lay audiences.</p><p>Dosen / Pengajar Fakultas</p><p>Jeannie Simms, Director, Master of Fine Arts Program</p><p>Lisa Bynoe, Associate Dean of Graduate Programs</p>', 'sarjana', 1, NULL),
+(2, 3, 3, 'Ilmu Teologi - Program Studi S1', 'Theology Science - S1 Study Program', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><h5>Hasil Belajar</h5><ul><li>Conduct original, publishable research in a field of Biology.</li><li>Formulate a novel research question and design the experiments required to make advances in the field.</li><li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li><li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li><li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li></ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>', '<p>Ikhtisar</p><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><p>Hasil Belajar</p><p>Conduct original, publishable research in a field of Biology.</p><p>Formulate a novel research question and design the experiments required to make advances in the field.</p><p>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</p><p>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</p><p>Communicate the findings of their research both orally and in writing to professional and lay audiences.</p><p>Dosen / Pengajar Fakultas</p><p>Jeannie Simms, Director, Master of Fine Arts Program</p><p>Lisa Bynoe, Associate Dean of Graduate Programs</p>', 'pasca_sarjana', 1, NULL),
+(3, 4, 4, 'Ilmu Filsafat - Program Studi S2', 'Philosophy Science - S2 Study Program', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><h5>Hasil Belajar</h5><ul><li>Conduct original, publishable research in a field of Biology.</li><li>Formulate a novel research question and design the experiments required to make advances in the field.</li><li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li><li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li><li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li></ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><h5>Hasil Belajar</h5><ul><li>Conduct original, publishable research in a field of Biology.</li><li>Formulate a novel research question and design the experiments required to make advances in the field.</li><li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li><li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li><li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li></ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>', 'pasca_sarjana', 5, NULL),
+(4, 4, 4, 'Ilmu Filsafat', 'Philosophy Science', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', 'Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero. Curabitur tempor lectus quam, id consectetur urna commodo vitae. Praesent ornare metus neque, id bibendum nulla tempus a. In eu placerat libero.', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><h5>Hasil Belajar</h5><ul><li>Conduct original, publishable research in a field of Biology.</li><li>Formulate a novel research question and design the experiments required to make advances in the field.</li><li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li><li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li><li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li></ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>', '<h5>Ikhtisar</h5><p>Research lies at the heart of the graduate experience at Boston College. Graduate students work directly with faculty in their labs while continuing their education. Current areas of faculty scholarship and expertise include Cell and Developmental Biology, Microbiology and Infectious Disease, and Computational Biology and Bioinformatics. Within these areas of study the department offers a program of study leading to a Ph.D. For more information about faculty research visit the Research page. The Biology department also offers state-of-the-art research laboratories and core-research support facilities, including confocal microscopy, flow cytometry, and FACS facilities.</p><p>A Master\'s degree is only offered through a 5-year BS/MS program for current undergraduate students.</p><h5>Hasil Belajar</h5><ul><li>Conduct original, publishable research in a field of Biology.</li><li>Formulate a novel research question and design the experiments required to make advances in the field.</li><li>Demonstrate a broad knowledge of theory and research in several areas of Biology and an in-depth knowledge of a specific area of expertise.</li><li>Display an understanding of the ethical guidelines for biological research and be able to follow such guidelines.</li><li>Communicate the findings of their research both orally and in writing to professional and lay audiences.</li></ul><h5>Dosen / Pengajar Fakultas</h5><p>Jeannie Simms, Director, Master of Fine Arts Program<br>Lisa Bynoe, Associate Dean of Graduate Programs</p>', 'sarjana', 5, NULL);
 
 -- --------------------------------------------------------
 
@@ -3074,7 +3155,37 @@ INSERT INTO `tt_text` (`id`, `category`, `message`) VALUES
 (70, 'admin', 'Penelitian'),
 (71, 'admin', 'Kalendar Akademik'),
 (72, 'admin', 'Extension Course'),
-(73, 'admin', 'Tentang Kami');
+(73, 'admin', 'Tentang Kami'),
+(74, 'front', 'Sejarah'),
+(75, 'front', 'Visi & Misi'),
+(76, 'front', 'Administrasi'),
+(77, 'front', 'Fakta & Angka'),
+(78, 'front', 'FAKTA'),
+(79, 'front', 'Beranda'),
+(80, 'front', 'Akademik'),
+(81, 'front', 'HUBUNGI KAMI'),
+(82, 'front', 'PENERIMAAN'),
+(83, 'front', 'Dari Filsafat Muncul Kejernihan'),
+(84, 'front', 'Pilih Kategori Studi'),
+(85, 'front', 'Pilih Jenjang Studi'),
+(86, 'front', 'daftarkan diri anda'),
+(87, 'front', 'klik di sini'),
+(88, 'front', 'untuk masuk ke Sistem Informasi Akademik'),
+(89, 'front', 'program sarjana'),
+(90, 'front', 'program pasca sarjana'),
+(91, 'front', 'Baca Lebih Lanjut'),
+(92, 'front', 'Mendaftar'),
+(93, 'front', 'Pendaftaraan'),
+(94, 'front', 'Lihat Pdf'),
+(95, 'front', 'Perpustakaan'),
+(96, 'front', 'jurnal diskursus'),
+(97, 'front', 'publikasi'),
+(98, 'front', 'repositori'),
+(99, 'front', 'jurnal-diskursus'),
+(100, 'front', 'mahasiswa'),
+(101, 'front', 'alumni'),
+(102, 'front', 'berita'),
+(103, 'front', '');
 
 -- --------------------------------------------------------
 --
@@ -3531,13 +3642,13 @@ ALTER TABLE `gal_gallery_image`
 -- AUTO_INCREMENT untuk tabel `language`
 --
 ALTER TABLE `language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
@@ -3585,13 +3696,13 @@ ALTER TABLE `pg_bank`
 -- AUTO_INCREMENT untuk tabel `pg_blog`
 --
 ALTER TABLE `pg_blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `pg_blog_description`
 --
 ALTER TABLE `pg_blog_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT untuk tabel `pg_infokampus`
@@ -3603,7 +3714,7 @@ ALTER TABLE `pg_infokampus`
 -- AUTO_INCREMENT untuk tabel `pg_infokampus_description`
 --
 ALTER TABLE `pg_infokampus_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `pg_list_bank`
@@ -3729,13 +3840,13 @@ ALTER TABLE `promo_list`
 -- AUTO_INCREMENT untuk tabel `setting`
 --
 ALTER TABLE `setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT untuk tabel `setting_description`
 --
 ALTER TABLE `setting_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT untuk tabel `shp_shipping_price`
@@ -3777,13 +3888,13 @@ ALTER TABLE `tb_kegiatan_univ`
 -- AUTO_INCREMENT untuk tabel `tb_master_jenjangstudi`
 --
 ALTER TABLE `tb_master_jenjangstudi`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_master_kategoristudi`
 --
 ALTER TABLE `tb_master_kategoristudi`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_menu_akses`
@@ -3795,7 +3906,7 @@ ALTER TABLE `tb_menu_akses`
 -- AUTO_INCREMENT untuk tabel `tb_program_sarjana`
 --
 ALTER TABLE `tb_program_sarjana`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_user`
@@ -3825,7 +3936,7 @@ ALTER TABLE `trips`
 -- AUTO_INCREMENT untuk tabel `tt_text`
 --
 ALTER TABLE `tt_text`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
