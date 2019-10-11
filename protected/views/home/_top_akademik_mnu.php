@@ -17,7 +17,9 @@
             <?php if (isset($_GET['name']) && $_GET['name'] != ''): ?>
             <h4><?php echo strtoupper(str_replace('-', ' ', $_GET['name'])) ?></h4>
             <?php else: ?>
+            <?php if ($actives != 'akademik_detail'): ?>
             <h4><?php echo strtoupper(str_replace('-', ' ', $actives)) ?></h4>
+            <?php endif ?>
             <?php endif ?>
             <div class="lines-middle d-block mx-auto"></div>
         </div>
