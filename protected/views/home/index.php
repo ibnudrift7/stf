@@ -44,11 +44,11 @@
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita')); ?>"><img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(382,255, '/images/blog/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')); ?>" alt="" ></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita', 'lang'=>Yii::app()->language)); ?>"><img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(382,255, '/images/blog/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')); ?>" alt="" ></a>
                     </div>
                     <div class="title">
                         <p>
-                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita')); ?>"><?php echo $value->description->title ?></a>
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=>$value->id, 'type'=> 'berita', 'lang'=>Yii::app()->language)); ?>"><?php echo $value->description->title ?></a>
                         </p>
                     </div>
                     <div class="subtitle">

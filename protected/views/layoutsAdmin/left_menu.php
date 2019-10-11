@@ -39,7 +39,7 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/visimisi')); ?>">Visi & Misi</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/administrasi')); ?>">Administrasi</a></li>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/fakta')); ?>">Fakta & Angka</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infokampus/index')); ?>">Info Kampus</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/infoKampus/index')); ?>">Info Kampus</a></li>
             </ul>
         </li>
 
@@ -56,7 +56,7 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/create')); ?>">Create Komunitas Blog</a></li>
             </ul>
         </li>
-        <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/kegiatanuniv')); ?>"><span class="fa fa-building"></span> <?php echo Tt::t('admin', 'Kegiatan Univ') ?></a></li>
+        <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/kegiatanUniv')); ?>"><span class="fa fa-building"></span> <?php echo Tt::t('admin', 'Kegiatan Univ') ?></a></li>
         <li>&nbsp;</li>
 
         <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Data Sarjana') ?></a>

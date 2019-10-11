@@ -1201,9 +1201,16 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		{
 			$model->attributes=$_POST['ContactForm'];
 			$status = true;
-	        $secret_key = "6LewK0EUAAAAAKBkAiXhXsR1ELPt7mQK5mcPRll2";
-	        $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
-	        $response = json_decode($response);
+	        $secret_key = "6LcJGr0UAAAAAAjqby74dES0bfAe8rkcODU8ldtt";
+	        $str_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR'];
+			
+			$ch = curl_init(); 
+			curl_setopt($ch, CURLOPT_URL, $str_url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+			$output = curl_exec($ch); 
+			curl_close($ch);
+
+	        $response = json_decode($output);
 	        if($response->success==false)
 	        {
 	          $status = false;
@@ -1217,7 +1224,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 					'model'=>$model,
 				),TRUE);
 				$config = array(
-					'to'=>array($model->email, $this->setting['email'], $this->setting['contact_email']),
+					'to'=>array($model->email, $this->setting['email'], 'ibnudrift@gmail.com'),
 					'subject'=>'['.Yii::app()->name.'] Contact from '.$model->email,
 					'message'=>$messaged,
 				);
@@ -1227,6 +1234,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 				if ($this->setting['contact_bcc']) {
 					$config['bcc'] = array($this->setting['contact_bcc']);
 				}
+
 				// kirim email
 				Common::mail($config);
 

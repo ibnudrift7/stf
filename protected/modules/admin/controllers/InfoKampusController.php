@@ -181,6 +181,8 @@ class InfoKampusController extends ControllerAdmin
 				{
 				    $transaction->rollback();
 				}
+			}else{
+				$model->addError('content', 'Mohon konten bahasa di lengkapi');
 			}
 		}
 

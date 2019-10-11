@@ -14,23 +14,31 @@
                 </div>
             </div>
             <div class="col-md-37">
-                <form>
+                <form class="filters_btm_nnda" method="get" action="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil')); ?>">
                     <div class="row">
                         <div class="col">
+                            <?php 
+                            $jenjangstudi = MasterJenjangstudi::model()->findAll();
+                            ?>
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" name="tipe_sarjana" id="exampleFormControlSelect1">
                                 <option selected><?php echo Tt::t('front', 'Pilih Kategori Studi') ?></option>
-                                <option>S1</option>
-                                <option>S2</option>
+                                <?php foreach ($jenjangstudi as $key => $value): ?>
+                                    <option value="<?php echo $value->id ?>"><?php echo $value->nama ?></option>
+                                <?php endforeach ?>
                                 </select>
                             </div>
                         </div>
                         <div class="col">
+                            <?php 
+                            $kategoristudi = MasterKategoristudi::model()->findAll();
+                            ?>
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" name="tipe_studi" id="exampleFormControlSelect1">
                                 <option selected><?php echo Tt::t('front', 'Pilih Jenjang Studi') ?></option>
-                                <option>Filsafat</option>
-                                <option>Teologi</option>
+                                <?php foreach ($kategoristudi as $key => $value): ?>
+                                    <option value="<?php echo $value->id ?>"><?php echo $value->nama ?></option>
+                                <?php endforeach ?>
                                 </select>
                             </div>
                         </div>
@@ -43,3 +51,8 @@
         </div>
     </div>
 </section>
+<style type="text/css">
+    form.filters_btm_nnda button{
+        cursor: pointer;
+    }
+</style>

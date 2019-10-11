@@ -20,17 +20,30 @@ $this->breadcrumbs=array(
                     <h5 class="subtitle">Menu</h5>
 
                     <ul class="shortcuts">
-                        <li class="events">
-                            <a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>">
-                                <i class="icon-cms fa fa-tag"></i>
-                                <span class="shortcuts-label">Products</span>
-                            </a>
-                        </li>
-                        <?php /*
                         <li class="products">
                             <a href="<?php echo CHtml::normalizeUrl(array('/admin/slide/index')); ?>">
                                 <i class="icon-cms fa fa-image"></i>
                                 <span class="shortcuts-label">Slide</span>
+                            </a>
+                        </li>
+                        <li class="archive">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/admin/blog/index')); ?>">
+                                <i class="icon-cms fa fa-flag"></i>
+                                <span class="shortcuts-label">Komunitas</span>
+                            </a>
+                        </li>
+                        <li class="archive">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/admin/static/kalendarakademik')); ?>">
+                                <i class="icon-cms fa fa-flag"></i>
+                                <span class="shortcuts-label">Kalendar Akademik</span>
+                            </a>
+                        </li>
+                        
+                        <?php /*
+                        <li class="events">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/admin/product/index')); ?>">
+                                <i class="icon-cms fa fa-tag"></i>
+                                <span class="shortcuts-label">Products</span>
                             </a>
                         </li>
                         <li class="archive">
@@ -173,3 +186,9 @@ $this->breadcrumbs=array(
 // // print_r($dataPenjulan3);
 
 ?>
+
+<style type="text/css">
+    .shortcuts li .shortcuts-label{
+        font-size: 12px;
+    }
+</style>

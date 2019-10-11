@@ -127,7 +127,7 @@ class TestimonialController extends ControllerAdmin
 		foreach (Language::model()->getLanguage() as $key => $value) {
 			$modelDesc[$value->code] = PgTestimonial::model()->getDataDesc($model->id, $value->id);
 			$modelDesc[$value->code] = ($modelDesc[$value->code]==null) ? new TestimonialDescription : $modelDesc[$value->code];
-			// echo CHtml::errorSummary($modelDesc[$value->code]);
+			echo CHtml::errorSummary($modelDesc[$value->code]);
 		}
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -181,6 +181,8 @@ class TestimonialController extends ControllerAdmin
 				{
 				    $transaction->rollback();
 				}
+			}else{
+				$model->addError('content', 'Mohon lengkapi konten tiap bahasa');
 			}
 		}
 

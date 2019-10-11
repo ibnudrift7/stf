@@ -195,13 +195,11 @@ $url = Yii::app()->request->hostInfo;
                                     </td>
                                     <td valign="top" style="margin:0;padding:0">
 
-                                        <span style="font-size:12px;margin-bottom:6px;display:inline-block"><?php echo Yii::t('mail', 'Ikuti Kami') ?>
-</span>
-
+                                        <!-- <span style="font-size:12px;margin-bottom:6px;display:inline-block"><?php echo Yii::t('mail', 'Ikuti Kami') ?></span> -->
                                         <div style="text-align:left">
+                                            <?php /*
                                             <a target="_blank" style="color:#008000;display:inline-block" href="<?php echo $this->setting['url_facebook'] ?>"><img style="border:0;min-height:auto;max-width:100%;outline:0" alt="Facebook" src="<?php echo $baseUrl ?>/asset/images/icon-facebook.png"></a>
                                             <a target="_blank" style="color:#008000;display:inline-block" href="<?php echo $this->setting['url_instagram'] ?>"><img style="border:0;min-height:auto;max-width:100%;outline:0" alt="Instagram" src="<?php echo $baseUrl ?>/asset/images/icon-instagram.png"></a>
-                                            <?php /*
                                             <a data-saferedirecturl="https://www.google.com/url?q=http://mandrillapp.com/track/click/12090311/twitter.com?p%3DeyJzIjoiaFVOemV4WUtXWEdrSjh0U1lqZWdYSXBHQ3F3IiwidiI6MSwicCI6IntcInVcIjoxMjA5MDMxMSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvdHdpdHRlci5jb21cXFwvdG9rb3BlZGlhXFxcL1wiLFwiaWRcIjpcImEwNTY3OTMxZjUyOTRmMDA4MmRjNGJlNWZmYmJmMWE1XCIsXCJ1cmxfaWRzXCI6W1wiMWEyZTVlODdmZjI4N2IwMzAyZGFkNjVmYTFkOWU0NzU1MzAzN2EwZlwiXX0ifQ&amp;source=gmail&amp;ust=1459306536673000&amp;usg=AFQjCNE4kU-8Fxx5Knbj73Ke8pgw1vwhUg" target="_blank" style="color:#008000;display:inline-block" href="http://mandrillapp.com/track/click/12090311/twitter.com?p=eyJzIjoiaFVOemV4WUtXWEdrSjh0U1lqZWdYSXBHQ3F3IiwidiI6MSwicCI6IntcInVcIjoxMjA5MDMxMSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvdHdpdHRlci5jb21cXFwvdG9rb3BlZGlhXFxcL1wiLFwiaWRcIjpcImEwNTY3OTMxZjUyOTRmMDA4MmRjNGJlNWZmYmJmMWE1XCIsXCJ1cmxfaWRzXCI6W1wiMWEyZTVlODdmZjI4N2IwMzAyZGFkNjVmYTFkOWU0NzU1MzAzN2EwZlwiXX0ifQ"><img style="border:0;min-height:auto;max-width:100%;outline:0" alt="Twitter" src="https://ci5.googleusercontent.com/proxy/-8wtK8UCwzgYf5r7ap2pOwgzm80lU2Rgr-FwOsUB0ZUkt96Cp_Cqn3UnIjzdnxVN7F8cBbt6y7XQoBqLZk95pTaRicik7Q=s0-d-e1-ft#https://ecs7.tokopedia.net/img/email/twitter.png"></a>
                                             <a data-saferedirecturl="https://www.google.com/url?q=http://mandrillapp.com/track/click/12090311/gplus.to?p%3DeyJzIjoiNExLUk1BSy1YRm5meHVRbm5PZGstY3loakhNIiwidiI6MSwicCI6IntcInVcIjoxMjA5MDMxMSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvZ3BsdXMudG9cXFwvdG9rb3BlZGlhXCIsXCJpZFwiOlwiYTA1Njc5MzFmNTI5NGYwMDgyZGM0YmU1ZmZiYmYxYTVcIixcInVybF9pZHNcIjpbXCI1MjdiYjU0MjdmZGUyNTIxZmFiNmMyYWU4YWY0NWQ0Zjk0YzRjYjk5XCJdfSJ9&amp;source=gmail&amp;ust=1459306536673000&amp;usg=AFQjCNEZfJpQq_cpriVwv2W1vNWDuFuazQ" target="_blank" style="color:#008000;display:inline-block" href="http://mandrillapp.com/track/click/12090311/gplus.to?p=eyJzIjoiNExLUk1BSy1YRm5meHVRbm5PZGstY3loakhNIiwidiI6MSwicCI6IntcInVcIjoxMjA5MDMxMSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvZ3BsdXMudG9cXFwvdG9rb3BlZGlhXCIsXCJpZFwiOlwiYTA1Njc5MzFmNTI5NGYwMDgyZGM0YmU1ZmZiYmYxYTVcIixcInVybF9pZHNcIjpbXCI1MjdiYjU0MjdmZGUyNTIxZmFiNmMyYWU4YWY0NWQ0Zjk0YzRjYjk5XCJdfSJ9"><img style="border:0;min-height:auto;max-width:100%;outline:0" alt="Google Plus" src="https://ci6.googleusercontent.com/proxy/W-I_th7pkNgG9aiQPXzB6HeDi0Rsg7rpvo-FYkluJv4CqZOeVKBUj01VOEiyTc-mzJKqOeDqhvfKkMC0AOMzuYtOscqHmPd89dQ=s0-d-e1-ft#https://ecs7.tokopedia.net/img/email/google-plus.png"></a>
                                             */ ?>
@@ -230,13 +228,13 @@ $url = Yii::app()->request->hostInfo;
                                     */ ?>
                                     <td valign="middle" style="margin:0;padding:0;width:53%">
 
-                                        <p style="color:#91908e;font-size:10px;line-height:150%;font-weight:normal;margin:0px;padding:0px"><?php echo Yii::t('mail', 'Jika butuh bantuan, gunakan halaman') ?> <a target="_blank" style="color:#0f990f;text-decoration:none;margin:0;padding:0" href="<?php echo $url.CHtml::normalizeUrl(array('/home/pcontact')); ?>"><?php echo Yii::t('mail', 'Kontak Kami') ?></a>.<br style="margin:0;padding:0"><?php echo date('Y') ?> &copy;
+                                        <p style="color:#91908e;font-size:10px;line-height:150%;font-weight:normal;margin:0px;padding:0px"><?php echo Yii::t('mail', 'Jika butuh bantuan, gunakan halaman') ?> <a target="_blank" style="color:#0f990f;text-decoration:none;margin:0;padding:0" href="<?php echo $url.CHtml::normalizeUrl(array('/home/contact')); ?>"><?php echo Yii::t('mail', 'Kontak Kami') ?></a>.<br style="margin:0;padding:0"><?php echo date('Y') ?> &copy;
 
                                             <span class="lG"><?php echo Yii::app()->name ?></span></p>
                                     </td>
                                     <td valign="middle" style="width:40%">
 
-                                        <div style="text-align:right"><img alt="<?php echo Yii::app()->name ?>" style="max-width: 120px;" src="<?php echo $baseUrl ?>/asset/images/lg_logo_precise.jpg">
+                                        <div style="text-align:right"><img alt="<?php echo Yii::app()->name ?>" style="max-width: 120px;" src="<?php echo $baseUrl ?>/asset/images/heads_logo_inside.png">
                                         </div>
                                     </td>
                                 </tr>

@@ -1,8 +1,18 @@
 <?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'akademik_detail')); ?>
 
-<?php 
-$ids = (int) $_GET['id'];
-$data = TbProgramSarjana::model()->findByPk($ids);
+<?php
+
+if ($_GET['tipe_sarjana'] != '' AND $_GET['tipe_studi'] != '') {
+    $criteria = new CDbCriteria;
+    $tipe_sar = $_GET['tipe_sarjana'];
+    $tipe_stu = $_GET['tipe_studi'];
+    $criteria->addCondition('jenjang_id = "$tipe_sar"');
+    $criteria->addCondition('studi_id = "$tipe_stu"');
+    $data = TbProgramSarjana::model()->find($ids);
+}else{
+    $ids = (int) $_GET['id'];
+    $data = TbProgramSarjana::model()->findByPk($ids);
+}
 
 $titles = '';
 $subtitle = '';

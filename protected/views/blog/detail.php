@@ -65,7 +65,7 @@ $res_product = array(
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $data->image ?>" alt="" ></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $value->image ?>" alt="" ></a>
                     </div>
                     <div class="title">
                         <p>
@@ -73,7 +73,7 @@ $res_product = array(
                         </p>
                     </div>
                     <div class="subtitle">
-                        <p><?php echo substr(strip_tags($value->description->content), 0, 60); ?></p>
+                        <p><?php echo $value->description->quote ?></p>
                     </div>
                 </div>
             </div>
@@ -81,9 +81,11 @@ $res_product = array(
         </div>
         <div class="row">
             <div class="col-md-60">
-                <button class="lihatsemua"><a href="#"><p>Lihat Semua Berita</p></a></button>
+                <button class="lihatsemua"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>"><p>Lihat Semua Berita</p></a></button>
             </div>
         </div>
+        <div class="py-5"></div>
+        <div class="py-1"></div>
     </div>
 </section>
 <?php endif ?>

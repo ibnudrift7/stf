@@ -67,7 +67,7 @@
             <div class="fright-inpd">
               <div class="form-group mb-0">
                 <div class="fleft">
-                  <div class="g-recaptcha" data-sitekey="6LewK0EUAAAAABmDgvHxO3OIHJ0dRpyYyu40CvOn"></div>
+                  <div class="g-recaptcha" data-sitekey="6LcJGr0UAAAAAPbWOfqycF8feudUpPFhRmC5s0Tv"></div>
                 </div>
                 <div class="clear"></div>
               </div>
