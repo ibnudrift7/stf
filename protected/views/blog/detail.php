@@ -51,21 +51,114 @@ $res_product = array(
     </div>
 </section>
 
-<?php if ( count($dataBlogs->getData()) > 0 ): ?>
+<?php if ( count($dataBlogs->getData()) > 0 ): ?> 
 <section class="home-sec-1">
     <div class="prelative container">
+      <?php if ($data->video_url_1 != '' OR $data->video_url_2 != '' OR $data->video_url_3 != ''): ?>
+      <div class="row">
+            <div class="col-md-60">
+                <?php if (Yii::app()->language == 'en'): ?>
+                <h4>RELATED VIDEOS</h4>  
+                <?php else: ?>
+                <h4>VIDEO TERKAIT</h4>
+                <?php endif ?>
+            </div>
+        </div>
+        <div class="py-2"></div>
+        <div class="py-1"></div>
+        <div class="row lists_video_mm">
+          <?php if ($data->video_url_1): ?>
+          <div class="col-md-20">
+            <?php 
+            $nm_youtub = $data->video_url_1;
+            parse_str( parse_url( $nm_youtub, PHP_URL_QUERY ), $my_array_of_vars );
+            $nx_video = $my_array_of_vars['v'];
+
+            $apikey = 'AIzaSyA-D9pByymuw3aunZMuLnjSFqiICZ0Jqek';
+            $ch = curl_init(); 
+            curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/videos?id='.$nx_video.'&key='.$apikey.'&part=snippet');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $output1 = json_decode( curl_exec($ch) );
+            curl_close($ch);  
+            $titles1 = $output1->items[0]->snippet->title;
+            ?>
+            <div class="item_video">
+              <div class="frames">
+                <div class='embed-container'>
+                  <iframe src='https://www.youtube.com/embed/<?php echo $nx_video ?>' frameborder='0' allowfullscreen></iframe>
+                </div>
+                <div class="titles-cont pt-3"><?php echo $titles1 ?></div>
+              </div>
+            </div>
+          </div>
+          <?php endif ?>
+
+          <?php if ($data->video_url_2): ?>
+          <div class="col-md-20">
+            <?php 
+            $nm_youtub2 = $data->video_url_2;
+            parse_str( parse_url( $nm_youtub2, PHP_URL_QUERY ), $my_array_of_vars2 );
+            $nx_video2 = $my_array_of_vars2['v'];  
+
+            $apikey = 'AIzaSyA-D9pByymuw3aunZMuLnjSFqiICZ0Jqek';
+            $ch = curl_init(); 
+            curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/videos?id='.$nx_video2.'&key='.$apikey.'&part=snippet');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $output2 = json_decode( curl_exec($ch) );
+            curl_close($ch);  
+            $titles2 = $output2->items[0]->snippet->title;
+            ?>
+            <div class="item_video">
+              <div class="frames">
+                <div class='embed-container'>
+                  <iframe src='https://www.youtube.com/embed/<?php echo $nx_video2 ?>' frameborder='0' allowfullscreen></iframe>
+                </div>
+                <div class="titles-cont pt-3"><?php echo $titles2 ?></div>
+              </div>
+            </div>
+          </div>
+          <?php endif ?>
+
+          <?php if ($data->video_url_3): ?>
+          <div class="col-md-20">
+            <?php 
+            $nm_youtub3 = $data->video_url_3;
+            parse_str( parse_url( $nm_youtub3, PHP_URL_QUERY ), $my_array_of_vars3 );
+            $nx_video3 = $my_array_of_vars3['v'];    
+
+            $apikey = 'AIzaSyA-D9pByymuw3aunZMuLnjSFqiICZ0Jqek';
+            $ch = curl_init(); 
+            curl_setopt($ch, CURLOPT_URL, 'https://www.googleapis.com/youtube/v3/videos?id='.$nx_video3.'&key='.$apikey.'&part=snippet');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $output3 = json_decode( curl_exec($ch) );
+            curl_close($ch);  
+            $titles3 = $output3->items[0]->snippet->title;
+            ?>
+            <div class="item_video">
+              <div class="frames">
+                <div class='embed-container'>
+                  <iframe src='https://www.youtube.com/embed/<?php echo $nx_video3 ?>' frameborder='0' allowfullscreen></iframe>
+                </div>
+                <div class="titles-cont pt-3"><?php echo $titles3 ?></div>
+              </div>
+            </div>
+          </div>
+          <?php endif ?>
+        </div>
+        <div class="py-5"></div>
+      <?php endif ?>
+
         <div class="row">
             <div class="col-md-60">
                 <h4>BERITA LAINNYA</h4>
             </div>
-
         </div>
         <div class="row">
             <?php foreach ($dataBlogs->getData() as $key => $value): ?>
             <div class="col-md-20">
                 <div class="box-content">
                     <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>../../images/blog/<?php echo $value->image ?>" alt="" ></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id, 'type'=> $type)); ?>"><img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(382,255, '/images/blog/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="" ></a>
                     </div>
                     <div class="title">
                         <p>
@@ -91,6 +184,19 @@ $res_product = array(
 <?php endif ?>
 
 <?php echo $this->renderPartial('//home/_bottoms_pgfilter', array()); ?>
+
+<style type="text/css">
+  .embed-container{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+  .embed-container iframe, 
+  .embed-container object, 
+  .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+  .titles-cont{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+  }
+</style>
 
 <style type="text/css">
 	section.berita-detail-sec-1 .box-content-topright{

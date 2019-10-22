@@ -205,5 +205,5 @@ return array(
         'PAYPAL_API_SIGNATURE'=>'AFcWxV21C7fd0v3bYYYRCpSSRl31Ac6aHPIbN8AJEMh-jNs1Q0L7bd.D',
         'PAYPAL_MODE'=>'live'   // sandbox/live  default=sandbox
 	),
-	'language'=>'en',
+	'language'=>'id',
 );

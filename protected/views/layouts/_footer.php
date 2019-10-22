@@ -3,16 +3,18 @@
         <div class="row">
             <div class="col-md-30">
                 <div class="whattaps">
-                    <a href="https://wa.me/628165047575"><p><b>Whatsapp Hotline. +62 81 650 47575</b> (click to chat)</a></p>
+                    <?php 
+                    $n_wa = str_replace('08', '628',  str_replace(' ', '', $this->setting['contact_wa']));
+                    ?>
+                    <a href="https://wa.me/<?php echo $n_wa ?>"><p><b>Whatsapp Hotline. </b> (click to chat)</a></p>
                 </div>
                 <div class="box-contact">
                     <div class="telmi">
-                        <p>Tel. +62 21 5047575</p>
-                        <p>Email. admin@driyarkara.ac.id</p>
+                        <p>Tel. <?php echo $this->setting['contact_phone'] ?></p>
+                        <p>Email. <?php echo $this->setting['email'] ?></p>
                     </div>
                     <div class="alamat">
-                        <p>Cempaka Putih Indah 100A</p>
-                        <p>Jembatan Serong, Rawasari - Jakarta 10520, Indonesia</p>
+                        <p><?php echo nl2br($this->setting['contact_adress']) ?></p>
                     </div>
                 </div>
                 <div class="copyright">
@@ -31,9 +33,9 @@
                 <div class="py-2"></div>
                 <div class="socmed_scl text-right">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;</li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;</li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        <li class="list-inline-item"><a href="<?php echo $this->setting['url_facebook'] ?>"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;</li>
+                        <li class="list-inline-item"><a href="<?php echo $this->setting['url_linkedin'] ?>"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;</li>
+                        <li class="list-inline-item"><a href="<?php echo $this->setting['url_youtube'] ?>"><i class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
             </div>

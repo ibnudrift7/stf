@@ -102,6 +102,18 @@
 			
 			<?php echo $form->dropDownListRow($model, 'topik_id', $res_product , array('class'=>'form-control span6', 'empty'=>'-- Pilih Topik --')); ?>
 
+			<div class="row-fluid">
+				<div class="span4">
+					<?php echo $form->textFieldRow($model, 'video_url_1', array('class'=>'form-control span11', 'hint'=> 'ex. https://www.youtube.com/watch?v=-lolJjx-Sq4')); ?>
+				</div>
+				<div class="span4">
+					<?php echo $form->textFieldRow($model, 'video_url_2', array('class'=>'form-control span11', 'hint'=> 'ex. https://www.youtube.com/watch?v=-lolJjx-Sq4')); ?>
+				</div>
+				<div class="span4">
+					<?php echo $form->textFieldRow($model, 'video_url_3', array('class'=>'form-control span11', 'hint'=> 'ex. https://www.youtube.com/watch?v=-lolJjx-Sq4')); ?>
+				</div>
+			</div>
+
 
 			<?php echo $form->fileFieldRow($model,'image',array(
 			'hint'=>'<b>Note:</b> Ukuran gambar adalah 1080 x 710px. Gambar yang lebih besar akan ter-crop otomatis, tolong upload foto ukuran horizontal')); ?>

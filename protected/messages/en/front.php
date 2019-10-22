@@ -11,12 +11,12 @@ return array(
 
 'Beranda'=>'Home',
 'Tentang Kami'=>'About Us',
-'Akademik'=>'Academic',
+'Akademik'=>'Academics',
 'Penelitian'=>'Research',
 'Komunitas'=>'Community',
 'HUBUNGI KAMI'=>'CONTACT US',
-'PENERIMAAN'=>'RECEPTION',
-'Dari Filsafat Muncul Kejernihan'=>'From Philosophy Emerges Clarity',
+'PENERIMAAN'=>'ADMISSION',
+'Dari Filsafat Muncul Kejernihan'=>'Out of Philosophy Clarity',
 
 'Pilih Kategori Studi'=>'Select Study Category',
 'Pilih Jenjang Studi'=>'Choose Study Level',
@@ -52,8 +52,8 @@ return array(
 'repositori'=>'repository',
 
 'komunitas'=>'community',
-'mahasiswa'=>'college student',
-'alumni'=>'alumni',
+'mahasiswa'=>'student news',
+'alumni'=>'alumni news',
 'berita'=>'news',
 
 );

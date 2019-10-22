@@ -13,7 +13,7 @@
     </div>
     <div class="prelatife container py-5 my-5">
         <div class="inner-texts text-center d-block py-4">
-            <h1>Akademik</h1>
+            <h1><?php echo Tt::t('front', 'Akademik') ?></h1>
             <?php if (isset($_GET['name']) && $_GET['name'] != ''): ?>
             <h4><?php echo strtoupper(str_replace('-', ' ', $_GET['name'])) ?></h4>
             <?php else: ?>

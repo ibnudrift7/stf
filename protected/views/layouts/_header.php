@@ -61,7 +61,7 @@
           </div>
           <div class="d-inline-block align-middle latsn">
             <?php if (Yii::app()->language == 'en'): ?>
-            <i>Out of Philosophy Clarity</i><br>
+            <i>Ex Philosophia Claritas</i><br>
             <?php else: ?>
             <i>Ex Philosophia Claritas</i><br>
             <?php endif ?>

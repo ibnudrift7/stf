@@ -14,6 +14,7 @@ if (isset($_GET['type'])) {
               $namas = strtolower(str_replace('-', ' ', $type));
               $locah = Tt::t('front', $namas);
               ?>
+
               <?php if (Yii::app()->language == 'en'): ?>
                 <h4>ALL <?php echo strtoupper($locah); ?></h4>
               <?php else: ?>

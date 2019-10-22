@@ -21,7 +21,7 @@
                         <tr>
                             <td>
                                 <div class="kiri">
-                                    <h5><?php echo $value->name ?></h5>
+                                    <h5><?php echo $value->description->title; ?></h5>
                                     <p><?php echo $value->description->content; ?></p>
                                 </div>
                             </td>

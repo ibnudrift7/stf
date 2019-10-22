@@ -53,7 +53,7 @@ class Blog extends CActiveRecord
 			array('writer, image, insert_by, last_update_by', 'length', 'max'=>255),
 			// array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>FALSE, 'on'=>'insert'),
 			// array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'update'),
-			// The following rule is used by search().
+			array('video_url_1, video_url_2, video_url_3','safe'),
 			// Please remove those attributes that should not be searched.
 			array('title, writer_name ,id, active, date_input, date_update, insert_by, last_update_by', 'safe', 'on'=>'search'),
 		);
@@ -87,6 +87,9 @@ class Blog extends CActiveRecord
 			'insert_by' => 'Insert By',
 			'last_update_by' => 'Last Update By',
 			'topik_id' => 'Topik',
+			'video_url_1' => 'Video Feature 1',
+			'video_url_2' => 'Video Feature 2',
+			'video_url_3' => 'Video Feature 3',
 		);
 	}
 
@@ -114,6 +117,10 @@ class Blog extends CActiveRecord
 		$criteria->compare('date_update',$this->date_update,true);
 		$criteria->compare('insert_by',$this->insert_by,true);
 		$criteria->compare('last_update_by',$this->last_update_by,true);
+
+		$criteria->compare('video_url_1',$this->video_url_1, true);
+		$criteria->compare('video_url_2',$this->video_url_2, true);
+		$criteria->compare('video_url_3',$this->video_url_3, true);
 
 		$criteria->compare('title',$this->title, true);
 		$criteria->compare('pastor_description.title',$this->writer_name, true);

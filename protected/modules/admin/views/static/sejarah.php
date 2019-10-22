@@ -64,7 +64,7 @@ $this->pageHeader=array(
 					<div class="clearfix" style="height: 1px;"></div>
 				<?php endif ?>
 
-				<?php $type = 'sejarah_hero_title' ?>
+				<?php /*$type = 'sejarah_hero_title' ?>
 				<?php Common::createSetting($type, 'Title', 'text', 'y') ?>
 				<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
 					<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
@@ -86,7 +86,7 @@ $this->pageHeader=array(
 					    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
 					    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
-				<?php endforeach ?>
+				<?php endforeach; */ ?>
 				
 				
 				<div class="divider10"></div>

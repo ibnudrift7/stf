@@ -52,8 +52,8 @@ return array(
 'repositori'=>'repositori',
 
 'komunitas'=>'komunitas',
-'mahasiswa'=>'mahasiswa',
-'alumni'=>'alumni',
-'berita'=>'berita',
+'mahasiswa'=>'berita mahasiswa',
+'alumni'=>'berita alumni',
+'berita'=>'semua berita',
 
 );

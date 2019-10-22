@@ -93,7 +93,7 @@
         $criteria->limit = 4;
         $data = PgTestimonial::model()->findAll($criteria);
         ?>
-        <div class="row">
+        <div class="row justify-content-center">
             <?php foreach ($data as $key => $value): ?>
             <div class="col-md-15 col-30">
                 <div class="box-content">
@@ -136,7 +136,7 @@
                     <h5>Info Kampus</h5>
                     <?php foreach ($data_info as $key => $value): ?>
                     <div class="box-caption">
-                        <h6><?php echo $value->name ?></h6>
+                        <h6><?php echo $value->description->title ?></h6>
                         <p><?php echo $value->description->content; ?></p>
                     </div>
                     <?php endforeach ?>

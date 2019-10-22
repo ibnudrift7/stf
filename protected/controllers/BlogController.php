@@ -92,6 +92,8 @@ class BlogController extends Controller
 		$criteria->order = 'RAND()';
 		$criteria->addCondition('id != :id');
 		$criteria->params[':id'] = $dataBlog->id;
+		$criteria->addCondition('t.topik_id = :sn_topikid');
+		$criteria->params[':sn_topikid'] = intval($dataBlog->topik_id);
 		$dataBlogs = new CActiveDataProvider('Blog', array(
 			'criteria'=>$criteria,
 		    'pagination'=>array(

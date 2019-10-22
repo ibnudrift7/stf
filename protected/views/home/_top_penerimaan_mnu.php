@@ -2,8 +2,8 @@
     <div class="pos-tops_submenu">
         <div class="prelatife container">
             <ul class="list-inline">
-                <li class="list-inline-item <?php if ($actives == 'program-sarjana'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('home/penerimaansarjana', 'type'=> 'program-sarjana')); ?>">PROGRAM SARJANA</a></li>
-                <li class="list-inline-item <?php if ($actives == 'program-pasca-sarjana'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('home/penerimaansarjana', 'type'=> 'program-pasca-sarjana')); ?>">PROGRAM PASCA SARJANA</a></li>
+                <li class="list-inline-item <?php if ($actives == 'program-sarjana'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('home/penerimaansarjana', 'type'=> 'program-sarjana', 'lang'=>Yii::app()->language)); ?>">PROGRAM SARJANA</a></li>
+                <li class="list-inline-item <?php if ($actives == 'program-pasca-sarjana'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('home/penerimaansarjana', 'type'=> 'program-pasca-sarjana', 'lang'=>Yii::app()->language)); ?>">PROGRAM PASCA SARJANA</a></li>
             </ul>
             <div class="clear clearfix"></div>
         </div>
