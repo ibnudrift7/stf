@@ -14,8 +14,9 @@
                 </div>
             </div>
             <div class="col-md-37">
-                <form class="filters_btm_nnda" method="get" action="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil')); ?>">
+                <form class="filters_btm_nnda" method="post" action="<?php echo CHtml::normalizeUrl(array('/home/filters_ft')); ?>">
                     <div class="row">
+
                         <div class="col">
                             <?php 
                             $jenjangstudi = MasterJenjangstudi::model()->findAll();
@@ -24,12 +25,13 @@
                                 <select class="form-control" name="tipe_sarjana" id="exampleFormControlSelect1">
                                 <option selected><?php echo Tt::t('front', 'Pilih Kategori Studi') ?></option>
                                 <?php foreach ($jenjangstudi as $key => $value): ?>
-                                    <option value="<?php echo $value->id ?>"><?php echo $value->nama ?></option>
+                                    <option value="<?php echo $value->nama ?>"><?php echo $value->nama ?></option>
                                 <?php endforeach ?>
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+
+                        <!-- <div class="col">
                             <?php 
                             $kategoristudi = MasterKategoristudi::model()->findAll();
                             ?>
@@ -41,10 +43,11 @@
                                 <?php endforeach ?>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col">
                             <button type="submit" class="submit"><p><?php echo Tt::t('front', 'daftarkan diri anda') ?></p></button>
                         </div>
+
                     </div>
                 </form>
             </div>

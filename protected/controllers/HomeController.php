@@ -1416,7 +1416,24 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	// 	));
 	// }
 
-	//  
+	public function actionFilters_ft()
+	{
+		$this->layout='//layouts/column2';
+		$this->pageTitle = 'Akademik Program '.$this->pageTitle;
+		if ($_POST['tipe_sarjana']) {
+			if ($_POST['tipe_sarjana'] == 'S2') {
+				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>3, 's_category'=>1));
+			} elseif($_POST['tipe_sarjana'] == 'S3') {
+				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>4, 's_category'=>1));
+			} else {
+				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>1, 's_category'=>1));
+			}
+					
+		}
+
+		exit;
+	}
+
 	public function actionAkademikprogramdetil()
 	{
 		$this->layout='//layouts/column2';
