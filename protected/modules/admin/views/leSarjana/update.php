@@ -1,22 +1,22 @@
 <?php
 $this->breadcrumbs=array(
-	'Page Sarjanas'=>array('index'),
+	'Data Sarjana'=>array('index'),
 	// $model->title=>array('view','id'=>$model->id),
 	'Edit',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-minus',
-	'title'=>'PageSarjana',
-	'subtitle'=>'Edit PageSarjana',
+	'title'=>'Data Sarjana',
+	'subtitle'=>'Edit Data Sarjana',
 );
 
 $this->menu=array(
-	array('label'=>'List PageSarjana', 'icon'=>'th-list','url'=>array('index')),
-	array('label'=>'Add PageSarjana', 'icon'=>'plus-sign','url'=>array('create')),
-	// array('label'=>'View PageSarjana', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
+	array('label'=>'List Data Sarjana', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'Add Data Sarjana', 'icon'=>'plus-sign','url'=>array('create')),
+	// array('label'=>'View Data Sarjana', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
 );
 ?>
 
-<?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?><br/><br/>
-<?php echo $this->renderPartial('_form',array('model'=>$model)); ?>
+<?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?><br/>
+<?php echo $this->renderPartial('_form',array('model'=>$model, 'modelCategory'=> $modelCategory)); ?>

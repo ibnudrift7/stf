@@ -1,4 +1,4 @@
-<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'program-sarjana')); ?>
+<?php echo $this->renderPartial('//home/_top_akademik_mnu', array('actives' => 'program-pasca-sarjana')); ?>
 
 <section class="program-sarjana-sec-1">
     <div class="prelative container">
@@ -20,7 +20,7 @@
                                 $names = $value->nama;
                             }
                             ?>
-                            <li <?php if (isset($_GET['s_type']) && $_GET['s_type'] == $value->id): ?>class="active"<?php endif ?>><a href="<?php echo CHtml::normalizeUrl(array('home/akademikprogramsarjana', 's_type'=>$value->id, 's_category'=> 1, 'lang'=>Yii::app()->language)); ?>"><?php echo $names ?></a></li>
+                            <li <?php if (isset($_GET['s_type']) && $_GET['s_type'] == $value->id): ?>class="active"<?php endif ?>><a href="<?php echo CHtml::normalizeUrl(array('home/akademikprogramdetil', 's_type'=>$value->id, 's_category'=> $_GET['s_category'], 'lang'=>Yii::app()->language)); ?>"><?php echo $names ?></a></li>
                             <?php endforeach ?>
                         </ul>
                         <div class="clear"></div>
@@ -46,13 +46,13 @@
             <div class="col-md-60">
                 <div class="box-judul">
                     <?php 
-                    $dns_category = PrdCategoryDescription::model()->find('category_id = :categ_id', array(':categ_id'=>1));
+                    $dns_category = PrdCategoryDescription::model()->find('category_id = :categ_id', array(':categ_id'=>$_GET['s_category']));
                     ?>
                     <?php if (Yii::app()->language == 'en'): ?>
-                    <h4><?php echo 'Program '. $dns_category->name ?></h4>
+                    <h4><?php echo $dns_category->name ?></h4>
                     <p class="subtitle"><b><?php echo ucwords($data_content->title_en) ?></b></p>    
                     <?php else: ?>
-                    <h4><?php echo 'Program '.$dns_category->name ?></h4>
+                    <h4><?php echo $dns_category->name ?></h4>
                     <p class="subtitle"><b><?php echo ucwords($data_content->title) ?></b></p>
                     <?php endif ?>
                 </div>

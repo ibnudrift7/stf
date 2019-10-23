@@ -1422,7 +1422,8 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		$this->layout='//layouts/column2';
 
 		$this->pageTitle = 'Akademik Program Detil '.$this->pageTitle;
-		$this->render('akademik_program_detil', array(
+		// $this->render('akademik_program_detil', array(
+		$this->render('akademik_program_detil2', array(
 			'model'=>$model,
 		));
 	}

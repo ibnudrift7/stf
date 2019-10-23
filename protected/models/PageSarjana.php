@@ -42,7 +42,7 @@ class PageSarjana extends CActiveRecord
 			array('type_kategori', 'required'),
 			array('type_kategori, category_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>225),
-			array('subtitle, content', 'safe'),
+			array('subtitle, content, title_en, subtitle_en, content_en', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, type_kategori, category_id, title, subtitle, content', 'safe', 'on'=>'search'),
@@ -69,9 +69,12 @@ class PageSarjana extends CActiveRecord
 			'id' => 'ID',
 			'type_kategori' => 'Type Kategori',
 			'category_id' => 'Category',
-			'title' => 'Title',
-			'subtitle' => 'Subtitle',
-			'content' => 'Content',
+			'title' => 'Title Indonesia',
+			'subtitle' => 'Subtitle Indonesia',
+			'content' => 'Content Indonesia',
+			'title_en' => 'Title English',
+			'subtitle_en' => 'Subtitle English',
+			'content_en' => 'Content English',
 		);
 	}
 

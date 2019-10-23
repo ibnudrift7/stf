@@ -69,21 +69,25 @@ foreach ($modelCategory as $key => $value) {
 						</select>
 					</div>
 				</div>
-<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/asset/js/multiselect/multiselect.min.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-    $('#multifilter').multiselect({
-        search: {
-            left: '<input type="text" name="q" class="form-control span12" placeholder="Search..." />',
-            right: '<input type="text" name="q" class="form-control span12" placeholder="Search..." />',
-        },
-        fireSearch: function(value) {
-            return value.length > 1;
-        }
-    });
-    $('#multifilter_rightSelected').click();
-});
-</script>
+
+				<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/asset/js/multiselect/multiselect.min.js"></script>
+				<script type="text/javascript">
+				jQuery(document).ready(function($) {
+				    
+				    $('#multifilter').multiselect({
+				        search: {
+				            left: '<input type="text" name="q" class="form-control span12" placeholder="Search..." />',
+				            right: '<input type="text" name="q" class="form-control span12" placeholder="Search..." />',
+				        },
+				        fireSearch: function(value) {
+				            return value.length > 1;
+				        }
+				    });
+				    $('#multifilter_rightSelected').click();
+
+				});
+				</script>
+
 		    </div>
 		</div>
 		<div class="divider15"></div>

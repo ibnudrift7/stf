@@ -114,7 +114,7 @@
 
 <?php $this->endWidget(); ?>
 <script type="text/javascript">
-$('.multilang2').multiLang({
+jQuery('.multilang2').multiLang({
 	target: '.myLanguage2',
 });
 </script>

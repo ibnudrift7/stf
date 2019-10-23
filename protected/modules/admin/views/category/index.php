@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
+	'Category'=>array('index'),
 );
 $this->pageHeader=array(
 	'icon'=>'fa fa-tags',
 	'title'=>'Product',
-	'subtitle'=>'Category Product',
+	'subtitle'=>'Category',
 ); 
 $bread = PrdCategory::model()->getBreadcrump($_GET['parent'], $this->languageID);
 $bread = array_reverse($bread,true);

@@ -62,8 +62,8 @@
         <li class="dropdown"><a href="#"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Data Sarjana') ?></a>
             <ul>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/masterKategoristudi')); ?>">Studi</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/masterJenjangstudi')); ?>">Jenjang</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/programSarjana')); ?>">Program Sarjana</a></li>
+                <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/masterJenjangstudi')); ?>">Jenjang</a></li> -->
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/LeSarjana')); ?>">Sarjana Data</a></li>
             </ul>
         </li>
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/extensioncourse')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Extension Course') ?></a></li>

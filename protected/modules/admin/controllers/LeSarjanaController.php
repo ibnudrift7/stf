@@ -49,6 +49,9 @@ class LeSarjanaController extends ControllerAdmin
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$modelCategory = array();
+		$modelCategory = PrdCategoryProduct::model()->findAll();
+
 		if(isset($_POST['PageSarjana']))
 		{
 			$model->attributes=$_POST['PageSarjana'];
@@ -71,6 +74,7 @@ class LeSarjanaController extends ControllerAdmin
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelCategory'=>$modelCategory,
 		));
 	}
 
@@ -86,6 +90,9 @@ class LeSarjanaController extends ControllerAdmin
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$modelCategory = array();
+		$modelCategory = PrdCategoryProduct::model()->findAll('product_id = :id ORDER BY id', array(':id'=>$model->id));
+
 		if(isset($_POST['PageSarjana']))
 		{
 			$model->attributes=$_POST['PageSarjana'];
@@ -93,6 +100,9 @@ class LeSarjanaController extends ControllerAdmin
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
+					// echo "<pre>";
+					// print_r($model->attributes);
+					// exit;
 					$model->save();
 					Log::createLog("LeSarjanaController Update $model->id");
 					Yii::app()->user->setFlash('success','Data Edited');
@@ -108,6 +118,7 @@ class LeSarjanaController extends ControllerAdmin
 
 		$this->render('update',array(
 			'model'=>$model,
+			'modelCategory'=>$modelCategory,
 		));
 	}
 
