@@ -17,16 +17,28 @@ $this->pageTitle = ucwords($names).' '.$this->pageTitle;
                     <h3><?php echo strtoupper( Tt::t('front', $names) ); ?></h3>
                     <?php 
                     $link = '#';
+                    $texts = '';
                     if ($type == 'perpustakaan') {
                         $link = $this->setting['link_eks_perpustakaan'];
+                        $texts = $this->setting['eks_perpustakaan_content'];
+
                     } else if($type == 'jurnal-diskursus') {
                         $link = $this->setting['link_eks_jurnaldis'];
+                        $texts = $this->setting['eks_jurnaldis_content'];
+
                     } else if($type == 'publikasi') {
                         $link = $this->setting['link_eks_publikasi'];
+                        $texts = $this->setting['eks_publikasi_content'];
+
                     } else if($type == 'repositori') {
                         $link = $this->setting['link_eks_repositori'];
+                        $texts = $this->setting['eks_repositori_content'];
                     }
                     ?>
+                    <div class="blc_ddesc pb-3">
+                        <?php echo $texts ?>
+                    </div>
+
                     <?php if (Yii::app()->language == 'en'): ?>
                     <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School Library</p>    
                     <?php else: ?>

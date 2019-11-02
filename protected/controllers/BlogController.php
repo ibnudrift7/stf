@@ -30,19 +30,13 @@ class BlogController extends Controller
 		$criteria->params[':language_id'] = $this->languageID;
 		$criteria->order = 'date_input DESC';
 		
-		if ( isset($_GET['type']) AND $_GET['type'] != '' ) {
-			switch ($_GET['type']) {
-				case 'alumni':
-					$numbers = 3;
-					break;
-				case 'berita':
-					$numbers = 1;
-					break;
-				
-				default:
-					$numbers = 2;
-					break;
+		if ( isset($_GET['type']) AND $_GET['type'] != '' AND $_GET['type'] != 'berita' ) {
+			if ($_GET['type'] == 'alumni') {
+				$numbers = 3;
+			} elseif ($_GET['type'] == 'mahasiswa') {
+				$numbers = 2;
 			}
+			
 			$criteria->addCondition('t.topik_id = :sn_topikid');
 			$criteria->params[':sn_topikid'] = intval($numbers);
 		}

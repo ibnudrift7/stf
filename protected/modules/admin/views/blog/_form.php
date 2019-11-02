@@ -93,7 +93,7 @@
 			// }
 
 			$res_product = array(
-							1=>'berita',
+							// 1=>'berita',
 							2=>'mahasiswa',
 							3=>'alumni',
 							);

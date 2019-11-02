@@ -1422,9 +1422,9 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 		$this->pageTitle = 'Akademik Program '.$this->pageTitle;
 		if ($_POST['tipe_sarjana']) {
 			if ($_POST['tipe_sarjana'] == 'S2') {
-				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>3, 's_category'=>1));
+				$this->redirect(array('//home/akademikprogramdetil', 's_type'=>1, 's_category'=>3));
 			} elseif($_POST['tipe_sarjana'] == 'S3') {
-				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>4, 's_category'=>1));
+				$this->redirect(array('//home/akademikprogramdetil', 's_type'=>1, 's_category'=>4));
 			} else {
 				$this->redirect(array('//home/akademikprogramsarjana', 's_type'=>1, 's_category'=>1));
 			}
@@ -1473,6 +1473,16 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 
 		$this->pageTitle = 'Akademik Program Pasca Sarjana '.$this->pageTitle;
 		$this->render('akademik_program_pasca', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionContactexten()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Contact'.$this->pageTitle;
+		$this->render('contact-exten', array(
 			'model'=>$model,
 		));
 	}

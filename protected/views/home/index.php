@@ -35,7 +35,7 @@
         $criteria->addCondition('t.topik_id = :sn_topikid');
         $criteria->params[':sn_topikid'] = intval(1);
         // }
-
+        $criteria->limit = 3;
         $data = Blog::model()->findAll($criteria);
         ?>
         <div class="row">
@@ -151,7 +151,9 @@
                 <div class="box-content-right">
                     <h4>Kegiatan Sekolah</h4>
                     <?php 
-                    $alls_data = KegiatanUniv::model()->findAll();
+                    $criteria = new CDbCriteria;
+                    // $criteria->order = 't.id DESC';
+                    $alls_data = KegiatanUniv::model()->findAll($criteria);
                     ?>
                     <?php foreach ($alls_data as $key => $value): ?>
                     <div class="row no-gutters">
