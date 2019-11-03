@@ -21,13 +21,13 @@
     <?php endif; ?>
 
     <div class="row default">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
             <label for="exampleInputName">Name</label>
             <?php echo $form->textField($model, 'name', array('class'=>'form-control')); ?>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         
         <div class="form-group">
             <label for="exampleInputEmail">Email</label>
@@ -37,45 +37,60 @@
     </div>
 
     <div class="row default">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
             <label for="exampleInputPhone">Phone</label>
             <?php echo $form->textField($model, 'phone', array('class'=>'form-control')); ?>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-30 col-sm-30">
         <div class="form-group">
-            <label for="exampleInputCompany">CV.</label>
-            <?php echo $form->fileField($model, 'curiculum_vitae', array('class'=>'form-control')); ?>
+            <label for="exampleInputCompany">Extension</label>
+            <?php // echo $form->radioButtonList($model, 'extension', array('Teologi', 'Filsafat'),  array('class'=>'form-control')); ?>
+            <div class="clear"></div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ContactForm[extension]" id="inlineRadio1" value="Teologi">
+              <label class="form-check-label" for="inlineRadio1">Teologi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ContactForm[extension]" id="inlineRadio2" value="Filsafat">
+              <label class="form-check-label" for="inlineRadio2">Filsafat</label>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="row default">
-      <div class="col-md-12 col-sm-12 col-lg-12">
+      <div class="col-md-30">
         <div class="form-group">
-            <label for="exampleInputMessage">Message</label> 
-            <div class="clear"></div>
-            <?php echo $form->textArea($model, 'body', array('class'=>'form-control', 'rows'=>4)); ?>
+            <label for="exampleInputPhone">Tanggal Lahir</label>
+            <?php echo $form->textField($model, 'tanggal_lahir', array('class'=>'form-control')); ?>
         </div>
       </div>
-      <div class="clear"></div>
+      <div class="col-md-30">
+        <div class="form-group">
+            <label for="exampleInputPhone">Pendidikan Terakhir</label>
+            <?php echo $form->textField($model, 'pendidikan_terakhir', array('class'=>'form-control')); ?>
+        </div>
+      </div>
+    </div>
 
-      <div class="col-md-12 col-sm-12 col-lg-12">
+    <div class="row default">
+      <div class="col-md-60 col-sm-60 col-lg-60">
         <div class="row default">
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-30 col-sm-30">
             <div class="fright-inpd">
               <div class="form-group mb-0">
                 <div class="fleft">
-                  <div class="g-recaptcha" data-sitekey="6Lc5ExQUAAAAALB4V8LnnmdlQT8TYGIqNqXWZ_Rf"></div>
+                  <div class="g-recaptcha" data-sitekey="6LcJGr0UAAAAAPbWOfqycF8feudUpPFhRmC5s0Tv"></div>
                 </div>
                 <div class="clear"></div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-30 col-sm-30">
             <div class="fright">
-              <button type="submit" class="btn btn-default btns-submit-bt"></button>
+              <button type="submit" class="btn btn-dark btns-submit-bt">SUBMIT</button>
             </div>
           </div>
         </div>

@@ -6,17 +6,17 @@ $url = Yii::app()->request->hostInfo;
 <font face="tahoma, arial"> 
 <table border="0" cellpadding="0" cellspacing="0" >
 	<tr>
-		<td colspan="3">Detail Contact</td>
+		<td colspan="3">Detail Information Extension</td>
 	</tr>
 	<tr>
-		<td>First Name</td>
+		<td>Name</td>
 		<td>:</td>
-		<td><?php echo $model->first_name; ?></td>
+		<td><?php echo $model->name; ?></td>
 	</tr>
 	<tr>
-		<td>Last Name</td>
+		<td>Phone</td>
 		<td>:</td>
-		<td><?php echo $model->last_name; ?></td>
+		<td><?php echo $model->phone; ?></td>
 	</tr>
 	
 	<tr>
@@ -25,11 +25,22 @@ $url = Yii::app()->request->hostInfo;
 		<td><?php echo $model->email; ?></td>
 	</tr>
 	<tr>
-		<td>Message</td>
+		<td>Extension</td>
 		<td>:</td>
-		<td><?php echo nl2br($model->body); ?>
-		</td>
+		<td><?php echo $model->extension; ?></td>
 	</tr>
+	<tr>
+		<td>Tanggal Lahir</td>
+		<td>:</td>
+		<td><?php echo $model->tanggal_lahir; ?></td>
+	</tr>
+	<tr>
+		<td>Pendidikan Terakhir</td>
+		<td>:</td>
+		<td><?php echo $model->pendidikan_terakhir; ?></td>
+	</tr>
+	
+	
 	<tr>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>

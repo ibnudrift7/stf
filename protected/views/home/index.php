@@ -31,10 +31,9 @@
         $criteria->params[':language_id'] = $this->languageID;
         $criteria->order = 'date_input DESC';
         
-        // if ( isset($_GET['topik']) AND $_GET['topik'] != '' ) {
-        $criteria->addCondition('t.topik_id = :sn_topikid');
-        $criteria->params[':sn_topikid'] = intval(1);
-        // }
+        // $criteria->addCondition('t.topik_id = :sn_topikid');
+        // $criteria->params[':sn_topikid'] = intval(1);
+        
         $criteria->limit = 3;
         $data = Blog::model()->findAll($criteria);
         ?>
@@ -69,6 +68,17 @@
     </div>
 </section>
 
+<?php 
+$criteria = new CDbCriteria;
+$criteria->with = array('description');
+$criteria->addCondition('status = "1"');
+$criteria->addCondition('description.language_id = :language_id');
+$criteria->params[':language_id'] = $this->languageID;
+$criteria->order = 't.id DESC';
+$criteria->limit = 4;
+$data = PgTestimonial::model()->findAll($criteria);
+?>
+<?php if (count($data) > 0): ?>
 <section class="home-sec-2">
     <div class="prelative container">
         <div class="py-3"></div>
@@ -83,16 +93,6 @@
                 </div>
             </div>
         </div>
-        <?php 
-        $criteria = new CDbCriteria;
-        $criteria->with = array('description');
-        $criteria->addCondition('status = "1"');
-        $criteria->addCondition('description.language_id = :language_id');
-        $criteria->params[':language_id'] = $this->languageID;
-        $criteria->order = 't.id DESC';
-        $criteria->limit = 4;
-        $data = PgTestimonial::model()->findAll($criteria);
-        ?>
         <div class="row justify-content-center">
             <?php foreach ($data as $key => $value): ?>
             <div class="col-md-15 col-30">
@@ -116,6 +116,7 @@
         </div>
     </div>
 </section>
+<?php endif ?>
 
 <section class="home-sec-3">
     <div class="prelative container">

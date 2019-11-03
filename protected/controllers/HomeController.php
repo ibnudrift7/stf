@@ -1449,8 +1449,72 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Akademik Program Extention '.$this->pageTitle;
+		$this->pageTitle = 'Akademik Program Extension '.$this->pageTitle;
 		$this->render('akademik_program_extention', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionProgramextensionform()
+	{
+		$this->layout='//layouts/column2';
+		$this->pageTitle = 'Akademik Program Extension '.$this->pageTitle;
+
+		$model = new ContactForm;
+		$model->scenario = 'insert';
+
+		if(isset($_POST['ContactForm']))
+		{
+			$model->attributes=$_POST['ContactForm'];
+			$status = true;
+	        $secret_key = "6LcJGr0UAAAAAAjqby74dES0bfAe8rkcODU8ldtt";
+	        $str_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR'];
+			
+			$ch = curl_init(); 
+			curl_setopt($ch, CURLOPT_URL, $str_url);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+			$output = curl_exec($ch); 
+			curl_close($ch);
+
+	        $response = json_decode($output);
+	        if($response->success==false)
+	        {
+	          $status = false;
+	          $model->addError('verifyCode', 'Verify you are not robbot');
+	        }
+
+			if($status AND $model->validate())
+			{
+				// config email
+				$messaged = $this->renderPartial('//mail/contact3',array(
+					'model'=>$model,
+				),TRUE);
+				$config = array(
+					'to'=>array($model->email, $this->setting['email'], 'ibnudrift@gmail.com'),
+					'subject'=>'['.Yii::app()->name.'] Registration Extension from '.$model->email,
+					'message'=>$messaged,
+				);
+				if ($this->setting['contact_cc']) {
+					$config['cc'] = array($this->setting['contact_cc']);
+				}
+				if ($this->setting['contact_bcc']) {
+					$config['bcc'] = array($this->setting['contact_bcc']);
+				}
+				
+				// echo "<pre>";
+				// print_r($config);
+				// exit;
+
+				// kirim email
+				Common::mail($config);
+
+				Yii::app()->user->setFlash('success','Thank you for contact us. We will respond to you as soon as possible.');
+				$this->refresh();
+			}
+
+		}
+
+		$this->render('akademik_program_extention_form', array(
 			'model'=>$model,
 		));
 	}

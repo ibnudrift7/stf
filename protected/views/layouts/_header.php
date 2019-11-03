@@ -18,7 +18,7 @@
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/tentangkami', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Tentang Kami') ?></a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademiksiadri', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Akademik') ?></a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/penelitian', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Penelitian') ?></a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=> 'berita', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Komunitas') ?></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=> 'mahasiswa', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Komunitas') ?></a></li>
             </ul>
           </div>
         </div>
