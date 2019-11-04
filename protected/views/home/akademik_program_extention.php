@@ -29,7 +29,7 @@
                         <p><?php echo $value->content_id ?></p>
                     <?php endif ?>
                     <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/images/extensi/'. $value->image ?>"><?php echo Tt::t('front', 'Lihat Pdf') ?></a></button>
-                    <button class="daftar"><a href="<?php echo $value->register_link ?>"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
+                    <button class="daftar"><a href="<?php echo CHtml::normalizeUrl(array('/home/programextensionform')); ?>"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
                 </div>
                 <?php endforeach ?>
 
