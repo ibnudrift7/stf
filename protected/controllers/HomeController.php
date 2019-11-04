@@ -1490,20 +1490,12 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 					'model'=>$model,
 				),TRUE);
 
-				if ($model->extension == 'Teologi') {
-					$config = array(
-						'to'=>array($model->email, $this->setting['email_extenion_teologi'], 'ibnudrift@gmail.com'),
-						'subject'=>'['.Yii::app()->name.'] Registration Extension Teologi from '.$model->email,
-						'message'=>$messaged,
-					);
-				} else {
-					$config = array(
-						'to'=>array($model->email, $this->setting['email_extenion_filsafat'], 'ibnudrift@gmail.com'),
-						'subject'=>'['.Yii::app()->name.'] Registration Extension Filsafat from '.$model->email,
-						'message'=>$messaged,
-					);
-				}
-				
+				$config = array(
+					'to'=>array($model->email, $this->setting['email_extenion_teologi'], 'ibnudrift@gmail.com'),
+					'subject'=>'['.Yii::app()->name.'] Registration Extension from '.$model->email,
+					'message'=>$messaged,
+				);
+								
 
 				if ($this->setting['contact_cc']) {
 					$config['cc'] = array($this->setting['contact_cc']);
