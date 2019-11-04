@@ -40,9 +40,9 @@ $this->pageTitle = ucwords($names).' '.$this->pageTitle;
                     </div>
 
                     <?php if (Yii::app()->language == 'en'): ?>
-                    <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School Library</p>    
+                    <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School <?php echo ucwords(str_replace('-', ' ', $_GET['type'])); ?></p>    
                     <?php else: ?>
-                    <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke Perpustakaan Sekolah Tinggi Filsafat Driyarkara</p>
+                    <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke <?php echo ucwords(str_replace('-', ' ', $_GET['type'])); ?> Sekolah Tinggi Filsafat Driyarkara</p>
                     <?php endif ?>
                 </div>
             </div>

@@ -6,7 +6,7 @@
                     <?php 
                     $n_wa = str_replace('08', '628',  str_replace(' ', '', $this->setting['contact_wa']));
                     ?>
-                    <a href="https://wa.me/<?php echo $n_wa ?>"><p><b>Whatsapp Hotline. </b> (click to chat)</a></p>
+                    <a href="https://wa.me/<?php echo $n_wa ?>"><p><b>Whatsapp Hotline. <?php echo $this->setting['contact_wa'] ?></b> (click to chat)</a></p>
                 </div>
                 <div class="box-contact">
                     <div class="telmi">
