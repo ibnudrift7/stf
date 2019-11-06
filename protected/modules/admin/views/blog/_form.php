@@ -96,6 +96,7 @@
 							// 1=>'berita',
 							2=>'mahasiswa',
 							3=>'alumni',
+							4=>'kampus',
 							);
 			?>
 			<?php // echo $form->textFieldRow($model, 'link', array('class'=>'form-control span6',)); ?>

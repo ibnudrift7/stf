@@ -5,6 +5,7 @@ if (isset($_GET['type'])) {
     $type = htmlspecialchars($_GET['type']);
     $names = str_replace('-', ' ', $type);
 }
+
 $this->pageTitle = ucwords($names).' '.$this->pageTitle;
 ?>
 <?php echo $this->renderPartial('//home/_top_penelitian_mnu', array('actives' => $type)); ?>
@@ -40,9 +41,9 @@ $this->pageTitle = ucwords($names).' '.$this->pageTitle;
                     </div>
 
                     <?php if (Yii::app()->language == 'en'): ?>
-                    <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School <?php echo ucwords(str_replace('-', ' ', $_GET['type'])); ?></p>    
+                    <p>Please <a target="_blank" href="<?php echo $link ?>">click here</a> to enter the Driyarkara Philosophy High School <?php echo ucwords(Tt::t('front', strtolower($_GET['type']))); ?></p>    
                     <?php else: ?>
-                    <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke <?php echo ucwords(str_replace('-', ' ', $_GET['type'])); ?> Sekolah Tinggi Filsafat Driyarkara</p>
+                    <p>Silahkan <a target="_blank" href="<?php echo $link ?>">klik di sini</a>  untuk masuk ke <?php echo ucwords(Tt::t('front', strtolower($_GET['type']))); ?> Sekolah Tinggi Filsafat Driyarkara</p>
                     <?php endif ?>
                 </div>
             </div>

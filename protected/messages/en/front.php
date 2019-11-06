@@ -55,5 +55,6 @@ return array(
 'mahasiswa'=>'student news',
 'alumni'=>'alumni news',
 'berita'=>'news',
+'kampus'=>'Campus',
 
 );

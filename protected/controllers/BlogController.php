@@ -35,6 +35,8 @@ class BlogController extends Controller
 				$numbers = 3;
 			} elseif ($_GET['type'] == 'mahasiswa') {
 				$numbers = 2;
+			} elseif ($_GET['type'] == 'kampus') {
+				$numbers = 4;
 			}
 			
 			$criteria->addCondition('t.topik_id = :sn_topikid');

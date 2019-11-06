@@ -4,7 +4,7 @@
             <ul class="list-inline">
                 <li class="list-inline-item <?php if ($actives == 'mahasiswa'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'mahasiswa', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'mahasiswa') ?></a></li>
                 <li class="list-inline-item <?php if ($actives == 'alumni'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'alumni', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'alumni') ?></a></li>
-                <!-- <li class="list-inline-item <?php if ($actives == 'berita'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'berita', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'berita') ?></a></li> -->
+                <li class="list-inline-item <?php if ($actives == 'kampus'): ?>active<?php endif; ?>"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=>'kampus', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'kampus') ?></a></li>
             </ul>
             <div class="clear clearfix"></div>
         </div>
