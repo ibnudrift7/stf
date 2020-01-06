@@ -8,7 +8,7 @@
     $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
 <header class="head <?php if ($active_menu_pg != 'home/index'): ?>head_inisdes<?php endif ?>">
-  <div class="tops_head">
+  <div class="tops_head d-none d-sm-block">
     <div class="prelatife container">
       <div class="row">
         <div class="col-md-25">
@@ -43,7 +43,7 @@
       <div class="clear"></div>
     </div>
   </div>
-  <div class="bottoms_head">
+  <div class="bottoms_head  d-none d-sm-block">
     <div class="prelatife container">
       <div class="row">
         <div class="col-md-40">
@@ -76,5 +76,30 @@
       <div class="clear"></div>
     </div>
   </div>
+
+  <div class="d-block d-sm-none fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="<?php echo $this->assetBaseurl ?>heads_logo.png" alt="" class="img img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSmenu" aria-controls="navbarSmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSmenu">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Beranda') ?></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/tentangkami', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Tentang Kami') ?></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/akademiksiadri', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Akademik') ?></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/penelitian', 'type'=>'perpustakaan', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Penelitian') ?></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/blog/index', 'type'=> 'mahasiswa', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'Komunitas') ?></a></li>
+
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'HUBUNGI KAMI') ?></a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/penerimaansarjana', 'lang'=>Yii::app()->language)); ?>"><?php echo Tt::t('front', 'PENERIMAAN') ?></a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+
   <div class="clear"></div>
 </header>
