@@ -15,14 +15,12 @@
     $slide = Slide::model()->with(array('description'))->findAll($criteria);
 ?>
 <div class="fcs-wrapper outers_fcs_wrapper prelatife wrapper-slide">
-    <!-- <img class="w-100 d-none d-sm-block" src="<?php echo $this->assetBaseurl; ?>home-sec-1_02.jpg" alt="First slide"> -->
-    <!-- <img class="w-100 d-block d-sm-none" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/slide/'. 'a94ea-fcs-1.jpg' , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="First slide"> -->
     <div id="myCarousel_home" class="carousel carousel-fade" data-ride="carousel" data-interval="4500">
             <div class="carousel-inner">
                 <?php foreach ($slide as $key => $value): ?>
                 <div class="carousel-item <?php if($key == 0): ?>active<?php endif ?> home-slider-new">
                     <img class="w-100 d-none d-sm-block" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(1920,850, '/images/slide/'. $value->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="First slide">
-                    <img class="w-100 d-block d-sm-none" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="">
+                    <img class="w-100 d-block d-sm-none" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(600,980, '/images/slide/'. $value->image2 , array('method' => 'adaptiveResize', 'quality' => '90')) ?>" alt="<?php echo $value->image2 ?>">
                 </div>
                 <?php endforeach; ?>
             </div>

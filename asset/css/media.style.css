@@ -39,3 +39,7 @@ section.home-sec-1 button.lihatsemua{
     vertical-align: top;
     border-top: 1px solid #dee2e6;
 }
+
+.alert-success.fade{	
+	opacity: 1 !important;
+}

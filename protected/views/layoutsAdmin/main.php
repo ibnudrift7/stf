@@ -149,21 +149,17 @@
         // tabbed widget
         jQuery('.tabbedwidget').tabs();
         
-        
-
         jQuery('.timepicker').timepicker({
-            timeFormat: 'h:mm p',
+            timeFormat: 'hh:mm p',
             interval: 60,
-            minTime: '8',
-            maxTime: '7:00pm',
-            startTime: '8:00',
+            minTime: '10',
+            maxTime: '6:00pm',
             defaultTime: '11',
+            startTime: '10:00',
             dynamic: false,
             dropdown: true,
             scrollbar: true
         });
-
-
     
     });
 </script>

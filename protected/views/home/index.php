@@ -159,7 +159,7 @@ $data = PgTestimonial::model()->findAll($criteria);
                     <?php foreach ($alls_data as $key => $value): ?>
                     <div class="row no-gutters">
                         <div class="col-md-6 col-6">
-                            <div class="images prelatife">
+                            <div class="images prelatife" data-desc="<?php echo $value->id; ?>">
                                 <img src="<?php echo $this->assetBaseurl; ?>square-tgl.jpg" alt="">
                                 <span><?php echo date('M', strtotime($value->date_event)); ?><br><small><?php echo date('d', strtotime($value->date_event)); ?></small></span>
                             </div>
@@ -171,7 +171,12 @@ $data = PgTestimonial::model()->findAll($criteria);
                                 <?php else: ?>
                                 <h5><?php echo $value->title_id ?></h5>
                                 <?php endif ?>
-                                <p><?php echo date('g:i a', strtotime($value->time_start)); ?> - <?php echo strtolower($value->time_end); ?></p>
+                                <?php 
+                                $starts_date = date('g:i a', strtotime($value->time_start));
+                                $timestamp = strtotime($value->time_start) + ( (intval($value->time_end) * 60) * 60);
+                                $time_ends = date('g:i a', $timestamp);
+                                ?>
+                                <p><?php echo $starts_date; ?> - <?php echo $time_ends; ?></p>
                             </div>
                         </div>
                     </div>

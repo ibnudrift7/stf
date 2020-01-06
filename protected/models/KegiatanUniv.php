@@ -71,7 +71,7 @@ class KegiatanUniv extends CActiveRecord
 			'title_en' => 'Title English',
 			'title_id' => 'Title Indonesia',
 			'time_start' => 'Time Start',
-			'time_end' => 'Time End',
+			'time_end' => 'Duration Time',
 			'date_input' => 'Date Input',
 			'date_event' => 'Date Event',
 		);

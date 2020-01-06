@@ -1234,7 +1234,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 				if ($this->setting['contact_bcc']) {
 					$config['bcc'] = array($this->setting['contact_bcc']);
 				}
-
+				
 				// kirim email
 				Common::mail($config);
 
@@ -1510,7 +1510,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 				// kirim email
 				Common::mail($config);
 
-				Yii::app()->user->setFlash('success','Thank you for contact us. We will respond to you as soon as possible.');
+				Yii::app()->user->setFlash('success','Thank you for sent extension course form. We will respond to you as soon as possible.');
 				$this->refresh();
 			}
 

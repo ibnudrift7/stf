@@ -24,10 +24,33 @@
 
 	<div class="row-fluid">
 		<div class="span5">
-			<?php echo $form->textFieldRow($model,'time_start',array('class'=>'span12 timepicker')); ?>
+			<?php 
+			$noted_time = [
+							'08:00:00'=>'08:00:00',
+							'09:00:00'=>'09:00:00',
+							'10:00:00'=>'10:00:00',
+							'11:00:00'=>'11:00:00',
+							'12:00:00'=>'12:00:00',
+							'13:00:00'=>'13:00:00',
+							'14:00:00'=>'14:00:00',
+							'15:00:00'=>'15:00:00',
+							'16:00:00'=>'16:00:00',
+							'17:00:00'=>'17:00:00',
+							'18:00:00'=>'18:00:00',
+							'19:00:00'=>'19:00:00',
+							'20:00:00'=>'20:00:00',
+							'21:00:00'=>'21:00:00',
+						  ];
+			?>
+			<?php echo $form->dropDownListRow($model,'time_start', $noted_time, array('class'=>'span12')); ?>
 		</div>
 		<div class="span5">
-			<?php echo $form->textFieldRow($model,'time_end',array('class'=>'span12','maxlength'=>225)); ?>
+			<?php if ($model->scenario == 'insert'): ?>
+			<?php
+			$model->time_end = 3;
+			?>
+			<?php endif ?>
+			<?php echo $form->textFieldRow($model,'time_end',array('class'=>'span12 hs_32', 'maxlength'=>225, 'append'=> 'Hours', 'hint'=>'Ex. Input Number duration Time ( 1, 2, 3 - 8) ',)); ?>
 		</div>
 	</div>
 
@@ -58,3 +81,9 @@
 </div>
 
 <?php $this->endWidget(); ?>
+
+<style type="text/css">
+	input.hs_32{
+		height: 32px;
+	}
+</style>

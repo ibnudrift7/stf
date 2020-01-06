@@ -54,6 +54,9 @@ class Slide extends CActiveRecord
 			
 			array('image, image2', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>FALSE, 'on'=>'insert'),
 			array('image, image2', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'update'),
+
+			array('image2', 'safe'),
+			
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('title, writer_name ,id, active, date_input, date_update, insert_by, last_update_by', 'safe', 'on'=>'search'),

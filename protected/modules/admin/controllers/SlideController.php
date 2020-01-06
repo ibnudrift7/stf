@@ -172,11 +172,11 @@ class SlideController extends ControllerAdmin
 		if(isset($_POST['Slide']))
 		{
 			$image = $model->image;//mengamankan nama file
-			// $image2 = $model->image2;//mengamankan nama file
+			$image2 = $model->image2;//mengamankan nama file
 			// $file = $model->file;//mengamankan nama file
 			$model->attributes=$_POST['Slide'];//setting semua nilai
 			$model->image = $image;//mengembalikan nama file
-			// $model->image2 = $image2;//mengembalikan nama file
+			$model->image2 = $image2;//mengembalikan nama file
 
 			unset($modelDesc);
 			$valid=true;
