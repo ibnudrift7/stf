@@ -279,6 +279,9 @@ class StaticController extends ControllerAdmin
 							|| $setting['type'][$key] == 'image/jpeg'
 							|| $setting['type'][$key] == 'image/pjpeg'
 							|| $setting['type'][$key] == 'image/png'
+
+							|| $setting['type'][$key] == 'application/pdf'
+
 							|| $setting['type'][$key] == ''
 						) 
 					)

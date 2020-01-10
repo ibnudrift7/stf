@@ -99,6 +99,19 @@ $this->pageHeader=array(
 					    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
 				<?php endforeach; ?>
+
+				<?php $type = 'file_upload_pdf' ?>
+				<?php Common::createSetting($type, 'File PDF', 'image', 'n') ?>
+				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+				<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+				<p class="help-block">NOTE: File attachment kurang dari 3mb</p>
+				<?php if ($model[$type]['data']->value): ?>
+					<div style="">
+						<img style="height: auto; max-width: 300px;" src="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $model[$type]['data']->value; ?>" alt="">
+						<a target="_blank" href="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $model[$type]['data']->value; ?>" class="download">Clik to download file</a>
+					</div>
+					<div class="clearfix" style="height: 12px;"></div>
+				<?php endif ?>
 				
 				
 				<div class="divider10"></div>
