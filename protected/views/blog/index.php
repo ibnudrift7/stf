@@ -23,7 +23,7 @@ if (isset($_GET['type'])) {
             </div>
         </div>
        
-        <?php if (count($data) > 0): ?>
+        <?php if ( !is_null($data) ): ?>
         <div class="row">
             <?php foreach ($data->getData() as $key => $value): ?>
             <div class="col-md-20">
