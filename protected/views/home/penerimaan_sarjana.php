@@ -12,33 +12,12 @@ if ( isset($_GET['type']) ) {
             <div class="col-md-60">
                 <div class="box-content">
                     <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
-                    <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S2</h3>
+                    <h3><?php echo $this->setting['sarjana_title11'] ?></h3>
                     <?php echo $this->setting['sarjana_content'] ?>
                     <?php else: ?>
-                    <h3>PENERIMAAN / PENDAFTARAN PROGRAM STUDI S1</h3>
+                    <h3><?php echo $this->setting['pascasarjana_title11'] ?></h3>
                     <?php echo $this->setting['pascasarjana_content'] ?>
                     <?php endif ?>
-                    <!-- <h5>Persyaratan Masuk</h5>
-                    <ul>
-                        <li>Lulus tes masuk dengan materi ujian: KECERDASAN BERPIKIR; BAHASA INGGRIS; BAHASA INDONESIA; ILMU 
-                            PENGETAHUAN SOSIAL; WAWANCARA</li>
-                        <li>Memenuhi persyaratan administrasi yang ditentukan oleh Sekretariat Sekolah Tinggi Filsafar Driyarkara</li>
-                    </ul>
-                    <h5>Persyaratan Daftar</h5>
-                    <ul>
-                        <li>Mengisi formulir pendaftaran (Rp. 500.000,-)</li>
-                        <li>Fotocopy ijasah terakhir yang dilegalisasi</li>
-                        <li>Pasfoto hitam-putih 4x6 dan 2x3 (masing-masing 3 lbr)</li>
-                        <li>Fotocopy KTP dan atau Surat Tanda Lapor Diri</li>
-                        <li>Kartu Keluarga (KK)</li>
-                    </ul>
-                    <h5>Informasi Lebih Lanjut</h5>
-                    <div class="kontak">
-                        <p>Whatsapp Hotline. +62 81 650 47575 <a href="#">(click to chat)</a></p>
-                        <p>Tel. +62 21 5047575</p>
-                        <p>Email. admin@driyarkara.ac.id</p>
-                    </div> -->
-
                 </div>
             </div>
         </div>
@@ -51,19 +30,34 @@ if ( isset($_GET['type']) ) {
             <div class="col-md-20">
                 <div class="box-isi">
                     <h5>Tanggal Pendaftaran</h5>
-                    <p>10 Juni – 15 Juli 2019</p>
+                     <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                    <?php // echo $this->setting['sarjana_content'] ?>
+                    <p><?php echo $this->setting['sarjana1_tanggal_masuk'] ?></p>
+                    <?php else: ?>
+                    <p><?php echo $this->setting['sarjana2_tanggal_masuk'] ?></p>
+                    <?php endif ?>
                 </div>
             </div>
             <div class="col-md-20">
                 <div class="box-isi">
                     <h5>Test Masuk</h5>
-                    <p>17 Juli 2019</p>
+                    <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                    <?php // echo $this->setting['sarjana_content'] ?>
+                    <p><?php echo $this->setting['sarjana1_test_masuk'] ?></p>
+                    <?php else: ?>
+                    <p><?php echo $this->setting['sarjana2_test_masuk'] ?></p>
+                    <?php endif ?>
                 </div>
             </div>
             <div class="col-md-20">
                 <div class="box-isi">
                     <h5>Daftar Ulang</h5>
-                    <p>22 - 26 Juli 2019</p>
+                    <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                    <?php // echo $this->setting['sarjana_content'] ?>
+                    <p><?php echo $this->setting['sarjana1_daftar_ulang'] ?></p>
+                    <?php else: ?>
+                    <p><?php echo $this->setting['sarjana2_daftar_ulang'] ?></p>
+                    <?php endif ?>
                 </div>
             </div>
         </div>
@@ -71,13 +65,24 @@ if ( isset($_GET['type']) ) {
             <div class="col-md-20">
                 <div class="box-isi">
                     <h5>Kuliah Awal</h5>
-                    <p>19 Agustus 2019</p>
+                    <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                    <?php // echo $this->setting['sarjana_content'] ?>
+                    <p><?php echo $this->setting['sarjana1_kuliah_awal'] ?></p>
+                    <?php else: ?>
+                    <p><?php echo $this->setting['sarjana2_kuliah_awal'] ?></p>
+                    <?php endif ?>
                 </div>
             </div>
             <div class="col-md-20">
                 <div class="box-isi">
                     <h5>Formulir Pendaftaran</h5>
-                    <a href="">
+                    <?php if ($_GET['type'] == 'program-pasca-sarjana'): ?>
+                        <?php $file_nm = $this->setting['sarjana1_form_diterima']; ?>
+                    <?php else: ?>
+                        <?php $file_nm = $this->setting['sarjana2_form_diterima']; ?>
+                    <?php endif ?>
+
+                    <a target="_blank" download href="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $file_nm; ?>">
                         <p>Download</p>
                         <img src="<?php echo $this->assetBaseurl; ?>download.png" alt="">
                     </a>

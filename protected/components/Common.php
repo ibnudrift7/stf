@@ -10,7 +10,7 @@ class Common {
     public static function mail($config = array())
     {
         // bila from tidak di setting
-        $config['from'] = ($config['from']=='')?'test@markdesign.net':$config['from'];
+        $config['from'] = ($config['from']=='')?'sender@driyarkara.ac.id':$config['from'];
         $config['bcc'] = ( empty($config['bcc']) )? array():$config['bcc'];
 
         $config['to'] = ($config['to']=='')?array():$config['to'];

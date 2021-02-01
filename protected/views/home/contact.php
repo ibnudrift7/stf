@@ -9,8 +9,7 @@
                     <div class="py-1"></div>
 
                     <p><?php echo nl2br($this->setting['contact_content']) ?></p>
-                    <?php echo $this->renderPartial('//home/_form_contact2', array('model'=> $model)); ?>                    
-
+                    <?php echo $this->renderPartial('//home/_form_contact2', array('model'=> $model)); ?>
                     <div class="clear clearfix"></div>
                 </div>
             </div>

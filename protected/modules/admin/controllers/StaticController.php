@@ -153,6 +153,17 @@ class StaticController extends ControllerAdmin
 		));
 	}
 
+	public function actionMagisterform()
+	{
+		$model = Setting::model()->getModelSetting('data');
+
+		$model = $this->loadData($model);
+
+		$this->render('magis_form',array(
+			'model'=>$model,
+		));
+	}
+
 	public function actionAbout()
 	{
 		$model = Setting::model()->getModelSetting('data');

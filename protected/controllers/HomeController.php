@@ -1448,8 +1448,8 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	public function actionAkademikprogramextension()
 	{
 		$this->layout='//layouts/column2';
-
 		$this->pageTitle = 'Akademik Program Extension '.$this->pageTitle;
+
 		$this->render('akademik_program_extention', array(
 			'model'=>$model,
 		));

@@ -29,7 +29,8 @@
                         <p><?php echo $value->content_id ?></p>
                     <?php endif ?>
                     <button class="baca"><a target="_blank" href="<?php echo Yii::app()->baseUrl.'/images/extensi/'. $value->image ?>"><?php echo Tt::t('front', 'Lihat Pdf') ?></a></button>
-                    <button class="daftar"><a href="<?php echo CHtml::normalizeUrl(array('/home/programextensionform')); ?>"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
+                    <?php //echo CHtml::normalizeUrl(array('/home/programextensionform')); ?>
+                    <button class="daftar"><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=zj0sevSvtk2BcHxAb3ED6IoAziwMwYFGkZxliu6WQbBUQ0FMNzYwNzFPSlFMV09FUUIxN1BROEc1Ry4u"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
                 </div>
                 <?php endforeach ?>
 

@@ -41,7 +41,16 @@
                     <h5><?php echo $value->description->name ?></h5>
                     <div class="py-2"></div>
                     <button class="baca"><a href="<?php echo CHtml::normalizeUrl(array('/home/akademikprogramdetil', 's_category'=>$value->id, 's_type'=> 1 )); ?>"><?php echo Tt::t('front', 'Baca Lebih Lanjut') ?></a></button>
-                    <button class="daftar"><a target="_blank" href="<?php echo CHtml::normalizeUrl(array('/home/penerimaansarjana', 'type'=> 'program-pasca-sarjana')); ?>"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
+                    <?php 
+                    $n_link = '';
+                    if ($key == 0) {
+                        $n_link = $this->setting['sarjana_magis_link_1'];
+                    } else {
+                        $n_link = $this->setting['sarjana_magis_link_2'];
+                    }
+                    
+                    ?>
+                    <button class="daftar"><a target="_blank" href="<?php echo $n_link ?>"><?php echo Tt::t('front', 'Mendaftar') ?></a></button>
                     <div class="py-2"></div>
                 </div>
                 <?php endforeach ?>

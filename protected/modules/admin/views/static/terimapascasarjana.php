@@ -1,13 +1,13 @@
 <?php
 $this->breadcrumbs=array(
 	'setting'=>array('/admin/setting/index'),
-	'Penerimaan Pasca Sarjana',
+	'Penerimaan Sarjana',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-info',
-	'title'=>'Penerimaan Pasca Sarjana',
-	'subtitle'=>'Penerimaan Pasca Sarjana',
+	'title'=>'Penerimaan Sarjana',
+	'subtitle'=>'Penerimaan Sarjana',
 );
 ?>
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
@@ -88,6 +88,18 @@ $this->pageHeader=array(
 				
 				<div class="row-fluid">
 					<div class="span6">
+						<?php $type = 'pascasarjana_title11' ?>
+						<?php Common::createSetting($type, 'Title', 'text', 'y') ?>
+						<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
+							<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
+								<label class="control-label required" for="Setting_<?php echo $type ?>_<?php echo $value->code ?>"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+								<input value="<?php echo $model[$type]['desc'][$value->code]->value ?>" type="text" id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span10">
+
+							    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
+							    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
+							</div>
+						<?php endforeach ?>
+
 						<?php $type = 'pascasarjana_content' ?>
 						<?php Common::createSetting($type, 'Content', 'text', 'y') ?>
 						<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
@@ -99,7 +111,43 @@ $this->pageHeader=array(
 							    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 							</div>
 						<?php endforeach ?>
-						
+					</div>
+					<div class="span6">
+						<?php $type = 'sarjana2_tanggal_masuk' ?>
+						<?php Common::createSetting($type, 'Tanggal Masuk', 'text', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<div class="divider10"></div>
+
+						<?php $type = 'sarjana2_test_masuk' ?>
+						<?php Common::createSetting($type, 'Test Masuk', 'text', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<div class="divider10"></div>
+
+						<?php $type = 'sarjana2_daftar_ulang' ?>
+						<?php Common::createSetting($type, 'Daftar Ulang', 'text', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<div class="divider10"></div>
+
+						<?php $type = 'sarjana2_kuliah_awal' ?>
+						<?php Common::createSetting($type, 'Tanggal Masuk', 'text', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::textField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<div class="divider10"></div>
+
+						<?php $type = 'sarjana2_form_diterima' ?>
+						<?php Common::createSetting($type, 'Formulir', 'image', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<p class="help-block">NOTE: File maximum 2Mb.</p>
+						<?php if ($model[$type]['data']->value): ?>
+							<div style="">
+								<a target="_blank" href="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $model[$type]['data']->value; ?>">View File</a>
+							</div>
+							<div class="clearfix" style="height: 10px;"></div>
+						<?php endif ?>
 					</div>
 				</div>
 				

@@ -64,6 +64,7 @@
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/masterKategoristudi')); ?>">Studi</a></li>
                 <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/masterJenjangstudi')); ?>">Jenjang</a></li> -->
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/LeSarjana')); ?>">Sarjana Data</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/static/magisterform')); ?>">Static Daftar Magister</a></li>
             </ul>
         </li>
         <li><a href="<?php echo CHtml::normalizeUrl(array('/admin/extensioncourse')); ?>"><span class="fa fa-folder"></span> <?php echo Tt::t('admin', 'Extension Course') ?></a></li>
