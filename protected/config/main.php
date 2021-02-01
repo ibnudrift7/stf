@@ -113,6 +113,9 @@ return array(
 				'/service/'=>'layanan/index',
 				'/service/<id:\w+>-<url:[a-zA-Z0-9&_\.-]+>.html'=>'layanan/view',
 
+				'<lang:(id|en)>/archive/'=>'archive/index',
+				'/archive/'=>'archive/index',
+
 				//menghilangkan index ex:home/index -> home
 				// '<controller:\w+>/*'=>'<controller>/index',
 				// '<controller:\w+>'=>'<controller>/index',
